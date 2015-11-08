@@ -15,4 +15,27 @@
 		<servlet-name>mvc-dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+
+	<!--&lt;!&ndash;-->
+	  <!--Define the Members-only area, by defining-->
+	  <!--a "Security Constraint" on this Application, and-->
+	  <!--mapping it to the subdirectory (URL) that we want-->
+	  <!--to restrict.-->
+ 	<!--&ndash;&gt;-->
+	<!--<security-constraint>-->
+		<!--<web-resource-collection>-->
+			<!--<web-resource-name>-->
+				<!--HG-->
+			<!--</web-resource-name>-->
+			<!--<url-pattern>/HG/*</url-pattern>-->
+		<!--</web-resource-collection>-->
+		<!--<auth-constraint>-->
+			<!--<role-name>admin</role-name>-->
+		<!--</auth-constraint>-->
+	<!--</security-constraint>-->
+	<!--&lt;!&ndash; Define the Login Configuration for this Application &ndash;&gt;-->
+	<!--<login-config>-->
+		<!--<auth-method>BASIC</auth-method>-->
+		<!--<realm-name>My Club Members-only Area</realm-name>-->
+	<!--</login-config>-->
 </web-app>
