@@ -19,7 +19,14 @@ public class DashboardController {
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://localhost/world", "root", "ouafahwafa79");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost/", "root", "ouafahwafa79");
+
+			ResultSet rs1 = connection.getMetaData().getCatalogs();
+
+			while (rs1.next()) {
+				System.out.println("TABLE_CAT = " + rs1.getString("TABLE_CAT") );
+				rs1.getMetaData();
+			}
 
 			DatabaseMetaData md = connection.getMetaData();
 			ResultSet rs = md.getTables(null, null, "%", null);
