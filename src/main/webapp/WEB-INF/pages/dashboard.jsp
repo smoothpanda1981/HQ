@@ -21,7 +21,7 @@
 	</c:choose>
 	<br>
 	<c:forEach items="${tableList}" var="table">
-	Item <c:out value="${table}"/><p>
+	Table Name :  <c:out value="${table}"/><p>
 		</c:forEach>
 </body>
 </html>
