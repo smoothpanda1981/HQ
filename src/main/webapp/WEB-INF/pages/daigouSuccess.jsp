@@ -23,18 +23,6 @@
 		<h1>${message}</h1>
 		<br>
 
-		<p>
-			Text Text Text Text Text <br>
-			Text Text Text Text Text <br>
-			Text Text Text Text Text <br>
-			Text Text Text Text Text <br>
-			Text Text Text Text Text <br>
-		</p>
-
-		<form:form method="post" modelAttribute="customer" action="/daigou/command">
-			<form:textarea path="content" rows="5" cols="50" /><br>
-			<input type="submit" />
-		</form:form>
 
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

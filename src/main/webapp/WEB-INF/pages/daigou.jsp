@@ -4,6 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/xml" prefix="x" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
 <html>
 <head>
@@ -21,20 +22,21 @@
 	<div class="container">
 		<h1>${message}</h1>
 		<br>
-		<c:choose>
-			<c:when test="${connection_status == 'OK'}">
-				mysql : <img src="http://icons.iconarchive.com/icons/dryicons/aesthetica-2/128/database-up-icon.png">
-				<br />
-			</c:when>
-			<c:otherwise>
-				mysql : <img src="http://icons.iconarchive.com/icons/dryicons/aesthetica-2/128/database-down-icon.png">
-				<br />
-			</c:otherwise>
-		</c:choose>
-		<br>
-		<c:forEach items="${tableList}" var="table">
-		Table Name :  <c:out value="${table}"/><p>
-		</c:forEach>
+
+		<p>
+			Text Text Text Text Text <br>
+			Text Text Text Text Text <br>
+			Text Text Text Text Text <br>
+			Text Text Text Text Text <br>
+			Text Text Text Text Text <br>
+		</p>
+
+		<form:form method="post" modelAttribute="customer">
+			Email : <form:input path="email" /><br>
+			Content : <form:textarea path="content" rows="5" cols="50" /><br>
+			<input type="submit" />
+		</form:form>
+
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery-1.11.1.min.js"></script>
