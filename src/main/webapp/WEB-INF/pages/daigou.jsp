@@ -32,7 +32,7 @@
 		</p>
 
 		<form:form method="post" modelAttribute="customer">
-			Email : <form:input path="email" /><br>
+			Email :   <form:input path="email" /><br>
 			Content : <form:textarea path="content" rows="5" cols="50" /><br>
 			<input type="submit" />
 		</form:form>
