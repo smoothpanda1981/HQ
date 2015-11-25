@@ -34,13 +34,21 @@ public class DaigouController {
 
 		System.out.println(customer.getEmail());
 
-		SimpleMailMessage email = new SimpleMailMessage();
-		email.setTo("daigouswitzerland@gmail.com");
-		email.setSubject("Requête de " + customer.getEmail());
-		email.setText(customer.getContent());
+		SimpleMailMessage emailToMe = new SimpleMailMessage();
+		emailToMe.setTo("daigouswitzerland@gmail.com");
+		emailToMe.setSubject("Commande de " + customer.getEmail());
+		emailToMe.setText(customer.getContent());
 
 		// sends the e-mail
-		mailSender.send(email);
+		mailSender.send(emailToMe);
+
+		SimpleMailMessage emailToCustomer = new SimpleMailMessage();
+		emailToCustomer.setTo(customer.getEmail());
+		emailToCustomer.setSubject("Confirmation - no reply");
+		emailToCustomer.setText("Nous allons vous répondre très rapidement. Merci de votre confiance !");
+
+		// sends the e-mail
+		mailSender.send(emailToCustomer);
 
 		return "daigouSuccess";
 	}
