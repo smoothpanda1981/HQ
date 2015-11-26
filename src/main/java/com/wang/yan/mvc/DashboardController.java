@@ -1,5 +1,9 @@
 package com.wang.yan.mvc;
 
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +17,10 @@ import java.util.List;
 @RequestMapping("/dashboard")
 public class DashboardController {
 
-	@RequestMapping(method = RequestMethod.GET)
+	@Autowired
+	public SessionFactory sessionFactory;
+
+	@RequestMapping(value = "jdbc", method = RequestMethod.GET)
 	public String dashBoardPage(ModelMap model) {
 		model.addAttribute("message", "Dashboard");
 		Connection connection = null;
@@ -53,5 +60,18 @@ public class DashboardController {
 			}
 		}
 		return "dashboard";
+	}
+
+	@RequestMapping(value="hibernate", method = RequestMethod.GET)
+	public String dashBoardUsingHibernatePage(ModelMap model) {
+		model.addAttribute("message", "Dashboard Hibernate");
+		Session session = sessionFactory.getCurrentSession();
+		Query query = session.createSQLQuery("select customerName from customers where customerNumber = :customerNumber")
+				.setParameter("customerNumber", "103");
+		List result = query.list();
+		if (result.size() == 1) {
+			System.out.println(result.get(0).toString());
+		}
+		return "dashboard_hibernate";
 	}
 }
