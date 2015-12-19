@@ -4,15 +4,13 @@ import com.wang.yan.mvc.dao.Student;
 import com.wang.yan.mvc.dao.User;
 import com.wang.yan.mvc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import javax.servlet.http.HttpServletRequest;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +21,20 @@ public class WebServiceController {
 
 	@Autowired
 	public UserService userService;
+
+	@RequestMapping(method = RequestMethod.GET)
+	public String printWS(ModelMap model, HttpServletRequest request) {
+
+		List<String> urlList = new ArrayList<String>();
+		urlList.add(request.getRequestURL().toString() + "/student");
+		urlList.add(request.getRequestURL().toString() + "/students");
+		urlList.add(request.getRequestURL().toString() + "/user/");
+		urlList.add(request.getRequestURL().toString() + "/user/1");
+
+		model.addAttribute("message", "Web Service");
+		model.addAttribute("urlList", urlList);
+		return "ws";
+	}
 
 	@RequestMapping(value = "student")
 	public @ResponseBody Student getStudent() {
