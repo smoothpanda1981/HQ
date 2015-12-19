@@ -33,7 +33,7 @@
 		</c:choose>
 		<br>
 		<c:forEach items="${tableList}" var="table">
-		Table Name :  <c:out value="${table}"/><p>
+			- <c:out value="${table}"/><p>
 		</c:forEach>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

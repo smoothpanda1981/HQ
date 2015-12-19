@@ -1,6 +1,6 @@
 package com.wang.yan.mvc.service.impl;
 
-import com.wang.yan.mvc.dao.User;
+import com.wang.yan.mvc.model.User;
 import com.wang.yan.mvc.service.UserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created by ywang on 25.11.15.

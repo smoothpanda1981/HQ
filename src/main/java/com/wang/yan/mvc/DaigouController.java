@@ -1,6 +1,6 @@
 package com.wang.yan.mvc;
 
-import com.wang.yan.mvc.dao.Customer;
+import com.wang.yan.mvc.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.mail.SimpleMailMessage;

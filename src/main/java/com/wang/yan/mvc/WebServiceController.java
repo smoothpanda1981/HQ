@@ -1,7 +1,7 @@
 package com.wang.yan.mvc;
 
-import com.wang.yan.mvc.dao.Student;
-import com.wang.yan.mvc.dao.User;
+import com.wang.yan.mvc.model.Student;
+import com.wang.yan.mvc.model.User;
 import com.wang.yan.mvc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.servlet.http.HttpServletRequest;
-import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 

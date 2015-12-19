@@ -1,6 +1,6 @@
 package com.wang.yan.mvc.service;
 
-import com.wang.yan.mvc.dao.User;
+import com.wang.yan.mvc.model.User;
 
 import java.util.List;
 
