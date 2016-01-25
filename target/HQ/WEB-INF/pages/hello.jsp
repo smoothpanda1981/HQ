@@ -35,6 +35,7 @@
 			</tbody>
 		</table>
 		<p><a href="${activemq}">activemq</a></p>
+		<p><a href="${wiki}">Zoho Wiki</a></p>
 	<%@ include file="footer.jsp"  %>
 </body>
 </html>
