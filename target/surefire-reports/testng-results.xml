@@ -2,10 +2,10 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="com.wang.yan.mvc.AppTests" duration-ms="5" started-at="2015-12-19T22:45:34Z" finished-at="2015-12-19T22:45:34Z">
+  <suite name="com.wang.yan.mvc.AppTests" duration-ms="5" started-at="2016-01-25T00:24:35Z" finished-at="2016-01-25T00:24:35Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="5" started-at="2015-12-19T22:45:34Z" finished-at="2015-12-19T22:45:34Z">
+    <test name="Command line test" duration-ms="5" started-at="2016-01-25T00:24:35Z" finished-at="2016-01-25T00:24:35Z">
     </test> <!-- Command line test -->
   </suite> <!-- com.wang.yan.mvc.AppTests -->
 </testng-results>
