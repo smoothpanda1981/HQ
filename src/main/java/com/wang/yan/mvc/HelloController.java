@@ -8,9 +8,11 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.method.HandlerMethod;
+import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -28,7 +30,7 @@ public class HelloController {
 	private Message message;
 
 	@RequestMapping(method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
+	public String printWelcome(ModelMap model, HttpServletRequest request) {
 
 		model.addAttribute("message", "Hello " + message.getContent() + " !");
 		logger.info("INFO LOG");
@@ -37,6 +39,10 @@ public class HelloController {
 		map = handlerMapping.getHandlerMethods();
 		Set<RequestMappingInfo> keys = map.keySet();
 		model.addAttribute("endPoints", keys);
+		String url = request.getRequestURL().toString();
+		String urlReplace = url.replace("8080", "8161");
+		String finalUrl = urlReplace + "admin/index.jsp";
+		model.addAttribute("activemq", finalUrl);
 		return "hello";
 	}
 }

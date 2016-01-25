@@ -23,7 +23,7 @@
 			<tbody>
 			<c:forEach items="${endPoints}" var="endPoint">
 				<tr>
-					<td>${endPoint.patternsCondition}</td>
+					<td align="center">${endPoint.patternsCondition}</td>
 					<td>${endPoint.methodsCondition}</td>
 					<td>${endPoint.consumesCondition}</td>
 					<td>${endPoint.producesCondition}</td>
@@ -34,7 +34,7 @@
 			</c:forEach>
 			</tbody>
 		</table>
-
+		<p><a href="${activemq}">activemq</a></p>
 	<%@ include file="footer.jsp"  %>
 </body>
 </html>
