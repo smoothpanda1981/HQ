@@ -35,8 +35,8 @@
 			</c:forEach>
 			</tbody>
 		</table>
-		<p><a href="${activemq}">activemq</a></p>
-		<p><a href="${wiki}">Zoho Wiki</a></p>
+		<p><a href="${activemq}" target="_blank">activemq</a></p>
+		<p><a href="${wiki}" target="_blank">Zoho Wiki</a></p>
 	<%@ include file="footer.jsp"  %>
 </body>
 </html>
