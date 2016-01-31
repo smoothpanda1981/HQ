@@ -3,10 +3,10 @@
 <html>
 <head>
 	<title>Videos</title>
-	<%@ include file="header.jsp"  %>
+	<%--<%@ include file="header.jsp"  %>--%>
 </head>
 <body>
-	<%@ include file="menus.jsp"  %>
+	<%--<%@ include file="menus.jsp"  %>--%>
 	<h1>${message}</h1>
 
 	<%--<video width="1280" height="960" controls>--%>

@@ -7,9 +7,9 @@
 </head>
 <body>
 	<%@ include file="menus.jsp"  %>
-	<h1>${message}</h1>
-
-		<table>
+	<h1 class="sub-header">${message}</h1>
+	<div class="table-responsive">
+		<table class="table table-striped">
 			<thead>
 				<tr>
 					<th>path</th>
@@ -24,7 +24,7 @@
 			<tbody>
 			<c:forEach items="${endPoints}" var="endPoint">
 				<tr>
-					<td align="center">${endPoint.patternsCondition}</td>
+					<td>${endPoint.patternsCondition}</td>
 					<td>${endPoint.methodsCondition}</td>
 					<td>${endPoint.consumesCondition}</td>
 					<td>${endPoint.producesCondition}</td>
@@ -35,6 +35,7 @@
 			</c:forEach>
 			</tbody>
 		</table>
+	</div>
 		<p><a href="${activemq}" target="_blank">activemq</a></p>
 		<p><a href="${wiki}" target="_blank">Zoho Wiki</a></p>
 	<%@ include file="footer.jsp"  %>

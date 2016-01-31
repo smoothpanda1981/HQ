@@ -44,7 +44,6 @@ public class HelloController {
 		String urlReplaceHQ = urlReplace.replace("/HQ", "");
 		String finalUrl = urlReplaceHQ + "admin/index.jsp";
 		model.addAttribute("activemq", finalUrl);
-		model.addAttribute("wiki", "https://ywangubuntu.wiki.zoho.com/How-to-set-up-a-ubuntu-server.html");
 		return "hello";
 	}
 }
