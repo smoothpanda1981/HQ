@@ -41,7 +41,8 @@ public class HelloController {
 		model.addAttribute("endPoints", keys);
 		String url = request.getRequestURL().toString();
 		String urlReplace = url.replace("8080", "8161");
-		String finalUrl = urlReplace + "admin/index.jsp";
+		String urlRepleaceHQ = urlReplace.replace("HQ", "");
+		String finalUrl = urlRepleaceHQ + "admin/index.jsp";
 		model.addAttribute("activemq", finalUrl);
 		model.addAttribute("wiki", "https://ywangubuntu.wiki.zoho.com/How-to-set-up-a-ubuntu-server.html");
 		return "hello";
