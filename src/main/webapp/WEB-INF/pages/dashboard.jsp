@@ -7,9 +7,8 @@
 
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<title>Dashboard</title>
+	<%@ include file="header.jsp"  %>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -18,6 +17,7 @@
 	<![endif]-->
 </head>
 <body>
+	<%@ include file="menus.jsp"  %>
 	<div class="container">
 		<h1>${message}</h1>
 		<br>

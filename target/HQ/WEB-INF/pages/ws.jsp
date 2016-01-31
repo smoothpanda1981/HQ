@@ -2,10 +2,11 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>Web Services</title>
 	<%@ include file="header.jsp"  %>
 </head>
 <body>
+	<%@ include file="menus.jsp"  %>
 	<h1>${message}</h1>
 
 	<c:forEach items="${urlList}" var="url">

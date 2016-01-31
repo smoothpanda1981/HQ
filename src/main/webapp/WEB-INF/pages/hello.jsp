@@ -6,6 +6,7 @@
 	<%@ include file="header.jsp"  %>
 </head>
 <body>
+	<%@ include file="menus.jsp"  %>
 	<h1>${message}</h1>
 
 		<table>

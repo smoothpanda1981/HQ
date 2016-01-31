@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Google Map Page</title>
+	<%@ include file="header.jsp"  %>
 	<style type="text/css">
 		div#map_container{
 			width:800px;
@@ -30,6 +31,7 @@
 	</script>
 </head>
 <body onload="loadMap()">
+	<%@ include file="menus.jsp"  %>
 	<h1>${message}</h1>
 	<div id="map_container"></div>
 </body>

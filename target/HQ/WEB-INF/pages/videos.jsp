@@ -2,10 +2,11 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>Videos</title>
 	<%@ include file="header.jsp"  %>
 </head>
 <body>
+	<%@ include file="menus.jsp"  %>
 	<h1>${message}</h1>
 
 	<%--<video width="1280" height="960" controls>--%>
