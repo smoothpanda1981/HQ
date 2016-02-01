@@ -34,5 +34,6 @@
 	<%@ include file="menus.jsp"  %>
 	<h1>${message}</h1>
 	<div id="map_container"></div>
+	<%@ include file="footer.jsp"  %>
 </body>
 </html>
