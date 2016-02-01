@@ -12,6 +12,5 @@
 	<%--<video width="1280" height="960" controls>--%>
 		<%--<source src="file:///home/ywang/Downloads/video_hq.mp4" type="video/mp4">--%>
 	<%--</video>--%>
-	<%@ include file="footer.jsp"  %>
 </body>
 </html>
