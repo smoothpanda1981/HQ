@@ -42,7 +42,7 @@ public class HibernateController {
 
 		bookService.saveBook(book);
 
-		return "hello";
+		return "hibernate";
 	}
 
 }

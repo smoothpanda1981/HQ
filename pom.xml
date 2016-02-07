@@ -33,6 +33,7 @@
         <h2.version>1.4.190</h2.version>
         <dbunit.version>2.1</dbunit.version>
         <maven-compiler-plugin.version>1.6</maven-compiler-plugin.version>
+        <activemq-spring.version>5.13.0</activemq-spring.version>
     </properties>
 
     <dependencies>
@@ -46,6 +47,12 @@
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>${mail.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-spring</artifactId>
+            <version>${activemq-spring.version}</version>
         </dependency>
 
 
@@ -136,6 +143,13 @@
             <artifactId>spring-core</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework</groupId>
