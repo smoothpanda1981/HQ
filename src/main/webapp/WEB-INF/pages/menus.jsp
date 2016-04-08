@@ -28,10 +28,9 @@
                         <li><a href="http://<%= request.getLocalName() %>:8161/admin/index.jsp">Active MQ</a></li>
                         <li><a href="https://ywangubuntu.wiki.zoho.com/How-to-set-up-a-ubuntu-server.html">Zoho Wiki</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Logout</a></li>
-
                     </ul>
                 </li>
+                <li><a href="logout">Logout</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

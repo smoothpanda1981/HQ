@@ -58,7 +58,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jms:4.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.2.2.RELEASE" />
@@ -70,6 +69,10 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.0.1.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.0.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:4.0.1.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
