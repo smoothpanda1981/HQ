@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ page session="false" %>
 <html>
 <head>
@@ -22,9 +23,19 @@
 				</tr>
 			</thead>
 			<tbody>
-			<c:forEach items="${endPoints}" var="endPoint">
+				<c:forEach items="${endPoints}" var="endPoint">
+					<c:set var="string1" value="${endPoint.patternsCondition}"/>
+					<c:set var="string2" value="${fn:replace(string1, '[', '')}" />
+					<c:set var="string3" value="${fn:replace(string2, ']', '')}" />
 				<tr>
-					<td>${endPoint.patternsCondition}</td>
+					<c:choose>
+						<c:when test="${endPoint.methodsCondition} eq '[GET]'">
+							<td><a href="${requestUrl}${string3}">${endPoint.patternsCondition}</a></td>
+						</c:when>
+						<c:otherwise>
+							<td><a href="${requestUrl}${string3}">${requestUrl}${string3}</a></td>
+						</c:otherwise>
+					</c:choose>
 					<td>${endPoint.methodsCondition}</td>
 					<td>${endPoint.consumesCondition}</td>
 					<td>${endPoint.producesCondition}</td>

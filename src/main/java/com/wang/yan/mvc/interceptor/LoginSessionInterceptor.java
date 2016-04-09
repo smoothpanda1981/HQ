@@ -19,6 +19,25 @@ public class LoginSessionInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         logger.debug("Pre Handle");
+
+        logger.info("test : " + httpServletRequest.getRequestURI());
+        logger.info("test : " + httpServletRequest.getServletPath());
+        logger.info("test : " + httpServletRequest.getLocalAddr());
+        logger.info("test : " + httpServletRequest.getRequestURL());
+        logger.info("test : " + httpServletRequest.getPathTranslated());
+        logger.info("test : " + httpServletRequest.getPathInfo());
+        logger.info("test : " + httpServletRequest.getContextPath());
+        logger.info("test : " + httpServletRequest.getLocalName());
+        logger.info("test : " + httpServletRequest.getServerPort());
+        logger.info("test : " + httpServletRequest.getLocalPort());
+
+        String servletPath = "";
+        if (httpServletRequest.getServletPath().length() > 1) {
+            servletPath = httpServletRequest.getRequestURL().toString().replace(httpServletRequest.getServletPath(), "");
+        } else {
+            servletPath = httpServletRequest.getRequestURL().toString();
+        }
+        httpServletRequest.setAttribute("homeMenuValue", servletPath);
         if (httpServletRequest.getServletPath().equals("/")) {
             return true;
         } else {

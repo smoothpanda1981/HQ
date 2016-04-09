@@ -89,5 +89,10 @@ public class HelloController {
 		String urlReplaceHQ = urlReplace.replace("/HQ", "");
 		String finalUrl = urlReplaceHQ + "admin/index.jsp";
 		model.addAttribute("activemq", finalUrl);
+		String requestUrl = request.getRequestURL().toString();
+		if (String.valueOf(requestUrl.charAt(requestUrl.length()-1)).equals("/")) {
+			requestUrl = requestUrl.substring(0, requestUrl.length()-1);
+		}
+		model.addAttribute("requestUrl", requestUrl);
 	}
 }
