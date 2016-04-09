@@ -20,16 +20,16 @@ public class LoginSessionInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         logger.debug("Pre Handle");
 
-        logger.info("test : " + httpServletRequest.getRequestURI());
-        logger.info("test : " + httpServletRequest.getServletPath());
-        logger.info("test : " + httpServletRequest.getLocalAddr());
-        logger.info("test : " + httpServletRequest.getRequestURL());
-        logger.info("test : " + httpServletRequest.getPathTranslated());
-        logger.info("test : " + httpServletRequest.getPathInfo());
-        logger.info("test : " + httpServletRequest.getContextPath());
-        logger.info("test : " + httpServletRequest.getLocalName());
-        logger.info("test : " + httpServletRequest.getServerPort());
-        logger.info("test : " + httpServletRequest.getLocalPort());
+//        logger.info("test : " + httpServletRequest.getRequestURI());
+//        logger.info("test : " + httpServletRequest.getServletPath());
+//        logger.info("test : " + httpServletRequest.getLocalAddr());
+//        logger.info("test : " + httpServletRequest.getRequestURL());
+//        logger.info("test : " + httpServletRequest.getPathTranslated());
+//        logger.info("test : " + httpServletRequest.getPathInfo());
+//        logger.info("test : " + httpServletRequest.getContextPath());
+//        logger.info("test : " + httpServletRequest.getLocalName());
+//        logger.info("test : " + httpServletRequest.getServerPort());
+//        logger.info("test : " + httpServletRequest.getLocalPort());
 
         String servletPath = "";
         if (httpServletRequest.getServletPath().length() > 1) {

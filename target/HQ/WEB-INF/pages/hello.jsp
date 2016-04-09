@@ -27,13 +27,14 @@
 					<c:set var="string1" value="${endPoint.patternsCondition}"/>
 					<c:set var="string2" value="${fn:replace(string1, '[', '')}" />
 					<c:set var="string3" value="${fn:replace(string2, ']', '')}" />
+					<c:set var="string4" value="${endPoint.methodsCondition}" />
 				<tr>
 					<c:choose>
-						<c:when test="${endPoint.methodsCondition} eq '[GET]'">
+						<c:when test="${fn:contains(string4, 'GET')}">
 							<td><a href="${requestUrl}${string3}">${endPoint.patternsCondition}</a></td>
 						</c:when>
 						<c:otherwise>
-							<td><a href="${requestUrl}${string3}">${requestUrl}${string3}</a></td>
+							<td>${endPoint.patternsCondition}</td>
 						</c:otherwise>
 					</c:choose>
 					<td>${endPoint.methodsCondition}</td>
