@@ -44,6 +44,7 @@ public class LogoutController {
 		}
 
 		model.addAttribute("message", "Please Sign In !");
+		model.addAttribute("login", new Login());
 		try {
 			response.sendRedirect(Utils.computePath(request));
 		} catch (IOException e) {

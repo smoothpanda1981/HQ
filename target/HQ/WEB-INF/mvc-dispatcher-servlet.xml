@@ -24,7 +24,6 @@
         <property name='useTrailingSlashMatch' value='false'></property>
     </bean>
 
-
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>

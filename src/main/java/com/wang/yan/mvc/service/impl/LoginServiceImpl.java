@@ -29,4 +29,14 @@ public class LoginServiceImpl implements LoginService {
     public Login isValidUser(String username, String password) throws SQLException {
         return loginDao.isValidUser(username, password);
     }
+
+    @Override
+    public Login addNewLogin(String username, String password) throws SQLException {
+        return loginDao.addNewLogin(username, password);
+    }
+
+    @Override
+    public Login updateExistingLogin(String current_username, String current_password, String new_username, String new_password) throws SQLException {
+        return loginDao.updateExistingLogin(current_username, current_password, new_username, new_password);
+    }
 }

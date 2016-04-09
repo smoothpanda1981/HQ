@@ -11,6 +11,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerMapping;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
@@ -44,6 +45,7 @@ public class HelloController {
 
 		if (request.getSession().getAttribute("login") == null) {
 			model.addAttribute("message", "Please Sign In !");
+			model.addAttribute("login", new Login());
 			return "login";
 		} else {
 			genetateHelloData(model, request);
@@ -53,7 +55,7 @@ public class HelloController {
 
 	@RequestMapping(method=RequestMethod.POST)
 	public String executeLogin(ModelMap model, HttpServletRequest request, @RequestParam String username, @RequestParam String password) {
-		String view = "login";
+		String view = "";
 
 		Login login = null;
 		try {
@@ -62,8 +64,9 @@ public class HelloController {
 			if (login == null) {
 				logger.info("login is null");
 				model.addAttribute("message", "Please Sign In !");
+				model.addAttribute("login", new Login());
 				model.addAttribute("error_message", "Invalid username or password !");
-
+				view = "login";
 			} else {
 				model.addAttribute("message", "Hello " + message.getContent() + " !");
 				genetateHelloData(model, request);

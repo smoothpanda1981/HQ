@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page session="false" %>
 <html>
 <head>
@@ -11,30 +12,33 @@
         <h1 class="sub-header text-left">${message}</h1>
     </div>
 
-<div>
-    <form id="loginForm" method="post" role="form">
+    <div>
+    <form:form id="loginForm" method="post" role="form" modelAttribute="login">
         <div class="form-group row">
-            <h6 class="col-md-offset-3 col-md-3 text-danger">${error_message}</h6>
+            <p class="col-md-3 text-danger"></p>
         </div>
         <div class="form-group row">
-            <label for="username" class="col-md-3 form-control-label text-right">Username</label>
+            <p class="col-md-offset-3 col-md-3 text-danger">${error_message}</p>
+        </div>
+        <div class="form-group row">
+            <form:label path="username" class="col-md-3 form-control-label text-right">Username</form:label>
             <div class="col-md-3">
-                <input id="username" class="form-control" name="username" placeholder = "Enter your username"/>
+                <form:input path="username" class="form-control" name="username" placeholder = "Enter your username"/>
             </div>
         </div>
         <div class="form-group row">
-            <label for="password" class="col-md-3 form-control-label text-right">Password</label>
+            <form:label path="password" class="col-md-3 form-control-label text-right">Password</form:label>
             <div class="col-md-3">
-                <input id="password" class="form-control" name="password" type="password" placeholder = "Enter your password"/>
+                <form:input path="password" class="form-control" name="password" type="password" placeholder = "Enter your password"/>
             </div>
         </div>
         <div class="form-group row">
             <div class="col-md-offset-3 col-md-3">
-                <input type="submit" class="btn btn-secondary" value="Sign in"/>
+                <input type="submit" class="btn btn-primary" value="Sign in"/>
             </div>
         </div>
-    </form>
-</div>
+    </form:form>
+    </div>
 <%@ include file="footer.jsp"  %>
 </body>
 </html>
