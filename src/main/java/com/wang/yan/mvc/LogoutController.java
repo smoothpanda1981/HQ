@@ -61,4 +61,9 @@ public class LogoutController {
 	public String logoutThridLyer(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
 		return logoutFirstLayer(model, request, response);
 	}
+
+	@RequestMapping(value="/*/*/*/logout", method = RequestMethod.GET)
+	public String logoutFouthLyer(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+		return logoutFirstLayer(model, request, response);
+	}
 }

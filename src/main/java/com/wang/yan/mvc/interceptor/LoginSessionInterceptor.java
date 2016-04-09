@@ -18,6 +18,7 @@ public class LoginSessionInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
+        logger.debug("*********************************************");
         logger.debug("Pre Handle");
 
 //        logger.info("test : " + httpServletRequest.getRequestURI());
@@ -34,17 +35,25 @@ public class LoginSessionInterceptor implements HandlerInterceptor {
         String servletPath = "";
         if (httpServletRequest.getServletPath().length() > 1) {
             servletPath = httpServletRequest.getRequestURL().toString().replace(httpServletRequest.getServletPath(), "");
+            logger.debug("in if : " + servletPath);
         } else {
             servletPath = httpServletRequest.getRequestURL().toString();
+            logger.debug("in else : " + servletPath);
         }
         httpServletRequest.setAttribute("homeMenuValue", servletPath);
+
+
         if (httpServletRequest.getServletPath().equals("/")) {
+            logger.debug("in if servletPath equals /.");
             return true;
         } else {
+            logger.debug("in else servletPath not equals /.");
             if (httpServletRequest.getSession().getAttribute("login") == null) {
+                logger.debug("in if session attribute login is null.");
                 httpServletResponse.sendRedirect(Utils.computePath(httpServletRequest));
                 return false;
             } else {
+                logger.debug("in else session login not null");
                 return true;
             }
         }

@@ -25,7 +25,6 @@ import java.util.Map;
 import java.util.Set;
 
 @Controller
-@SessionAttributes("login")
 @RequestMapping("/")
 public class HelloController {
 
@@ -43,11 +42,14 @@ public class HelloController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model, HttpServletRequest request) {
 
+		logger.info("************************************");
 		if (request.getSession().getAttribute("login") == null) {
+			logger.info("no session login");
 			model.addAttribute("message", "Please Sign In !");
 			model.addAttribute("login", new Login());
 			return "login";
 		} else {
+			logger.info("with session login");
 			genetateHelloData(model, request);
 			return "hello";
 		}
