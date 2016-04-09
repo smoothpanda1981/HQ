@@ -7,21 +7,31 @@
 </head>
 <body>
 <%@ include file="menus.jsp"  %>
-<h1 class="sub-header">${message}</h1>
-<font color="red">${error_message}</font>
+    <div class="col-md-offset-3 col-md-3">
+        <h1 class="sub-header text-left">${message}</h1>
+    </div>
 
 <div>
     <form id="loginForm" method="post" role="form">
-        <div class = "form-group">
-            <label path="username">Username</label>
-            <input id="username" name="username" placeholder = "Enter your username"/>
+        <div class="form-group row">
+            <h6 class="col-md-offset-3 col-md-3 text-danger">${error_message}</h6>
         </div>
-        <div class = "form-group">
-            <label path="password">Password</label>
-            <input id="password" name="password" type="password" placeholder = "Enter your password"/>
+        <div class="form-group row">
+            <label for="username" class="col-md-3 form-control-label text-right">Username</label>
+            <div class="col-md-3">
+                <input id="username" class="form-control" name="username" placeholder = "Enter your username"/>
+            </div>
         </div>
-        <div class = "form-group">
-            <input type="submit" value="Sign in"/>
+        <div class="form-group row">
+            <label for="password" class="col-md-3 form-control-label text-right">Password</label>
+            <div class="col-md-3">
+                <input id="password" class="form-control" name="password" type="password" placeholder = "Enter your password"/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-offset-3 col-md-3">
+                <input type="submit" class="btn btn-secondary" value="Sign in"/>
+            </div>
         </div>
     </form>
 </div>
