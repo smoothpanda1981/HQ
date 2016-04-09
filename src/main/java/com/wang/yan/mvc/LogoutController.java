@@ -26,13 +26,12 @@ import java.util.Map;
 import java.util.Set;
 
 @Controller
-@RequestMapping("/logout")
 public class LogoutController {
 
 	private static final Logger logger = Logger.getLogger(LogoutController.class);
 
-	@RequestMapping(method = RequestMethod.GET)
-	public String logout(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping(value="/logout", method = RequestMethod.GET)
+	public String logoutFirstLayer(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
 		logger.info("path : " + request.getContextPath());
 
 		HttpSession session = request.getSession();
@@ -51,5 +50,15 @@ public class LogoutController {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	@RequestMapping(value="/*/logout", method = RequestMethod.GET)
+	public String logoutSecondLyer(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+		return logoutFirstLayer(model, request, response);
+	}
+
+	@RequestMapping(value="/*/*/logout", method = RequestMethod.GET)
+	public String logoutThridLyer(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+		return logoutFirstLayer(model, request, response);
 	}
 }
