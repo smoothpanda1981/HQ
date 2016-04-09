@@ -15,7 +15,7 @@
     <div>
         <h3>Create new login</h3>
         <h6 class="text-danger">${create_login_message}</h6>
-        <form:form id="createloginForm" method="post" action="/db/login" role="form" class="form-inline" modelAttribute="createLogin">
+        <form:form id="createloginForm" method="post" action="login" role="form" class="form-inline" modelAttribute="createLogin">
             <div class="form-group">
                 <form:label path="username">Username</form:label>
                 <form:input path="username" class="form-control" name="username"/>
@@ -31,7 +31,7 @@
     <div>
         <h3>Update existing login</h3>
         <h6 class="text-danger">${update_login_message}</h6>
-        <form:form id="updateloginForm" method="PUT" action="/db/login" role="form" class="form-inline" modelAttribute="updateLogin">
+        <form:form id="updateloginForm" method="PUT" action="login" role="form" class="form-inline" modelAttribute="updateLogin">
             <div class="form-group">
                 <form:label path="current_username">Current Username</form:label>
                 <form:input path="current_username" class="form-control" name="current_username"/>
@@ -48,13 +48,14 @@
                 <form:label path="new_password">New Password</form:label>
                 <form:input path="new_password" class="form-control" name="new_password" type="password"/>
             </div>
+            <input type="hidden" name="_method" value="PUT"/>
             <input type="submit" class="btn btn-primary" value="Update"/>
         </form:form>
     </div>
     <hr>
     <div>
         <h3>Delete existing login</h3>
-        <form:form id="deleteloginForm" method="delete" action="/db/login" role="form" class="form-inline" modelAttribute="deleteLogin">
+        <form:form id="deleteloginForm" method="delete" action="login" role="form" class="form-inline" modelAttribute="deleteLogin">
             <div class="form-group">
                 <form:label path="delete_username">Username</form:label>
                 <form:input path="delete_username" class="form-control" name="username"/>
