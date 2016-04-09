@@ -22,21 +22,8 @@ public class GoogleMapsController {
 	private static final Logger logger = Logger.getLogger(GoogleMapsController.class);
 
 	@RequestMapping(method = RequestMethod.GET)
-	public String mapsPage(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
-
-		if (request.getSession().getAttribute("login") != null) {
-			model.addAttribute("message", "Google Maps");
-			return "maps";
-		} else {
-			try {
-				model.addAttribute("message", "Please Sign In !");
-
-				response.sendRedirect(Utils.computePath(request));
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			return null;
-		}
-
+	public String mapsPage(ModelMap model) {
+		model.addAttribute("message", "Google Maps");
+		return "maps";
 	}
 }
