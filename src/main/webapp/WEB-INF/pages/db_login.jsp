@@ -55,7 +55,8 @@
     <hr>
     <div>
         <h3>Delete existing login</h3>
-        <form:form id="deleteloginForm" method="delete" action="login" role="form" class="form-inline" modelAttribute="deleteLogin">
+        <h6 class="text-danger">${delete_login_message}</h6>
+        <form:form id="deleteloginForm" method="DELETE" action="login" role="form" class="form-inline" modelAttribute="deleteLogin">
             <div class="form-group">
                 <form:label path="delete_username">Username</form:label>
                 <form:input path="delete_username" class="form-control" name="username"/>
@@ -64,6 +65,7 @@
                 <form:label path="delete_password">Password</form:label>
                 <form:input path="delete_password" class="form-control" name="password" type="password"/>
             </div>
+            <input type="hidden" name="_method" value="PUT"/>
             <input type="submit" class="btn btn-primary" value="Delete"/>
         </form:form>
     </div>

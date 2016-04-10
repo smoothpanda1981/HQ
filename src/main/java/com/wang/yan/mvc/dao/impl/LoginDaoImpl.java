@@ -104,4 +104,31 @@ public class LoginDaoImpl implements LoginDao {
         }
         return updateLogin;
     }
+
+    @Override
+    public Login deleteExistingLogin(String username, String password) throws SQLException {
+        Session session = sessionFactory.getCurrentSession();
+        if (session == null) {
+            session = sessionFactory.openSession();
+        }
+        Login deleteLogin = new Login();
+
+        Login login = (Login) session.createCriteria(Login.class).add(Restrictions.eq("username", username)).uniqueResult();
+        if (login == null) {
+            logger.debug("login == null");
+            deleteLogin.setUsername("Login '" + username + "' doesn't exists!");
+        } else {
+            logger.debug("login != null");
+            Login login2 = isValidUser(username, password);
+            if (login2 == null) {
+                logger.debug("login2 == null");
+                deleteLogin.setUsername("Login '" + username + "' does exist, but password is wrong!");
+            } else {
+                Login toDeleteLogin = (Login) session.load(Login.class, login2.getId());
+                session.delete(toDeleteLogin);
+                deleteLogin.setUsername("Login '" + username + "' has been deleted successfully!");
+            }
+        }
+        return deleteLogin;
+    }
 }

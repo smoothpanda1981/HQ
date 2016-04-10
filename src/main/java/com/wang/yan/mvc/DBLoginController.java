@@ -61,4 +61,18 @@ public class DBLoginController {
 		return "db_login";
 	}
 
+	@RequestMapping(value= "login", method=RequestMethod.DELETE)
+	public String deleteLogin(ModelMap model, HttpServletRequest request, @RequestParam String delete_username, @RequestParam String delete_password) {
+		try {
+			Login login = loginService.deleteExistingLogin(delete_username, delete_password);
+			model.addAttribute("delete_login_message", login.getUsername());
+			model.addAttribute("createLogin", new Login());
+			model.addAttribute("updateLogin", new UpdateLogin());
+			model.addAttribute("deleteLogin", new DeleteLogin());
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return "db_login";
+	}
+
 }

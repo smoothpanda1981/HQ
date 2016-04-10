@@ -39,4 +39,9 @@ public class LoginServiceImpl implements LoginService {
     public Login updateExistingLogin(String current_username, String current_password, String new_username, String new_password) throws SQLException {
         return loginDao.updateExistingLogin(current_username, current_password, new_username, new_password);
     }
+
+    @Override
+    public Login deleteExistingLogin(String username, String password) throws SQLException {
+        return loginDao.deleteExistingLogin(username, password);
+    }
 }
