@@ -5,6 +5,7 @@ import com.wang.yan.mvc.dao.BookDao;
 import com.wang.yan.mvc.dao.LoginDao;
 import com.wang.yan.mvc.model.Book;
 import com.wang.yan.mvc.model.Login;
+import com.wang.yan.mvc.utils.MD5Encryption;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -37,7 +38,7 @@ public class LoginDaoImpl implements LoginDao {
         if (session == null) {
             session = sessionFactory.openSession();
         }
-        Login login = (Login) session.createCriteria(Login.class).add(Restrictions.eq("username", username)).add(Restrictions.eq("password", password)).uniqueResult();
+        Login login = (Login) session.createCriteria(Login.class).add(Restrictions.eq("username", username)).add(Restrictions.eq("password", MD5Encryption.encryptPasswordByMD5(password))).uniqueResult();
         if (login != null) {
             return login;
         } else {
@@ -60,7 +61,7 @@ public class LoginDaoImpl implements LoginDao {
         } else {
             Login logingToCreate = new Login();
             logingToCreate.setUsername(username);
-            logingToCreate.setPassword(password);
+            logingToCreate.setPassword(MD5Encryption.encryptPasswordByMD5(password));
             session.save(logingToCreate);
 
             newLogin.setUsername("Login '" + username + "' has been created successfully!");
@@ -89,16 +90,25 @@ public class LoginDaoImpl implements LoginDao {
             } else {
                 logger.debug("login2 != null");
                 Login login3 = (Login) session.createCriteria(Login.class).add(Restrictions.eq("username", new_username)).uniqueResult();
-                if (login3 != null) {
-                    logger.debug("login3 != null");
-                    updateLogin.setUsername("New Login '" + new_username + "' already exists, please choose a new username!");
-                } else {
+                if (login3 == null) {
                     logger.debug("login3 == null");
                     Login toUpdateLogin = (Login) session.load(Login.class, login2.getId());
                     toUpdateLogin.setUsername(new_username);
-                    toUpdateLogin.setPassword(new_password);
+                    toUpdateLogin.setPassword(MD5Encryption.encryptPasswordByMD5(new_password));
                     session.update(toUpdateLogin);
                     updateLogin.setUsername("New Login '" + current_username + "' has been updated successfully!");
+                } else {
+                    logger.debug("login3 != null");
+                    if (login3.getUsername().equals(current_username) && login3.getUsername().equals(new_password)) {
+                        logger.debug("Keep the same username, ok!");
+                        Login toUpdateLogin = (Login) session.load(Login.class, login2.getId());
+                        toUpdateLogin.setUsername(new_username);
+                        toUpdateLogin.setPassword(MD5Encryption.encryptPasswordByMD5(new_password));
+                        session.update(toUpdateLogin);
+                        updateLogin.setUsername("New Login '" + current_username + "' has been updated successfully!");
+                    } else {
+                        updateLogin.setUsername("New Login '" + new_username + "' already exists, please choose a new username!");
+                    }
                 }
             }
         }

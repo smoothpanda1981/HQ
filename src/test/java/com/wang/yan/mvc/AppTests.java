@@ -1,5 +1,6 @@
 package com.wang.yan.mvc;
 
+import com.wang.yan.mvc.utils.MD5Encryption;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
