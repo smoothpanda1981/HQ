@@ -32,12 +32,25 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <bean id="propertyConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+
+        <property name="locations">
+            <list>
+                <value>classpath:database.properties</value>
+                <value>classpath:log4j.properties</value>
+                <value>classpath:activemq.properties</value>
+                <value>classpath:gmail/mail.properties</value>
+            </list>
+        </property>
+    </bean>
+
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <!-- SMTP settings -->
-        <property name="host" value="smtp.gmail.com" />
-        <property name="port" value="587" />
-        <property name="username" value="daigouswitzerland@gmail.com" />
-        <property name="password" value="monlapin7981" />
+        <property name="host" value="${smtp.host}" />
+        <property name="port" value="${smtp.port}" />
+        <property name="username" value="${smtp.username}" />
+        <property name="password" value="${smtp.password}" />
 
         <property name="javaMailProperties">
             <!-- additional properties specific to JavaMail -->
@@ -47,17 +60,6 @@
                 <prop key="mail.smtp.starttls.enable">true</prop>
                 <prop key="mail.from.email">daigouswitzerland@gmail.com</prop>
             </props>
-        </property>
-    </bean>
-
-    <bean id="propertyConfigurer"
-          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-
-        <property name="locations">
-            <list>
-                <value>classpath:database.properties</value>
-                <value>classpath:log4j.properties</value>
-            </list>
         </property>
     </bean>
 
@@ -100,9 +102,9 @@
     <!-- Activemq connection factory -->
     <bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
         <!-- brokerURL, You may have different IP or port -->
-        <constructor-arg index="0" value="admin" />
-        <constructor-arg index="1" value="admin" />
-        <constructor-arg index="2" value="tcp://localhost:8161" />
+        <constructor-arg index="0" value="${activemq.username}" />
+        <constructor-arg index="1" value="${activemq.password}" />
+        <constructor-arg index="2" value="${activemq.url}" />
     </bean>
 
     <!-- Pooled Spring connection factory -->
