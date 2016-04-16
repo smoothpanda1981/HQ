@@ -12,7 +12,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="${homeMenuValue}">Home<span class="sr-only">(current)</span></a></li>
                 <li><a href="http://<%= request.getLocalName() %>:8161/admin/index.jsp">Active MQ</a></li>
-                <li><a href="https://ywangubuntu.wiki.zoho.com/How-to-set-up-a-ubuntu-server.html">Zoho Wiki</a></li>
+                <li><a href="http://<%= request.getLocalName() %>/mediawiki/index.php/Main_Page">Wiki</a></li>
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
