@@ -9,6 +9,19 @@
 <body>
 	<%@ include file="menus.jsp"  %>
 	<h1 class="sub-header">${message}</h1>
+	<div>
+		<c:forEach items="${endPoints}" var="endPoint">
+			<c:set var="string1" value="${endPoint.patternsCondition}"/>
+			<c:set var="string2" value="${fn:replace(string1, '[', '')}" />
+			<c:set var="string3" value="${fn:replace(string2, ']', '')}" />
+			<c:set var="string4" value="${endPoint.methodsCondition}" />
+			<c:choose>
+				<c:when test="${fn:contains(string4, 'GET')}">
+					<button type="button" class="btn btn-info"><a href="${requestUrl}${string3}">${endPoint.patternsCondition}</a></button>
+				</c:when>
+			</c:choose>
+		</c:forEach>
+	</div>
 	<div class="table-responsive">
 		<table class="table table-striped">
 			<thead>
