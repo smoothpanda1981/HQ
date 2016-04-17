@@ -20,12 +20,32 @@
 		</tr>
 		</thead>
 		<tbody>
+			<c:forEach items="${stockDataList}" var="stockDataList">
 			<tr>
-				<td>${stock_name}</td>
-				<td>${stock_currency}</td>
-				<td>${stock_day_high}</td>
-				<td>${stock_day_low}</td>
+				<td>${stockDataList.stockName}</td>
+				<td>${stockDataList.stockCurrency}</td>
+				<td>${stockDataList.stockDayHigh}</td>
+				<td>${stockDataList.stockDayLow}</td>
 			</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+</div>
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+		<tr>
+			<th>symbol</th>
+			<th>price</th>
+		</tr>
+		</thead>
+		<tbody>
+		<c:forEach items="${fxDataList}" var="fxDataList">
+			<tr>
+				<td>${fxDataList.fxSymbol}</td>
+				<td>${fxDataList.fxPrice}</td>
+			</tr>
+		</c:forEach>
 		</tbody>
 	</table>
 </div>
