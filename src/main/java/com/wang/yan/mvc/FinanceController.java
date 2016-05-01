@@ -9,10 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
+import yahoofinance.histquotes.HistoricalQuote;
+import yahoofinance.histquotes.Interval;
 import yahoofinance.quotes.fx.FxQuote;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
@@ -27,7 +30,7 @@ public class FinanceController {
 		Stock stock = null;
 		try {
 			List<StockData> stockDataList = new ArrayList<StockData>();
-			String[] symbols = new String[] {"INTC", "BABA", "TSLA", "AIR.PA", "YHOO"};
+			String[] symbols = new String[] {"AAPL", "INTC", "BABA", "TSLA", "AIR.PA", "YHOO"};
 			Map<String, Stock> stocks = YahooFinance.get(symbols); // single request
 			for (Map.Entry<String, Stock> entry : stocks.entrySet()) {
 				StockData financeData = new StockData();
@@ -52,6 +55,12 @@ public class FinanceController {
 				fxDataList.add(fxData);
 			}
 			model.addAttribute("fxDataList", fxDataList);
+
+			Calendar from = Calendar.getInstance();
+			Calendar to = Calendar.getInstance();
+			from.add(Calendar.YEAR, -1); // from 1 year ago
+			Stock google = YahooFinance.get("GOOG");
+			List<HistoricalQuote> googleHistQuotes = google.getHistory(from, to, Interval.DAILY);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
