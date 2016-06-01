@@ -39,6 +39,7 @@
         <google-api-client.version>1.21.0</google-api-client.version>
         <google-api-services-gmail.version>v1-rev40-1.21.0</google-api-services-gmail.version>
         <YahooFinanceAPI.version>3.1.0</YahooFinanceAPI.version>
+        <scribe.version>1.3.7</scribe.version>
     </properties>
 
     <dependencies>
@@ -168,7 +169,6 @@
             <version>${spring.version}</version>
             <scope>compile</scope>
         </dependency>
-
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
@@ -255,6 +255,13 @@
             <artifactId>YahooFinanceAPI</artifactId>
             <version>${YahooFinanceAPI.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.scribe</groupId>
+            <artifactId>scribe</artifactId>
+            <version>${scribe.version}</version>
+        </dependency>
+
 
 
 

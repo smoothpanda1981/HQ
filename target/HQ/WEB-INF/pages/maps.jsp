@@ -33,6 +33,7 @@
 <body onload="loadMap()">
 	<%@ include file="menus.jsp"  %>
 	<h1>${message}</h1>
+	<input id="pac-input" class="controls" type="text" placeholder="Search Box">
 	<div id="map_container"></div>
 	<%@ include file="footer.jsp"  %>
 </body>

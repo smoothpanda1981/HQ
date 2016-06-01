@@ -40,6 +40,7 @@
                 <value>classpath:database.properties</value>
                 <value>classpath:log4j.properties</value>
                 <value>classpath:activemq.properties</value>
+                <value>classpath:apis_auth.properties</value>
                 <value>classpath:gmail/mail.properties</value>
             </list>
         </property>
@@ -127,5 +128,21 @@
         <property name="connectionFactory" ref="connectionFactory" />
         <property name="defaultDestination" ref="defaultDestination" />
     </bean>
+
+    <!-- ======================================================= -->
+    <!-- OAuth Java lib    -->
+    <!-- ======================================================= -->
+    <!-- oauth -->
+    <!--<bean id="linkedInServiceConfig" class="org.scribe.oauth.OA">-->
+        <!--<constructor-arg value="${app.config.oauth.linkedin.apikey}" />-->
+        <!--<constructor-arg value="${app.config.oauth.linkedin.apisecret}"/>-->
+        <!--<constructor-arg value="${app.config.oauth.linkedin.callback}"/>-->
+        <!--<constructor-arg value="org.scribe.builder.api.LinkedInApi"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="linkedInServiceProvider" class="edu.seua.scribe.OAuthServiceProvider">-->
+        <!--<constructor-arg name="config" ref="linkedInServiceConfig" />-->
+    <!--</bean>-->
+
 
 </beans>

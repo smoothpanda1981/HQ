@@ -37,6 +37,11 @@
                 <input type="submit" class="btn btn-primary" value="Sign in"/>
             </div>
         </div>
+        <div class="form-group row">
+            <div class="col-md-offset-3 col-md-3">
+                <a class="glyphicon glyphicon-info-sign" href="/singup"> Don't have an account ? Register</a>
+            </div>
+        </div>
     </form:form>
     </div>
 <%@ include file="footer.jsp"  %>
