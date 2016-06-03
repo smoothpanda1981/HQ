@@ -26,74 +26,29 @@ public class SingupController {
 
 	private static final Logger logger = Logger.getLogger(SingupController.class);
 
-	@Autowired
-	private RequestMappingHandlerMapping handlerMapping;
-
-	@Autowired
-	private Message message;
-
-	@Autowired
-	private LoginService loginService;
-
 	@RequestMapping(method = RequestMethod.GET)
-	public String printWelcome(ModelMap model, HttpServletRequest request) {
+	public String showForm(ModelMap model, HttpServletRequest request) {
 
 		logger.info("************************************");
-		if (request.getSession().getAttribute("login") == null) {
-			logger.info("no session login");
-			model.addAttribute("message", "Please Sign In !");
-			model.addAttribute("login", new Login());
-			return "login";
-		} else {
-			logger.info("with session login");
-			genetateHelloData(model, request);
-			return "hello";
-		}
+//		if (request.getSession().getAttribute("login") == null) {
+//			logger.info("no session login");
+//			model.addAttribute("message", "Please Sign In !");
+//			model.addAttribute("login", new Login());
+//			return "login";
+//		} else {
+//			logger.info("with session login");
+//			return "signup";
+//		}
+		return "signup";
 	}
 
 	@RequestMapping(method=RequestMethod.POST)
 	public String executeLogin(ModelMap model, HttpServletRequest request, @RequestParam String username, @RequestParam String password) {
-		String view = "";
-
-		Login login = null;
-		try {
-			login = loginService.isValidUser(username, password);
-			request.getSession().setAttribute("login", login);
-			if (login == null) {
-				logger.info("login is null");
+		logger.info("login is null");
 				model.addAttribute("message", "Please Sign In !");
 				model.addAttribute("login", new Login());
 				model.addAttribute("error_message", "Invalid username or password !");
-				view = "login";
-			} else {
-				model.addAttribute("message", "Hello " + message.getContent() + " !");
-				genetateHelloData(model, request);
 
-				view = "hello";
-			}
-		} catch (SQLException e) {
-			logger.error(e.getMessage());
-		}
-		return view;
-	}
-
-	private void genetateHelloData(ModelMap model, HttpServletRequest request) {
-		model.addAttribute("message", "Hello " + message.getContent() + " !");
-		logger.info("INFO LOG");
-		logger.debug("DEBUG LOG");
-		Map<RequestMappingInfo, HandlerMethod> map = new HashMap<RequestMappingInfo, HandlerMethod>();
-		map = handlerMapping.getHandlerMethods();
-		Set<RequestMappingInfo> keys = map.keySet();
-		model.addAttribute("endPoints", keys);
-		String url = request.getRequestURL().toString();
-		String urlReplace = url.replace("8080", "8161");
-		String urlReplaceHQ = urlReplace.replace("/HQ", "");
-		String finalUrl = urlReplaceHQ + "admin/index.jsp";
-		model.addAttribute("activemq", finalUrl);
-		String requestUrl = request.getRequestURL().toString();
-		if (String.valueOf(requestUrl.charAt(requestUrl.length()-1)).equals("/")) {
-			requestUrl = requestUrl.substring(0, requestUrl.length()-1);
-		}
-		model.addAttribute("requestUrl", requestUrl);
+		return "signup";
 	}
 }

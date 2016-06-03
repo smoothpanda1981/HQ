@@ -4,46 +4,54 @@
 <html>
 <head>
     <title>Login</title>
+    <style>
+        .centered-form {
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+
+        .centered-form .panel {
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+        }
+    </style>
     <%@ include file="header.jsp"  %>
 </head>
 <body>
 <%@ include file="menus.jsp"  %>
-    <div class="col-md-offset-3 col-md-3">
-        <h1 class="sub-header text-left">${message}</h1>
-    </div>
+<div>
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">${message}</h3>
+                </div>
+                <div class="panel-body">
+                    <form:form id="loginForm" method="post" role="form" modelAttribute="login">
+                        <div class="form-group">
+                            <p class="text-danger"></p>
+                        </div>
+                        <div class="form-group ">
+                            <p class="text-danger">${error_message}</p>
+                        </div>
+                        <div class="form-group">
+                            <form:input path="username" class="form-control input-sm" name="username" placeholder = "Enter your username"/>
+                        </div>
 
-    <div>
-    <form:form id="loginForm" method="post" role="form" modelAttribute="login">
-        <div class="form-group row">
-            <p class="col-md-3 text-danger"></p>
-        </div>
-        <div class="form-group row">
-            <p class="col-md-offset-3 col-md-3 text-danger">${error_message}</p>
-        </div>
-        <div class="form-group row">
-            <form:label path="username" class="col-md-3 form-control-label text-right">Username</form:label>
-            <div class="col-md-3">
-                <form:input path="username" class="form-control" name="username" placeholder = "Enter your username"/>
+                        <div class="form-group">
+                            <form:input path="password" class="form-control input-sm" name="password" type="password" placeholder = "Enter your password"/>
+                        </div>
+
+                        <input type="submit" class="btn btn-info btn-block" value="Sign in"/>
+                    </form:form>
+                    <div class="form-group">
+                        <label class="glyphicon glyphicon-info-sign"> Don't have an account? </label><a href="/signup"> Register</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="form-group row">
-            <form:label path="password" class="col-md-3 form-control-label text-right">Password</form:label>
-            <div class="col-md-3">
-                <form:input path="password" class="form-control" name="password" type="password" placeholder = "Enter your password"/>
-            </div>
-        </div>
-        <div class="form-group row">
-            <div class="col-md-offset-3 col-md-3">
-                <input type="submit" class="btn btn-primary" value="Sign in"/>
-            </div>
-        </div>
-        <div class="form-group row">
-            <div class="col-md-offset-3 col-md-3">
-                <a class="glyphicon glyphicon-info-sign" href="/singup"> Don't have an account ? Register</a>
-            </div>
-        </div>
-    </form:form>
     </div>
+</div>
 <%@ include file="footer.jsp"  %>
 </body>
 </html>

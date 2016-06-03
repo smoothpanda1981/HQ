@@ -22,9 +22,9 @@ public class LoginSessionInterceptor implements HandlerInterceptor {
         logger.debug("Pre Handle");
 
 //        logger.info("test : " + httpServletRequest.getRequestURI());
-//        logger.info("test : " + httpServletRequest.getServletPath());
+        logger.info("Servlet Path : " + httpServletRequest.getServletPath());
 //        logger.info("test : " + httpServletRequest.getLocalAddr());
-//        logger.info("test : " + httpServletRequest.getRequestURL());
+//        logger.info("Request URL : " + httpServletRequest.getRequestURL().toString());
 //        logger.info("test : " + httpServletRequest.getPathTranslated());
 //        logger.info("test : " + httpServletRequest.getPathInfo());
 //        logger.info("test : " + httpServletRequest.getContextPath());
@@ -48,13 +48,18 @@ public class LoginSessionInterceptor implements HandlerInterceptor {
             return true;
         } else {
             logger.debug("in else servletPath not equals /.");
-            if (httpServletRequest.getSession().getAttribute("login") == null) {
-                logger.debug("in if session attribute login is null.");
-                httpServletResponse.sendRedirect(Utils.computePath(httpServletRequest));
-                return false;
-            } else {
-                logger.debug("in else session login not null");
+            if (httpServletRequest.getServletPath().equals("/signup")) {
+                logger.debug("in else servletPath  in if servletPath equals /signup.");
                 return true;
+            } else {
+                if (httpServletRequest.getSession().getAttribute("login") == null) {
+                    logger.debug("in if session attribute login is null.");
+                    httpServletResponse.sendRedirect(Utils.computePath(httpServletRequest));
+                    return false;
+                } else {
+                    logger.debug("in else session login not null");
+                    return true;
+                }
             }
         }
     }
