@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.Set;
 
 @Controller
-@RequestMapping("/signup")
+@RequestMapping("signup")
 public class SingupController {
 
 	private static final Logger logger = Logger.getLogger(SingupController.class);

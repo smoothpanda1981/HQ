@@ -45,7 +45,7 @@
                         <input type="submit" class="btn btn-info btn-block" value="Sign in"/>
                     </form:form>
                     <div class="form-group">
-                        <label class="glyphicon glyphicon-info-sign"> Don't have an account? </label><a href="/signup"> Register</a>
+                        <label class="glyphicon glyphicon-info-sign"> Don't have an account? </label><a href="signup"> Register</a>
                     </div>
                 </div>
             </div>
