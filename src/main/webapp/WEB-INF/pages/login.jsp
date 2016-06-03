@@ -24,7 +24,7 @@
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center">${message}</h3>
+                    <h2 class="panel-title text-center">${message}</h2>
                 </div>
                 <div class="panel-body">
                     <form:form id="loginForm" method="post" role="form" modelAttribute="login">
@@ -42,7 +42,7 @@
                             <form:input path="password" class="form-control input-sm" name="password" type="password" placeholder = "Enter your password"/>
                         </div>
 
-                        <input type="submit" class="btn btn-info btn-block" value="Sign in"/>
+                        <input type="submit" class="btn btn-info btn-sm btn-block" value="Sign in"/>
                     </form:form>
                     <div class="form-group">
                         <label class="glyphicon glyphicon-info-sign"> Don't have an account? </label><a href="signup"> Register</a>
