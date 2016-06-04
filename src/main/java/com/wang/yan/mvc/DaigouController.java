@@ -1,6 +1,7 @@
 package com.wang.yan.mvc;
 
 import com.wang.yan.mvc.model.Customer;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.mail.SimpleMailMessage;
@@ -16,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/daigou")
 public class DaigouController {
 
+	private static final Logger logger = Logger.getLogger(DaigouController.class);
+
 	@Autowired
 	@Qualifier("mailSender")
 	private JavaMailSender mailSender;
@@ -30,13 +33,17 @@ public class DaigouController {
 	@RequestMapping(method = RequestMethod.POST)
 	public String commandPage(@ModelAttribute("customer")Customer customer, ModelMap model) {
 		model.addAttribute("message", "You will receive our reply in your mailbox : " + customer.getEmail() + " !");
-		System.out.println(customer.getContent());
 
-		System.out.println(customer.getEmail());
+		logger.info(customer.getFname());
+		logger.info(customer.getLname());
+		logger.info(customer.getPhone());
+		logger.info(customer.getEmail());
+		logger.info(customer.getContent());
+
 
 		SimpleMailMessage emailToMe = new SimpleMailMessage();
 		emailToMe.setTo("daigouswitzerland@gmail.com");
-		emailToMe.setSubject("Commande de " + customer.getEmail());
+		emailToMe.setSubject("Order of : " + customer.getFname() + " " + customer.getLname() + " - " + customer.getEmail() + " (" + customer.getPhone() + ")");
 		emailToMe.setText(customer.getContent());
 
 		// sends the e-mail
@@ -44,8 +51,8 @@ public class DaigouController {
 
 		SimpleMailMessage emailToCustomer = new SimpleMailMessage();
 		emailToCustomer.setTo(customer.getEmail());
-		emailToCustomer.setSubject("Confirmation - no reply");
-		emailToCustomer.setText("Nous allons vous répondre très rapidement. Merci de votre confiance !");
+		emailToCustomer.setSubject("Confirmation - please do not reply");
+		emailToCustomer.setText("We are going to reply you ASAP. Thanks for your order(s) !");
 
 		// sends the e-mail
 		mailSender.send(emailToCustomer);

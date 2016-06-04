@@ -7,7 +7,7 @@
     <title>Sign Up</title>
     <style>
         .centered-form {
-            margin-top: 30px;
+            margin-top: 25px;
             margin-bottom: 120px;
         }
 
