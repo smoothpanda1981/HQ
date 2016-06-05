@@ -2,7 +2,9 @@ package com.wang.yan.mvc;
 
 import com.wang.yan.mvc.model.Login;
 import com.wang.yan.mvc.model.Message;
+import com.wang.yan.mvc.model.Signup;
 import com.wang.yan.mvc.service.LoginService;
+import com.wang.yan.mvc.service.SignupService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,29 +28,57 @@ public class SingupController {
 
 	private static final Logger logger = Logger.getLogger(SingupController.class);
 
+	@Autowired
+	private LoginService loginService;
+
+	@Autowired
+	private SignupService signupService;
+
 	@RequestMapping(method = RequestMethod.GET)
 	public String showForm(ModelMap model, HttpServletRequest request) {
 
 		logger.info("************************************");
-//		if (request.getSession().getAttribute("login") == null) {
-//			logger.info("no session login");
-//			model.addAttribute("message", "Please Sign In !");
-//			model.addAttribute("login", new Login());
-//			return "login";
-//		} else {
-//			logger.info("with session login");
-//			return "signup";
-//		}
+		model.addAttribute("signup", new Signup());
+
 		return "signup";
 	}
 
 	@RequestMapping(method=RequestMethod.POST)
-	public String executeLogin(ModelMap model, HttpServletRequest request, @RequestParam String username, @RequestParam String password) {
-		logger.info("login is null");
-				model.addAttribute("message", "Please Sign In !");
-				model.addAttribute("login", new Login());
-				model.addAttribute("error_message", "Invalid username or password !");
+	public String executeLogin(ModelMap model, HttpServletRequest request) {
+		logger.debug(request.getParameter("company"));
+		logger.debug(request.getParameter("first_name"));
+		logger.debug(request.getParameter("last_name"));
+		logger.debug(request.getParameter("email"));
+		logger.debug(request.getParameter("street"));
+		logger.debug(request.getParameter("city"));
+		logger.debug(request.getParameter("state"));
+		logger.debug(request.getParameter("zip"));
+		logger.debug(request.getParameter("phone"));
+		logger.debug(request.getParameter("username"));
 
-		return "signup";
+		Signup signup = new Signup();
+		signup.setCompany(request.getParameter("company"));
+		signup.setFirst_name(request.getParameter("first_name"));
+		signup.setLast_name(request.getParameter("last_name"));
+		signup.setEmail(request.getParameter("email"));
+		signup.setStreet(request.getParameter("street"));
+		signup.setCity(request.getParameter("city"));
+		signup.setState(request.getParameter("state"));
+		signup.setZip(request.getParameter("zip"));
+		signup.setPhone(request.getParameter("phone"));
+		signup.setPassword(request.getParameter("password"));
+		signup.setPassword_confirmation(request.getParameter("password_confirmation"));
+		signup.setUsername(request.getParameter("username"));
+
+		try {
+			Login login = loginService.addNewLogin(request.getParameter("username"), request.getParameter("password"));
+			logger.info("login id after saved in DB : " + login.getId());
+			signup.setLogin(login);
+			Signup signupResponse = signupService.addNewSignup(signup);
+		} catch (SQLException e) {
+			logger.error(e.getMessage());
+		}
+
+		return "signupSuccess";
 	}
 }

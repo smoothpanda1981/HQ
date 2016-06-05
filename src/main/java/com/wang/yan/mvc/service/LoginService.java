@@ -12,6 +12,8 @@ import java.util.List;
 public interface LoginService {
     Login isValidUser(String username, String password) throws SQLException;
 
+    Login addLogin(String username, String password) throws SQLException;
+
     Login addNewLogin(String username, String password) throws SQLException;
 
     Login updateExistingLogin(String current_username, String current_password, String new_username, String new_password) throws SQLException;

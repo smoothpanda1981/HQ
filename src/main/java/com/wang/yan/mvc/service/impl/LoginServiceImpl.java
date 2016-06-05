@@ -31,6 +31,11 @@ public class LoginServiceImpl implements LoginService {
     }
 
     @Override
+    public Login addLogin(String username, String password) throws SQLException {
+        return loginDao.addLogin(username, password);
+    }
+
+    @Override
     public Login addNewLogin(String username, String password) throws SQLException {
         return loginDao.addNewLogin(username, password);
     }

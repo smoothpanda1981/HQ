@@ -15,7 +15,9 @@ import java.util.Set;
 @Table(name="LOGIN")
 public class Login {
 
-    @Id @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Column(name="ID")
     private Integer id;
 
     @NotEmpty

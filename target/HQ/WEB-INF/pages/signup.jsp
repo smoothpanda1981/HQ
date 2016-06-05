@@ -35,7 +35,14 @@
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <input type="text" name="company" id="company" class="form-control input-sm" placeholder="Company Name" required>
+                                        <form:input type="text" path="company" id="company" class="form-control input-sm" placeholder="Company Name" required="required" />
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <form:input type="text" path="username" id="username" class="form-control input-sm" placeholder="Username" required="required" />
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                                 </div>
@@ -44,7 +51,7 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+                                                <form:input type="text" path="first_name" id="first_name" class="form-control input-sm" placeholder="First Name" required="required" />
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                             </div>
                                         </div>
@@ -53,7 +60,7 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+                                                <form:input type="text" path="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name" required="required" />
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                             </div>
                                         </div>
@@ -62,21 +69,21 @@
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address" required>
+                                        <form:input type="email" path="email" id="email" class="form-control input-sm" placeholder="Email Address" required="required" />
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <input type="text" class="form-control input-sm" id="street" name="street" placeholder="Street address, P.O. box, c/o" required>
+                                        <form:input type="text" class="form-control input-sm" id="street" path="street" placeholder="Street address, P.O. box, c/o" required="required" />
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <input type="text" class="form-control input-sm" id="city" name="city" placeholder="City" required>
+                                        <form:input type="text" class="form-control input-sm" id="city" path="city" placeholder="City" required="required" />
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                                 </div>
@@ -85,13 +92,15 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <select class="form-control input-sm" id="state" name="state">
+                                                <form:select class="form-control input-sm" id="state" path="state" required="required">
+                                                    <option value="ZZ">State</option>
                                                     <option value="VD">Vaud</option>
                                                     <option value="GE">Genève</option>
                                                     <option value="VS">Valais</option>
                                                     <option value="FR">Fribourg</option>
                                                     <option value="NE">Neuchâtel</option>
-                                                </select>
+                                                    <option value="ZZ">Autres</option>
+                                                </form:select>
                                             </div>
                                         </div>
                                      </div>
@@ -99,7 +108,7 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="text" class="form-control input-sm" id="zip" name="zip" placeholder="zip code" required>
+                                                <form:input type="text" class="form-control input-sm" id="zip" path="zip" placeholder="zip code" required="required" />
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                             </div>
                                         </div>
@@ -108,7 +117,7 @@
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <input type="text" name="phone" class="form-control input-sm bfh-phone" data-country="CH" placeholder="Phone" required>
+                                        <form:input type="text" path="phone" class="form-control input-sm bfh-phone" data-country="CH" placeholder="Phone" required="required" />
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                     </div>
                                 </div>
@@ -117,7 +126,7 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password" required>
+                                                <form:input type="password" path="password" id="password" class="form-control input-sm" placeholder="Password" required="required" />
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                             </div>
                                         </div>
@@ -125,7 +134,7 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password" required>
+                                                <form:input type="password" path="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password" required="required" />
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
                                             </div>
                                         </div>

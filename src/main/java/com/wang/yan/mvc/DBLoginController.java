@@ -36,7 +36,7 @@ public class DBLoginController {
 	@RequestMapping(value= "login", method=RequestMethod.POST)
 	public String createLogin(ModelMap model, HttpServletRequest request, @RequestParam String username, @RequestParam String password) {
 		try {
-			Login login = loginService.addNewLogin(username, password);
+			Login login = loginService.addLogin(username, password);
 			model.addAttribute("create_login_message", login.getUsername());
 			model.addAttribute("createLogin", new Login());
 			model.addAttribute("updateLogin", new UpdateLogin());

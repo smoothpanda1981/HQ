@@ -5,8 +5,10 @@ import com.wang.yan.mvc.dao.BookDao;
 import com.wang.yan.mvc.dao.LoginDao;
 import com.wang.yan.mvc.model.Book;
 import com.wang.yan.mvc.model.Login;
+import com.wang.yan.mvc.model.Signup;
 import com.wang.yan.mvc.utils.MD5Encryption;
 import org.apache.log4j.Logger;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
@@ -47,7 +49,7 @@ public class LoginDaoImpl implements LoginDao {
     }
 
     @Override
-    public Login addNewLogin(String username, String password) throws SQLException {
+    public Login addLogin(String username, String password) throws SQLException {
         Session session = sessionFactory.getCurrentSession();
         if (session == null) {
             session = sessionFactory.openSession();
@@ -67,6 +69,21 @@ public class LoginDaoImpl implements LoginDao {
             newLogin.setUsername("Login '" + username + "' has been created successfully!");
         }
         return newLogin;
+    }
+
+    public Login addNewLogin(String username, String password) throws SQLException {
+        Session session = sessionFactory.getCurrentSession();
+        if (session == null) {
+            session = sessionFactory.openSession();
+        }
+
+        Login logingToCreate = new Login();
+        logingToCreate.setUsername(username);
+        logingToCreate.setPassword(MD5Encryption.encryptPasswordByMD5(password));
+        session.save(logingToCreate);
+
+
+        return logingToCreate;
     }
 
     @Override
