@@ -91,6 +91,7 @@
                                                     <option value="VS">Valais</option>
                                                     <option value="FR">Fribourg</option>
                                                     <option value="NE">Neuchâtel</option>
+                                                    <option value="ZZ">Autres</option>
                                                 </select>
                                             </div>
                                         </div>
