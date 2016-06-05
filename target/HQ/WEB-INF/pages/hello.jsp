@@ -8,8 +8,8 @@
 </head>
 <body>
 	<%@ include file="menus.jsp"  %>
-	<h1 class="sub-header">${message}</h1>
-	<div>
+	<h1 class="col-md-12 sub-header">${message}</h1>
+	<div class="col-md-12">
 		<c:forEach items="${endPoints}" var="endPoint">
 			<c:set var="string1" value="${endPoint.patternsCondition}"/>
 			<c:set var="string2" value="${fn:replace(string1, '[', '')}" />
@@ -17,13 +17,14 @@
 			<c:set var="string4" value="${endPoint.methodsCondition}" />
 			<c:choose>
 				<c:when test="${fn:contains(string4, 'GET')}">
-					<button type="button" class="btn btn-info"><a href="${requestUrl}${string3}">${endPoint.patternsCondition}</a></button>
+					<button type="button" class="btn btn-info btn-sm"><a href="${requestUrl}${string3}">${endPoint.patternsCondition}</a></button>
 				</c:when>
 			</c:choose>
 		</c:forEach>
 	</div>
-	<div class="table-responsive">
-		<table class="table table-striped">
+	<div class="col-md-12"></div>
+	<div class="table-responsive col-md-12">
+		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
 					<th>path</th>
