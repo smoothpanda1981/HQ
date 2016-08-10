@@ -262,7 +262,18 @@
             <version>${scribe.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/de.slackspace/openkeepass -->
+        <dependency>
+            <groupId>de.slackspace</groupId>
+            <artifactId>openkeepass</artifactId>
+            <version>0.5.1</version>
+        </dependency>
 
+        <dependency>
+            <groupId>com.dropbox.core</groupId>
+            <artifactId>dropbox-core-sdk</artifactId>
+            <version>2.1.1</version>
+        </dependency>
 
 
 
