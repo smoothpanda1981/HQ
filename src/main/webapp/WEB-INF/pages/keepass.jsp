@@ -34,28 +34,16 @@
 
 <h1 class="sub-header">${message}</h1>
 
-<%--<div class="table-responsive">--%>
-	<%--<table class="table table-striped">--%>
-		<%--<thead>--%>
-		<%--<tr>--%>
-			<%--<th>name</th>--%>
-			<%--<th>currency</th>--%>
-			<%--<th>day high</th>--%>
-			<%--<th>day low</th>--%>
-		<%--</tr>--%>
-		<%--</thead>--%>
-		<%--<tbody>--%>
-		<%--<c:forEach items="${stockDataList}" var="stockDataList">--%>
-			<%--<tr>--%>
-				<%--<td>${stockDataList.stockName}</td>--%>
-				<%--<td>${stockDataList.stockCurrency}</td>--%>
-				<%--<td>${stockDataList.stockDayHigh}</td>--%>
-				<%--<td>${stockDataList.stockDayLow}</td>--%>
-			<%--</tr>--%>
-		<%--</c:forEach>--%>
-		<%--</tbody>--%>
-	<%--</table>--%>
-<%--</div>--%>
+<form:form id="searchForm" method="post" action="keepass" role="form" class="form-inline" modelAttribute="seacheKeepass">
+	<div class="form-group">
+		<form:label path="searchField">Search : </form:label>
+		<form:input path="searchField" class="form-control" name="searchField"/>
+	</div>
+	<button type="button" class="btn btn-default" aria-label="Left Align">
+		<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+	</button>
+	<input type="submit" class="btn btn-primary" value="Search"/>
+</form:form>
 
 <%@ include file="footer.jsp"  %>
 </body>
