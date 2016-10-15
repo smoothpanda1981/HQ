@@ -36,9 +36,12 @@
 
 <form:form id="searchForm" method="post" action="keepass" role="form" class="form-inline" modelAttribute="seacheKeepass">
 	<div class="form-group">
-		<form:label path="searchField">Search</form:label>
+		<form:label path="searchField">Search : </form:label>
 		<form:input path="searchField" class="form-control" name="searchField"/>
 	</div>
+	<button type="button" class="btn btn-default" aria-label="Left Align">
+		<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+	</button>
 	<input type="submit" class="btn btn-primary" value="Search"/>
 </form:form>
 

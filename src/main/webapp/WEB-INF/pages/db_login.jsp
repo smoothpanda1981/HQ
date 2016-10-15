@@ -31,25 +31,21 @@
     <div>
         <h3>Update existing login</h3>
         <h6 class="text-danger">${update_login_message}</h6>
-        <form:form id="updateloginForm" method="PUT" action="login" role="form" class="form-inline" modelAttribute="updateLogin">
-            <div class="form-group">
+        <form:form id="updateloginForm" method="PUT" action="login" role="form" modelAttribute="updateLogin">
+            <div class="form-group form-inline">
                 <form:label path="current_username">Current Username</form:label>
                 <form:input path="current_username" class="form-control" name="current_username"/>
-            </div>
-            <div class="form-group">
                 <form:label path="current_password">Curent Password</form:label>
                 <form:input path="current_password" class="form-control" name="current_password" type="password"/>
             </div>
-            <div class="form-group">
+            <div class="form-group form-inline">
                 <form:label path="new_username">New Username</form:label>
                 <form:input path="new_username" class="form-control" name="new_username"/>
-            </div>
-            <div class="form-group">
                 <form:label path="new_password">New Password</form:label>
                 <form:input path="new_password" class="form-control" name="new_password" type="password"/>
+                <input type="hidden" name="_method" value="PUT"/>
+                <input type="submit" class="btn btn-primary" value="Update"/>
             </div>
-            <input type="hidden" name="_method" value="PUT"/>
-            <input type="submit" class="btn btn-primary" value="Update"/>
         </form:form>
     </div>
     <hr>
