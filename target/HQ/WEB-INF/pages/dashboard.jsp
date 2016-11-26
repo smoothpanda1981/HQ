@@ -32,9 +32,15 @@
 			</c:otherwise>
 		</c:choose>
 		<br>
-		<c:forEach items="${tableList}" var="table">
-			- <c:out value="${table}"/><p>
-		</c:forEach>
+		<table class="table table-condensed">
+			<tbody>
+				<c:forEach items="${tableList}" var="table">
+					<tr>
+						<td><c:out value="${table}"/></td>
+					</tr>
+				</c:forEach>
+			</tbody>
+		</table>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery-1.11.1.min.js"></script>
