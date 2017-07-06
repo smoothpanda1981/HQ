@@ -9,7 +9,6 @@
 <body>
 	<%@ include file="menus.jsp"  %>
 	<h1 class="col-md-12 sub-header">${message}</h1>
-
 	<div class="col-md-12">
 		<c:forEach items="${endPoints}" var="endPoint">
 			<c:set var="string1" value="${endPoint.patternsCondition}"/>
