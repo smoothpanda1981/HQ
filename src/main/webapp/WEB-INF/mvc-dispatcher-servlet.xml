@@ -17,7 +17,7 @@
     <mvc:interceptors>
         <bean class="com.wang.yan.mvc.interceptor.LoginSessionInterceptor" />
     </mvc:interceptors>
-
+    <mvc:resources mapping="/resources/**" location="/resources/theme1/" cache-period="31556926"/>
 
 
     <bean name='handlerMapping' class='org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'>
