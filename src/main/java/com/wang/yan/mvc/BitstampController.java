@@ -97,5 +97,6 @@ public class BitstampController {
 		catch (IOException e) {
 			e.printStackTrace();
 		}
+		return null;
 	}
 }
