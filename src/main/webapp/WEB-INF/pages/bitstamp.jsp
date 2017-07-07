@@ -10,7 +10,7 @@
 <%@ include file="menus.jsp"  %>
 <h1 class="sub-header">${message}</h1>
 
-
+<h3>${result}</h3>
 <%@ include file="footer.jsp"  %>
 </body>
 </html>
