@@ -42,18 +42,18 @@ public class BitstampController {
 
 		try {
 //			String result = getTickerBTCUSD("https://www.bitstamp.net/api/ticker/");
-			String result = "{\"high\": \"2612.00\", \"last\": \"2540.08\", \"timestamp\": \"1499428242\", \"bid\": \"2540.23\", \"vwap\": \"2580.89\", \"volume\": \"7095.30631551\", \"low\": \"2540.00\", \"ask\": \"2543.98\", \"open\": 2599.01}";
+//			String result = "{\"high\": \"2612.00\", \"last\": \"2540.08\", \"timestamp\": \"1499428242\", \"bid\": \"2540.23\", \"vwap\": \"2580.89\", \"volume\": \"7095.30631551\", \"low\": \"2540.00\", \"ask\": \"2543.98\", \"open\": 2599.01}";
 
 			ObjectMapper mapper = new ObjectMapper();
 
 			//JSON from file to Object
-//			Staff obj = mapper.readValue(new File("c:\\file.json"), Staff.class);
+//			Ticker ticker = mapper.readValue(new File("c:\\file.json"), Ticker.class);
 
 			//JSON from URL to Object
-//			Staff obj = mapper.readValue(new URL("http://mkyong.com/api/staff.json"), Staff.class);
+			Ticker ticker = mapper.readValue(new URL("https://www.bitstamp.net/api/ticker/"), Ticker.class);
 
 			//JSON from String to Object
-			Ticker ticker = mapper.readValue(result, Ticker.class);
+//			Ticker ticker = mapper.readValue(result, Ticker.class);
 
 			logger.info("last " + ticker.getLast());
 			logger.info("high " + ticker.getHigh());
