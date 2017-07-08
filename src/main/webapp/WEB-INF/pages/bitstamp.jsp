@@ -11,6 +11,8 @@
 <h1 class="sub-header">${message}</h1>
 
 <h3>${result}</h3>
+
+<h3>BTC : ${btc_balance}</h3> <h3>Cash USD : ${usd_available}</h3>
 <%@ include file="footer.jsp"  %>
 </body>
 </html>
