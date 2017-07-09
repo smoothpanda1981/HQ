@@ -3,7 +3,7 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Linked In</title>
+	<title>Bitstamp</title>
 	<%@ include file="header.jsp"  %>
 </head>
 <body>
@@ -13,6 +13,28 @@
 <h3>${result}</h3>
 
 <h3>BTC : ${btc_balance}</h3> <h3>Cash USD : ${usd_available}</h3>
+
+<table class="table table-striped">
+	<thead>
+	<tr>
+
+		<th>buy - #BTC</th>
+		<th>buy - price</th>
+		<th>sell - price</th>
+		<th>buy - #BTC</th>
+	</tr>
+	</thead>
+	<tbody>
+	<c:forEach items="${bidsList}" var="bidsList" varStatus="status">
+		<tr>
+			<td>${bidsList.btcQuantity}</td>
+			<td>${bidsList.price}</td>
+			<td>${asksList[status.index].price}</td>
+			<td>${asksList[status.index].btcQuantity}</td>
+		</tr>
+	</c:forEach>
+	</tbody>
+</table>
 <%@ include file="footer.jsp"  %>
 </body>
 </html>
