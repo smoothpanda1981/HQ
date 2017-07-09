@@ -1,10 +1,12 @@
 package com.wang.yan.mvc;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.net.*;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -144,11 +146,138 @@ public class BitstampController {
 			logger.info(response.toString());
 			List<UserTransaction> userTransactionList = mapper.readValue(response.toString(), new TypeReference<List<UserTransaction>>(){});
 			logger.info("test 1: " + userTransactionList.get(0).getBtc());
-		}
-		catch (MalformedURLException e) {
+
+			List<UserTransaction> boughtUserTransationList = new ArrayList<UserTransaction>();
+			List<UserTransaction> soldUserTransationList = new ArrayList<UserTransaction>();
+			List<UserTransaction> depositUserTransationList = new ArrayList<UserTransaction>();
+
+			for (UserTransaction userTransaction : userTransactionList) {
+				if (userTransaction.getType().equals("0")) {
+					depositUserTransationList.add(userTransaction);
+				} else {
+					if (userTransaction.getBtc() > 0.0) {
+						boughtUserTransationList.add(userTransaction);
+					} else {
+						soldUserTransationList.add(userTransaction);
+					}
+				}
+			}
+
+			List<ProfitsBuySell> profitsBuySellsList = new ArrayList<ProfitsBuySell>();
+
+			List<Integer> sellIdsListToIgnore = new ArrayList<Integer>();
+
+
+			for (UserTransaction buy_transaction : boughtUserTransationList) {
+				BigDecimal profitAndLoss = new BigDecimal(0);
+				profitAndLoss = profitAndLoss.setScale(2, BigDecimal.ROUND_CEILING);
+
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+				Date buydate = sdf.parse(buy_transaction.getDatetime());
+
+				ProfitsBuySell profitsBuySell = new ProfitsBuySell();
+
+				profitsBuySell.setBtc_buy(buy_transaction.getBtc());
+				profitsBuySell.setBtc_usd_buy(buy_transaction.getBtc_usd());
+				profitsBuySell.setDatetime_buy(buy_transaction.getDatetime());
+				profitsBuySell.setEur_buy(buy_transaction.getEur());
+				profitsBuySell.setFee_buy(buy_transaction.getFee());
+				profitsBuySell.setId_buy(buy_transaction.getId());
+				profitsBuySell.setOrder_id_buy(buy_transaction.getOrder_id());
+				profitsBuySell.setType_buy(buy_transaction.getType());
+				profitsBuySell.setUsd_buy(buy_transaction.getUsd());
+				BigDecimal t = new BigDecimal(buy_transaction.getUsd());
+				t = t.setScale(2, BigDecimal.ROUND_CEILING);
+				profitAndLoss = profitAndLoss.add(t);
+				BigDecimal s = new BigDecimal(buy_transaction.getFee());
+				s = s.setScale(2, BigDecimal.ROUND_CEILING);
+				profitAndLoss = profitAndLoss.subtract(s);
+
+				for (UserTransaction sell_transaction : soldUserTransationList) {
+					Date selldate = sdf.parse(sell_transaction.getDatetime());
+					if (Math.abs(sell_transaction.getBtc()) == buy_transaction.getBtc() && selldate.compareTo(buydate) > 0) {
+						profitsBuySell.setBtc_sell(sell_transaction.getBtc());
+						profitsBuySell.setBtc_usd_sell(sell_transaction.getBtc_usd());
+						profitsBuySell.setDatetime_sell(sell_transaction.getDatetime());
+						profitsBuySell.setEur_sell(sell_transaction.getEur());
+						profitsBuySell.setFee_sell(sell_transaction.getFee());
+						profitsBuySell.setId_sell(sell_transaction.getId());
+						profitsBuySell.setOrder_id_sell(sell_transaction.getOrder_id());
+						profitsBuySell.setType_sell(sell_transaction.getType());
+						profitsBuySell.setUsd_sell(sell_transaction.getUsd());
+
+						BigDecimal a = new BigDecimal(sell_transaction.getUsd());
+						BigDecimal b = new BigDecimal(buy_transaction.getUsd());
+
+						BigDecimal c = new BigDecimal(sell_transaction.getFee());
+						BigDecimal d = new BigDecimal(buy_transaction.getFee());
+
+
+						a = a.setScale(2, BigDecimal.ROUND_CEILING);
+						b = b.setScale(2, BigDecimal.ROUND_CEILING);
+						c = c.setScale(2, BigDecimal.ROUND_CEILING);
+						d = d.setScale(2, BigDecimal.ROUND_CEILING);
+
+
+						logger.info("a = " + a);
+						logger.info("b = " + b);
+						logger.info("c = " + c);
+						logger.info("d = " + d);
+						profitAndLoss = new BigDecimal(0);
+						profitAndLoss = profitAndLoss.setScale(2, BigDecimal.ROUND_CEILING);
+						profitAndLoss = profitAndLoss.add(a);
+						profitAndLoss = profitAndLoss.add(b);
+						profitAndLoss = profitAndLoss.subtract(c);
+						profitAndLoss = profitAndLoss.subtract(d);
+
+						logger.info("profitAndLoss = " + profitAndLoss);
+						sellIdsListToIgnore.add(sell_transaction.getId());
+					}
+				}
+
+				profitsBuySell.setProfitAndLose(profitAndLoss);
+
+				profitsBuySellsList.add(profitsBuySell);
+			}
+
+			for (UserTransaction sell_transaction : soldUserTransationList) {
+				boolean testIfIgnore = false;
+				for (Integer i : sellIdsListToIgnore) {
+					if (i == sell_transaction.getId()) {
+						testIfIgnore = true;
+					}
+				}
+
+				if (!testIfIgnore) {
+					ProfitsBuySell profitsBuySell = new ProfitsBuySell();
+					profitsBuySell.setBtc_sell(sell_transaction.getBtc());
+					profitsBuySell.setBtc_usd_sell(sell_transaction.getBtc_usd());
+					profitsBuySell.setDatetime_sell(sell_transaction.getDatetime());
+					profitsBuySell.setEur_sell(sell_transaction.getEur());
+					profitsBuySell.setFee_sell(sell_transaction.getFee());
+					profitsBuySell.setId_sell(sell_transaction.getId());
+					profitsBuySell.setOrder_id_sell(sell_transaction.getOrder_id());
+					profitsBuySell.setType_sell(sell_transaction.getType());
+					profitsBuySell.setUsd_sell(sell_transaction.getUsd());
+
+					BigDecimal t = new BigDecimal(sell_transaction.getUsd());
+					t = t.setScale(2, BigDecimal.ROUND_CEILING);
+					BigDecimal profitAndLoss = new BigDecimal(0);
+					profitAndLoss = profitAndLoss.setScale(2, BigDecimal.ROUND_CEILING);
+					profitAndLoss = profitAndLoss.add(t);
+					BigDecimal s = new BigDecimal(sell_transaction.getFee());
+					s = s.setScale(2, BigDecimal.ROUND_CEILING);
+					profitAndLoss = profitAndLoss.subtract(s);
+					profitsBuySell.setProfitAndLose(profitAndLoss);
+
+					profitsBuySellsList.add(profitsBuySell);
+				}
+
+			}
+			model.addAttribute("profitsBuySellsList", profitsBuySellsList);
+		} catch (MalformedURLException e) {
 			e.printStackTrace();
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (ParseException e) {
 			e.printStackTrace();
