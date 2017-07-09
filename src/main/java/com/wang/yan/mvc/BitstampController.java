@@ -9,6 +9,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.wang.yan.mvc.model.bitstamp.*;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
@@ -30,6 +31,7 @@ public class BitstampController {
 	private Mac mac;
 	private String key;
 	private String clientid;
+	private long nonce;
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String bitStampPage(ModelMap model) {
@@ -78,75 +80,8 @@ public class BitstampController {
 
 			model.addAttribute("result", ticker.getLast());
 
-
-			/*
-				authentication
-		 	*/
-			setAuthKeys("njOkn5ghkE2GFui01Wh94eyy7FCBekpk", "B1iF44lKdMalQXCy2viXg4FkPKLD1bUG", "670702");
-
-
-			/*
-				balance
-		 	*/
-			Map<String,String> args = new HashMap<String,String>() ;
-
-			SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-
-			Date d = f.parse(f.format(new Date()));
-			long milliseconds = d.getTime();
-
-
-			args.put("nonce",Long.toString(milliseconds)) ;
-			args.put("key", this.key) ;
-
-			// create url form encoded post data
-			String postData = "" ;
-			for (Iterator<String> iter = args.keySet().iterator(); iter.hasNext();) {
-				String arg = iter.next() ;
-				if (postData.length() > 0) postData += "&" ;
-				postData += arg + "=" + URLEncoder.encode(args.get(arg)) ;
-			}
-
-
-
-			URL url = new URL("https://www.bitstamp.net/api/v2/balance/");
-			URLConnection conn = url.openConnection() ;
-			conn.setUseCaches(false) ;
-			conn.setDoOutput(true) ;
-
-			mac.update(Long.toString(milliseconds).getBytes()) ;
-			mac.update(this.clientid.getBytes()) ;
-			mac.update(this.key.getBytes()) ;
-
-			postData += "&signature="+String.format("%064x", new BigInteger(1, mac.doFinal())).toUpperCase() ;
-			logger.info("postData : " + postData);
-			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded") ;
-			conn.setRequestProperty("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36") ;
-
-
-
-			// write post data
-			OutputStreamWriter out = new OutputStreamWriter(conn.getOutputStream());
-			out.write(postData) ;
-			out.close() ;
-
-			// read response
-			BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-			String line = null ;
-			StringBuffer response = new StringBuffer() ;
-			while ((line = in.readLine()) != null)
-				response.append(line) ;
-			in.close() ;
-			logger.info(response.toString());
-
-			Balance balance = mapper.readValue(response.toString(), Balance.class);
-
-			model.addAttribute("btc_balance", balance.getBtc_balance());
-			model.addAttribute("usd_available", balance.getUsd_available());
-
-
-			/*
-				order_book
+/*
+				order_book (pubilc call)
 		 	*/
 			OrderBook orderBook = mapper.readValue(new URL("https://www.bitstamp.net/api/order_book/"), OrderBook.class);
 			logger.info("timestamp : " + orderBook.getTimestamp());
@@ -187,6 +122,28 @@ public class BitstampController {
 			}
 			model.addAttribute("bidsList", bidsList);
 			model.addAttribute("asksList", asksList);
+
+			/*
+				authentication
+		 	*/
+			setAuthKeys("njOkn5ghkE2GFui01Wh94eyy7FCBekpk", "B1iF44lKdMalQXCy2viXg4FkPKLD1bUG", "670702");
+
+			/*
+				balance
+		 	*/
+			StringBuffer response = getPostData("https://www.bitstamp.net/api/v2/balance/", "balance");
+			logger.info(response.toString());
+			Balance balance = mapper.readValue(response.toString(), Balance.class);
+			model.addAttribute("btc_balance", balance.getBtc_balance());
+			model.addAttribute("usd_available", balance.getUsd_available());
+
+			/*
+				user_transaction
+		 	*/
+			response = getPostData("https://www.bitstamp.net/api/v2/user_transactions/", "user_transaction");
+			logger.info(response.toString());
+			List<UserTransaction> userTransactionList = mapper.readValue(response.toString(), new TypeReference<List<UserTransaction>>(){});
+			logger.info("test 1: " + userTransactionList.get(0).getBtc());
 		}
 		catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -197,6 +154,62 @@ public class BitstampController {
 			e.printStackTrace();
 		}
 		return "bitstamp";
+	}
+
+	private StringBuffer getPostData(String httpLink, String requestName) throws ParseException, IOException {
+		Map<String,String> args = new HashMap<String,String>() ;
+
+//		SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+
+		//Date d = f.parse(f.format(new Date()));
+		//long milliseconds = d.getTime();
+		this.nonce = System.currentTimeMillis();
+
+		args.put("nonce", Long.toString(this.nonce)) ;
+		args.put("key", this.key) ;
+
+		if (requestName.equals("user_transaction")) {
+			args.put("limit", Integer.toString(1000));
+		}
+		// create url form encoded post data
+		String postData = "" ;
+		for (Iterator<String> iter = args.keySet().iterator(); iter.hasNext();) {
+			String arg = iter.next() ;
+			if (postData.length() > 0) postData += "&" ;
+			postData += arg + "=" + URLEncoder.encode(args.get(arg)) ;
+		}
+
+
+		//URL url = new URL("https://www.bitstamp.net/api/v2/balance/");
+		URL url = new URL(httpLink);
+		URLConnection conn = url.openConnection() ;
+		conn.setUseCaches(false) ;
+		conn.setDoOutput(true) ;
+
+		mac.update(Long.toString(this.nonce).getBytes()) ;
+		mac.update(this.clientid.getBytes()) ;
+		mac.update(this.key.getBytes()) ;
+
+		postData += "&signature="+String.format("%064x", new BigInteger(1, mac.doFinal())).toUpperCase() ;
+		logger.info("postData : " + postData);
+		conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded") ;
+		conn.setRequestProperty("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36") ;
+
+		// write post data
+		OutputStreamWriter out = new OutputStreamWriter(conn.getOutputStream());
+		out.write(postData) ;
+		out.close() ;
+
+		// read response
+		BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+		String line = null;
+		StringBuffer response = new StringBuffer() ;
+		while ((line = in.readLine()) != null)
+			response.append(line) ;
+		in.close() ;
+
+
+		return response;
 	}
 
 	private String getTickerBTCUSD(String url) {
