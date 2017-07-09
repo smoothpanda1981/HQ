@@ -10,9 +10,10 @@
 <%@ include file="menus.jsp"  %>
 <h1 class="sub-header">${message}</h1>
 
-<h3>${result}</h3>
+<div style="text-align: center">
+	<strong>${result}</strong> <strong>BTC : ${btc_balance}</strong> <strong>Cash USD : ${usd_available}</strong>
+</div>
 
-<h3>BTC : ${btc_balance}</h3> <h3>Cash USD : ${usd_available}</h3>
 
 <table class="table table-striped">
 	<thead>
