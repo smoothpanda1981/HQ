@@ -30,11 +30,4 @@ public class AppTests {
     public void setup() {
         this.mockMvc = webAppContextSetup(this.wac).build();
     }
-
-    @Test
-    public void simple() throws Exception {
-        mockMvc.perform(get("/"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("hello"));
-    }
 }

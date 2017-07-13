@@ -186,12 +186,12 @@ public class BitstampController {
 				profitsBuySell.setOrder_id_buy(buy_transaction.getOrder_id());
 				profitsBuySell.setType_buy(buy_transaction.getType());
 				profitsBuySell.setUsd_buy(buy_transaction.getUsd());
-				BigDecimal t = new BigDecimal(buy_transaction.getUsd());
-				t = t.setScale(2, BigDecimal.ROUND_CEILING);
-				profitAndLoss = profitAndLoss.add(t);
-				BigDecimal s = new BigDecimal(buy_transaction.getFee());
-				s = s.setScale(2, BigDecimal.ROUND_CEILING);
-				profitAndLoss = profitAndLoss.subtract(s);
+//				BigDecimal t = new BigDecimal(buy_transaction.getUsd());
+//				t = t.setScale(2, BigDecimal.ROUND_CEILING);
+//				profitAndLoss = profitAndLoss.add(t);
+//				BigDecimal s = new BigDecimal(buy_transaction.getFee());
+//				s = s.setScale(2, BigDecimal.ROUND_CEILING);
+//				profitAndLoss = profitAndLoss.subtract(s);
 
 				for (UserTransaction sell_transaction : soldUserTransationList) {
 					Date selldate = sdf.parse(sell_transaction.getDatetime());
@@ -260,14 +260,14 @@ public class BitstampController {
 					profitsBuySell.setType_sell(sell_transaction.getType());
 					profitsBuySell.setUsd_sell(sell_transaction.getUsd());
 
-					BigDecimal t = new BigDecimal(sell_transaction.getUsd());
-					t = t.setScale(2, BigDecimal.ROUND_CEILING);
+//					BigDecimal t = new BigDecimal(sell_transaction.getUsd());
+//					t = t.setScale(2, BigDecimal.ROUND_CEILING);
 					BigDecimal profitAndLoss = new BigDecimal(0);
 					profitAndLoss = profitAndLoss.setScale(2, BigDecimal.ROUND_CEILING);
-					profitAndLoss = profitAndLoss.add(t);
-					BigDecimal s = new BigDecimal(sell_transaction.getFee());
-					s = s.setScale(2, BigDecimal.ROUND_CEILING);
-					profitAndLoss = profitAndLoss.subtract(s);
+//					profitAndLoss = profitAndLoss.add(t);
+//					BigDecimal s = new BigDecimal(sell_transaction.getFee());
+//					s = s.setScale(2, BigDecimal.ROUND_CEILING);
+//					profitAndLoss = profitAndLoss.subtract(s);
 					profitsBuySell.setProfitAndLose(profitAndLoss);
 
 					profitsBuySellsList.add(profitsBuySell);
