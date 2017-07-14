@@ -38,7 +38,6 @@ public class BitstampController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String bitStampPage(ModelMap model) {
 		model.addAttribute("message", "Bitstamp");
-		model.addAttribute("message2", "Jenkins");
 
 		/*
 		Pusher
