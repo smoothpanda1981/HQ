@@ -9,17 +9,10 @@
 <body>
 <%@ include file="menus.jsp"  %>
 <h1 class="sub-header">${message}</h1>
+<h3>${message2}</h3>
 
 <div style="text-align: center">
 	<strong>${result}</strong> <strong>BTC : ${btc_balance}</strong> <strong>Cash USD : ${usd_available}</strong>
-</div>
-
-<div style="text-align: center">
-	<strong>depositAmount : ${depositAmount}</strong>
-	<strong>buyAmount : ${buyAmount}</strong>
-	<strong>sellAmount : ${sellAmount}</strong>
-	<strong>withDrawAmount : ${withDrawAmount}</strong>
-	<strong>profit : ${profit}</strong>
 </div>
 
 
