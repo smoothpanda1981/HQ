@@ -147,6 +147,46 @@ public class BitstampController {
 			List<UserTransaction> userTransactionList = mapper.readValue(response.toString(), new TypeReference<List<UserTransaction>>(){});
 			logger.info("test 1: " + userTransactionList.get(0).getBtc());
 
+			BigDecimal depositAmount = new BigDecimal(0);
+
+			BigDecimal buyAmount = new BigDecimal(0);
+
+			BigDecimal sellAmount = new BigDecimal(0);
+
+			BigDecimal withDrawAmount = new BigDecimal(0);
+
+			for (UserTransaction userTransaction : userTransactionList) {
+				if (userTransaction.getType().equals("0")) {
+					BigDecimal userTransUsd = new BigDecimal(userTransaction.getUsd());
+					logger.info("deposit : " + userTransaction.getUsd());
+					depositAmount = depositAmount.add(userTransUsd);
+				}
+
+				if (userTransaction.getType().equals("2")) {
+					BigDecimal amountBtcValue = new BigDecimal(userTransaction.getUsd());
+					if (userTransaction.getBtc() >= 0.0) {
+						logger.info("buy : " + userTransaction.getUsd());
+						buyAmount = buyAmount.add(amountBtcValue);
+					} else {
+						logger.info("sell : " + userTransaction.getUsd());
+						sellAmount = sellAmount.add(amountBtcValue);
+					}
+				}
+
+				if (userTransaction.getType().equals("1")) {
+					BigDecimal userTransUsd = new BigDecimal(userTransaction.getUsd());
+					logger.info("withdraw : " + userTransaction.getUsd());
+					withDrawAmount = withDrawAmount.add(userTransUsd);
+				}
+			}
+
+			model.addAttribute("depositAmount", depositAmount.toString());
+			model.addAttribute("buyAmount", buyAmount.toString());
+			model.addAttribute("sellAmount", sellAmount.toString());
+			model.addAttribute("withDrawAmount", withDrawAmount.toString());
+			logger.info("profit : " + buyAmount.add(sellAmount));
+			model.addAttribute("profit : ", buyAmount.add(sellAmount));
+
 			List<UserTransaction> boughtUserTransationList = new ArrayList<UserTransaction>();
 			List<UserTransaction> soldUserTransationList = new ArrayList<UserTransaction>();
 			List<UserTransaction> depositUserTransationList = new ArrayList<UserTransaction>();
@@ -219,10 +259,10 @@ public class BitstampController {
 						d = d.setScale(2, BigDecimal.ROUND_CEILING);
 
 
-						logger.info("a = " + a);
-						logger.info("b = " + b);
-						logger.info("c = " + c);
-						logger.info("d = " + d);
+//						logger.info("a = " + a);
+//						logger.info("b = " + b);
+//						logger.info("c = " + c);
+//						logger.info("d = " + d);
 						profitAndLoss = new BigDecimal(0);
 						profitAndLoss = profitAndLoss.setScale(2, BigDecimal.ROUND_CEILING);
 						profitAndLoss = profitAndLoss.add(a);
@@ -230,7 +270,7 @@ public class BitstampController {
 						profitAndLoss = profitAndLoss.subtract(c);
 						profitAndLoss = profitAndLoss.subtract(d);
 
-						logger.info("profitAndLoss = " + profitAndLoss);
+//						logger.info("profitAndLoss = " + profitAndLoss);
 						sellIdsListToIgnore.add(sell_transaction.getId());
 					}
 				}

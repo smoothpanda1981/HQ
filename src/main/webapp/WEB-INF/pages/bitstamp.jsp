@@ -14,6 +14,14 @@
 	<strong>${result}</strong> <strong>BTC : ${btc_balance}</strong> <strong>Cash USD : ${usd_available}</strong>
 </div>
 
+<div style="text-align: center">
+	<strong>depositAmount : ${depositAmount}</strong>
+	<strong>buyAmount : ${buyAmount}</strong>
+	<strong>sellAmount : ${sellAmount}</strong>
+	<strong>withDrawAmount : ${withDrawAmount}</strong>
+	<strong>profit : ${profit}</strong>
+</div>
+
 
 <table class="table table-striped">
 	<thead>
