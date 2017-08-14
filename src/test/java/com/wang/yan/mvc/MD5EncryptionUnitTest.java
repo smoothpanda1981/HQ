@@ -9,6 +9,7 @@ import org.junit.Test;
 public class MD5EncryptionUnitTest {
     @Test
     public void testMD5Encryption() {
-        System.out.println(MD5Encryption.encryptPasswordByMD5("ouafahwafa79"));
+        System.out.println("oufahwafa79 : " + MD5Encryption.encryptPasswordByMD5("ouafahwafa79"));
+        System.out.println("welcome123 : " + MD5Encryption.encryptPasswordByMD5("welcome123"));
     }
 }

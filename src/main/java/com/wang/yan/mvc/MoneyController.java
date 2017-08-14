@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wang.yan.mvc.model.bitstamp.*;
 import com.wang.yan.mvc.utils.BitstampUtils;
 import org.apache.log4j.Logger;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -94,6 +96,11 @@ public class MoneyController {
 			model.addAttribute("sellAmount", sellAmount.toString());
 			model.addAttribute("withDrawAmount", withDrawAmount.toString());
 			model.addAttribute("profitAmount", (buyAmount.add(sellAmount)).toString());
+
+			Document doc = Jsoup.connect("http://www.fedex.com/us/fcl/pckgenvlp/online-billing/").get();
+			System.out.println("************************************");
+			System.out.println(doc.outerHtml());
+			System.out.println("************************************");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

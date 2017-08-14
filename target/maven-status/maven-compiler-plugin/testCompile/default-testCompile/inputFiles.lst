@@ -1,2 +1,4 @@
-/home/ywang/Progs/workspaces/HQ/src/test/java/com/wang/yan/mvc/AppTests.java
-/home/ywang/Progs/workspaces/HQ/src/test/java/com/wang/yan/mvc/MD5EncryptionUnitTest.java
+/home/ywang/IdeaProjects/HQ/src/test/java/com/wang/yan/mvc/AppTests.java
+/home/ywang/IdeaProjects/HQ/src/test/java/com/wang/yan/mvc/SeleniumTest.java
+/home/ywang/IdeaProjects/HQ/src/test/java/com/wang/yan/mvc/MD5EncryptionUnitTest.java
+/home/ywang/IdeaProjects/HQ/src/test/java/com/wang/yan/mvc/JsoupTest.java
