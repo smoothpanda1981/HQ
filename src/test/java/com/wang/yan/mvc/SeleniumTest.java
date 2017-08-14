@@ -20,6 +20,7 @@ public class SeleniumTest {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("disable-infobars");
+        options.addArguments("--no-startup-window");
 
         WebDriver driver = new ChromeDriver();
         // open the browser and go to JavaTutorial Network Website
@@ -90,5 +91,7 @@ public class SeleniumTest {
         }
         System.out.println("Total = " + total);
         System.out.println("*****************************");
+
+        driver.quit();
     }
 }
