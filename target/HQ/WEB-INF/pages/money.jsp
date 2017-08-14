@@ -21,6 +21,10 @@
 	<strong>withDrawAmount : ${withDrawAmount}</strong>
 	<strong>profit : ${profitAmount}</strong>
 </div>
+
+<div style="text-align: left">
+	<strong>Total of Fedex Billing : ${fedexBillingTotal}</strong>
+</div>
 <%@ include file="footer.jsp"  %>
 </body>
 </html>
