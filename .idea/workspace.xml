@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b67453-0d9e-4d58-8942-09d2bb330bb9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/HQ/META-INF/MANIFEST.MF" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ.war" afterPath="$PROJECT_DIR$/target/HQ.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Balance.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Balance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransaction.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransaction.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1135,7 +1131,7 @@
       <workItem from="1501962965175" duration="667000" />
       <workItem from="1502614080903" duration="2230000" />
       <workItem from="1502743418006" duration="4869000" />
-      <workItem from="1503059589344" duration="1515000" />
+      <workItem from="1503059589344" duration="1545000" />
     </task>
     <task id="LOCAL-00001" summary="Stable version on Acer for the 1st time.">
       <created>1499536138782</created>
@@ -1221,7 +1217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502746947022</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add etherum in Bitstamp">
+      <created>1503082574840</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1503082574840</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1254,7 +1257,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70411000" />
+    <option name="totallyTimeSpent" value="70441000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1346,7 +1349,8 @@
     <MESSAGE value="Add profit computation" />
     <MESSAGE value="Add Money Page and fix Profit issue" />
     <MESSAGE value="Add driver.quit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add driver.quit" />
+    <MESSAGE value="Add etherum in Bitstamp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add etherum in Bitstamp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
