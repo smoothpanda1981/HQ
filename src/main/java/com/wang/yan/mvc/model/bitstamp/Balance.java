@@ -28,6 +28,12 @@ public class Balance {
     private double xrpbtc_fee;
     private double xrpeur_fee;
     private double xrpusd_fee;
+    private double eth_available;
+    private double eth_balance;
+    private double eth_reserved;
+    private double ethbtc_fee;
+    private double etheur_fee;
+    private double ethusd_fee;
 
     public double getBtc_available() {
         return btc_available;
@@ -219,5 +225,53 @@ public class Balance {
 
     public void setXrpusd_fee(double xrpusd_fee) {
         this.xrpusd_fee = xrpusd_fee;
+    }
+
+    public double getEth_available() {
+        return eth_available;
+    }
+
+    public void setEth_available(double eth_available) {
+        this.eth_available = eth_available;
+    }
+
+    public double getEth_balance() {
+        return eth_balance;
+    }
+
+    public void setEth_balance(double eth_balance) {
+        this.eth_balance = eth_balance;
+    }
+
+    public double getEth_reserved() {
+        return eth_reserved;
+    }
+
+    public void setEth_reserved(double eth_reserved) {
+        this.eth_reserved = eth_reserved;
+    }
+
+    public double getEthbtc_fee() {
+        return ethbtc_fee;
+    }
+
+    public void setEthbtc_fee(double ethbtc_fee) {
+        this.ethbtc_fee = ethbtc_fee;
+    }
+
+    public double getEtheur_fee() {
+        return etheur_fee;
+    }
+
+    public void setEtheur_fee(double etheur_fee) {
+        this.etheur_fee = etheur_fee;
+    }
+
+    public double getEthusd_fee() {
+        return ethusd_fee;
+    }
+
+    public void setEthusd_fee(double ethusd_fee) {
+        this.ethusd_fee = ethusd_fee;
     }
 }

@@ -13,6 +13,9 @@ public class UserTransaction {
     private String type;
     private Integer id;
     private Double eur;
+    private Double eth;
+    private Double eth_usd;
+
 
     public String getUsd() {
         return usd;
@@ -84,5 +87,21 @@ public class UserTransaction {
 
     public void setEur(Double eur) {
         this.eur = eur;
+    }
+
+    public Double getEth() {
+        return eth;
+    }
+
+    public void setEth(Double eth) {
+        this.eth = eth;
+    }
+
+    public Double getEth_usd() {
+        return eth_usd;
+    }
+
+    public void setEth_usd(Double eth_usd) {
+        this.eth_usd = eth_usd;
     }
 }
