@@ -113,9 +113,12 @@ public class MoneyController {
 			List<Double> doubleList = new ArrayList<Double>();
 
 			System.setProperty("webdriver.chrome.driver", "/home/ywang/Downloads/chromedriver");
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("disable-infobars");
-			options.addArguments("--no-startup-window");
+//			ChromeOptions options = new ChromeOptions();
+//			options.addArguments("disable-infobars");
+//			options.addArguments("no-sandbox");
+//			options.addArguments("--no-startup-window");
+//			options.addArguments("disable-setuid-sandbox");
+//			options.addArguments("allow-insecure-localhost");
 
 			WebDriver driver = new ChromeDriver();
 			// open the browser and go to JavaTutorial Network Website
