@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b67453-0d9e-4d58-8942-09d2bb330bb9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ.war" afterPath="$PROJECT_DIR$/target/HQ.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
     </list>
@@ -133,8 +132,8 @@
       <file leaf-file-name="MoneyController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="114" column="53" lean-forward="false" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
+            <state relative-caret-position="91">
+              <caret line="115" column="75" lean-forward="false" selection-start-line="115" selection-start-column="75" selection-end-line="115" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -1145,7 +1144,7 @@
       <workItem from="1502743418006" duration="4869000" />
       <workItem from="1503059589344" duration="2746000" />
       <workItem from="1503567938696" duration="124000" />
-      <workItem from="1503568121759" duration="5643000" />
+      <workItem from="1503568121759" duration="5873000" />
     </task>
     <task id="LOCAL-00001" summary="Stable version on Acer for the 1st time.">
       <created>1499536138782</created>
@@ -1259,7 +1258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503847578618</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Use chromedriver of /opt/tomcat/bin one">
+      <created>1503848876370</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1503848876370</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1292,7 +1298,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77409000" />
+    <option name="totallyTimeSpent" value="77639000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1388,7 +1394,8 @@
     <MESSAGE value="Add etherum in Bitstamp" />
     <MESSAGE value="Add 4% then 49% computation for Fedex Bill" />
     <MESSAGE value="Not using chrome options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Not using chrome options" />
+    <MESSAGE value="Use chromedriver of /opt/tomcat/bin one" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use chromedriver of /opt/tomcat/bin one" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1791,8 +1798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="114" column="53" lean-forward="false" selection-start-line="114" selection-start-column="53" selection-end-line="114" selection-end-column="53" />
+        <state relative-caret-position="91">
+          <caret line="115" column="75" lean-forward="false" selection-start-line="115" selection-start-column="75" selection-end-line="115" selection-end-column="75" />
           <folding />
         </state>
       </provider>

@@ -113,7 +113,7 @@ public class MoneyController {
 			List<Double> doubleList = new ArrayList<Double>();
 
 			// stored in /opt/tomcat/bin/chromedriver
-			System.setProperty("webdriver.chrome.driver", "chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/opt/tomcat/bin/chromedriver");
 //			ChromeOptions options = new ChromeOptions();
 //			options.addArguments("disable-infobars");
 //			options.addArguments("no-sandbox");
