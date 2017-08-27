@@ -17,10 +17,14 @@ public class SeleniumTest {
         int nbOfLoop = 0;
         List<Double> doubleList = new ArrayList<Double>();
 
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("disable-infobars");
-        options.addArguments("--no-startup-window");
+        // stored in /opt/tomcat/bin/chromedriver
+        System.setProperty("webdriver.chrome.driver", "/opt/tomcat/bin/chromedriver");
+//			ChromeOptions options = new ChromeOptions();
+//			options.addArguments("disable-infobars");
+//			options.addArguments("no-sandbox");
+//			options.addArguments("--no-startup-window");
+//			options.addArguments("disable-setuid-sandbox");
+//			options.addArguments("allow-insecure-localhost");
 
         WebDriver driver = new ChromeDriver();
         // open the browser and go to JavaTutorial Network Website
@@ -91,7 +95,8 @@ public class SeleniumTest {
         }
         System.out.println("Total = " + total);
         System.out.println("*****************************");
-
+        Double fourPercent = total * 0.04 * 0.49;
+        System.out.println("fourPercent = " + fourPercent);
         driver.quit();
     }
 }

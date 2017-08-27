@@ -22,10 +22,10 @@
 	<strong>profit : ${profitAmount}</strong>
 </div>
 
-<div style="text-align: left">
-	<strong>Total of Fedex Billing : ${fedexBillingTotal}</strong>
-	<strong>4% (then 49%) : ${fourPercent}</strong>
-</div>
+<%--<div style="text-align: left">--%>
+	<%--<strong>Total of Fedex Billing : ${fedexBillingTotal}</strong>--%>
+	<%--<strong>4% (then 49%) : ${fourPercent}</strong>--%>
+<%--</div>--%>
 <%@ include file="footer.jsp"  %>
 </body>
 </html>
