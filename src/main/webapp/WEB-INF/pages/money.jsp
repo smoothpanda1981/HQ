@@ -22,6 +22,29 @@
 	<strong>profit : ${profitAmount}</strong>
 </div>
 
+
+<div>
+	<table class="table table-bordered table-inverse">
+		<thead>
+		<tr>
+			<th>Bitcoin Available</th>
+			<th>Ethereum Available</th>
+			<th>USD Cash</th>
+			<th>EUR Cash</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>${btc_balance}</td>
+				<td>${eth_balance}</td>
+				<td>${usd_available}</td>
+				<td>${eur_available}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
 <%--<div style="text-align: left">--%>
 	<%--<strong>Total of Fedex Billing : ${fedexBillingTotal}</strong>--%>
 	<%--<strong>4% (then 49%) : ${fourPercent}</strong>--%>

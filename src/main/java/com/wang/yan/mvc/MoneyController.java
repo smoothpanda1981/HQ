@@ -51,16 +51,18 @@ public class MoneyController {
 				balance
 		 	*/
 			StringBuffer response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/balance/", "balance");
-			logger.info(response.toString());
+			logger.info("balance : " + response.toString());
 			Balance balance = mapper.readValue(response.toString(), Balance.class);
 			model.addAttribute("btc_balance", balance.getBtc_balance());
+			model.addAttribute("eth_balance", balance.getEth_balance());
 			model.addAttribute("usd_available", balance.getUsd_available());
+			model.addAttribute("eur_available", balance.getEur_available());
 
 			/*
 				user_transaction
 		 	*/
 			response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/user_transactions/", "user_transaction");
-			logger.info(response.toString());
+			logger.info("user_transactions : " + response.toString());
 			List<UserTransaction> userTransactionList = mapper.readValue(response.toString(), new TypeReference<List<UserTransaction>>(){});
 			logger.info("test 1: " + userTransactionList.get(0).getBtc());
 
@@ -102,12 +104,6 @@ public class MoneyController {
 			model.addAttribute("sellAmount", sellAmount.toString());
 			model.addAttribute("withDrawAmount", withDrawAmount.toString());
 			model.addAttribute("profitAmount", (buyAmount.add(sellAmount)).toString());
-
-			Document doc = Jsoup.connect("http://www.fedex.com/us/fcl/pckgenvlp/online-billing/").get();
-			System.out.println("************************************");
-			System.out.println(doc.outerHtml());
-			System.out.println("************************************");
-
 
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
