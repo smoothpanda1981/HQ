@@ -66,7 +66,8 @@ public class MoneyController {
 			List<UserTransaction> userTransactionList = mapper.readValue(response.toString(), new TypeReference<List<UserTransaction>>(){});
 			logger.info("test 1: " + userTransactionList.get(0).getBtc());
 
-			BigDecimal depositAmount = new BigDecimal(0);
+			BigDecimal depositAmount_usd = new BigDecimal(0);
+			BigDecimal depositAmount_eur = new BigDecimal(0);
 
 			BigDecimal buyAmount = new BigDecimal(0);
 
@@ -77,8 +78,15 @@ public class MoneyController {
 			for (UserTransaction userTransaction : userTransactionList) {
 				if (userTransaction.getType().equals("0")) {
 					BigDecimal userTransUsd = new BigDecimal(userTransaction.getUsd());
-					logger.info("deposit : " + userTransaction.getUsd());
-					depositAmount = depositAmount.add(userTransUsd);
+					BigDecimal userTransEur = new BigDecimal(userTransaction.getEur());
+
+					if (userTransUsd.compareTo(BigDecimal.ZERO) > 0) {
+						logger.info("deposit usd : " + userTransaction.getUsd());
+						depositAmount_usd = depositAmount_usd.add(userTransUsd);
+					} else {
+						logger.info("deposit eur : " + userTransaction.getEur());
+						depositAmount_eur = depositAmount_eur.add(userTransEur);
+					}
 				}
 
 				if (userTransaction.getType().equals("2")) {
@@ -99,7 +107,8 @@ public class MoneyController {
 				}
 			}
 
-			model.addAttribute("depositAmount", depositAmount.toString());
+			model.addAttribute("depositAmountUsd", depositAmount_usd.toString());
+			model.addAttribute("depositAmountEur", depositAmount_eur.toString());
 			model.addAttribute("buyAmount", buyAmount.toString());
 			model.addAttribute("sellAmount", sellAmount.toString());
 			model.addAttribute("withDrawAmount", withDrawAmount.toString());

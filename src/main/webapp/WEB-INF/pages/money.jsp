@@ -15,16 +15,17 @@
 </div>
 
 <div style="text-align: left">
-	<strong>depositAmount : ${depositAmount}</strong>
-	<strong>buyAmount : ${buyAmount}</strong>
-	<strong>sellAmount : ${sellAmount}</strong>
-	<strong>withDrawAmount : ${withDrawAmount}</strong>
-	<strong>profit : ${profitAmount}</strong>
+	<strong>depositAmount USD : ${depositAmountUsd}</strong><br>
+	<strong>depositAmount EUR : ${depositAmountEur}</strong><br>
+	<strong>buyAmount : ${buyAmount}</strong><br>
+	<strong>sellAmount : ${sellAmount}</strong><br>
+	<strong>withDrawAmount : ${withDrawAmount}</strong><br>
+	<strong>profit : ${profitAmount}</strong><br>
 </div>
 
 
 <div>
-	<table class="table table-bordered table-inverse">
+	<table class="table">
 		<thead>
 		<tr>
 			<th>Bitcoin Available</th>
@@ -44,6 +45,11 @@
 	</table>
 </div>
 
+<div>
+	<table class="table">
+
+	</table>
+</div>
 
 <%--<div style="text-align: left">--%>
 	<%--<strong>Total of Fedex Billing : ${fedexBillingTotal}</strong>--%>

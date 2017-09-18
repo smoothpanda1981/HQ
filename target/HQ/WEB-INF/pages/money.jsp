@@ -15,17 +15,46 @@
 </div>
 
 <div style="text-align: left">
-	<strong>depositAmount : ${depositAmount}</strong>
-	<strong>buyAmount : ${buyAmount}</strong>
-	<strong>sellAmount : ${sellAmount}</strong>
-	<strong>withDrawAmount : ${withDrawAmount}</strong>
-	<strong>profit : ${profitAmount}</strong>
+	<strong>depositAmount USD : ${depositAmountUsd}</strong><br>
+	<strong>depositAmount EUR : ${depositAmountEur}</strong><br>
+	<strong>buyAmount : ${buyAmount}</strong><br>
+	<strong>sellAmount : ${sellAmount}</strong><br>
+	<strong>withDrawAmount : ${withDrawAmount}</strong><br>
+	<strong>profit : ${profitAmount}</strong><br>
 </div>
 
-<div style="text-align: left">
-	<strong>Total of Fedex Billing : ${fedexBillingTotal}</strong>
-	<strong>4% (then 49%) : ${fourPercent}</strong>
+
+<div>
+	<table class="table">
+		<thead>
+		<tr>
+			<th>Bitcoin Available</th>
+			<th>Ethereum Available</th>
+			<th>USD Cash</th>
+			<th>EUR Cash</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>${btc_balance}</td>
+				<td>${eth_balance}</td>
+				<td>${usd_available}</td>
+				<td>${eur_available}</td>
+			</tr>
+		</tbody>
+	</table>
 </div>
+
+<div>
+	<table class="table">
+
+	</table>
+</div>
+
+<%--<div style="text-align: left">--%>
+	<%--<strong>Total of Fedex Billing : ${fedexBillingTotal}</strong>--%>
+	<%--<strong>4% (then 49%) : ${fourPercent}</strong>--%>
+<%--</div>--%>
 <%@ include file="footer.jsp"  %>
 </body>
 </html>
