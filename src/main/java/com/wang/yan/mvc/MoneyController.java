@@ -73,7 +73,8 @@ public class MoneyController {
 
 			BigDecimal sellAmount = new BigDecimal(0);
 
-			BigDecimal withDrawAmount = new BigDecimal(0);
+			BigDecimal withDrawAmount_usd = new BigDecimal(0);
+			BigDecimal withDrawAmount_eur = new BigDecimal(0);
 
 			for (UserTransaction userTransaction : userTransactionList) {
 				if (userTransaction.getType().equals("0")) {
@@ -92,18 +93,25 @@ public class MoneyController {
 				if (userTransaction.getType().equals("2")) {
 					BigDecimal amountBtcValue = new BigDecimal(userTransaction.getUsd());
 					if (userTransaction.getBtc() >= 0.0) {
-						logger.info("buy : " + userTransaction.getUsd());
+						//logger.info("buy : " + userTransaction.getUsd());
 						buyAmount = buyAmount.add(amountBtcValue);
 					} else {
-						logger.info("sell : " + userTransaction.getUsd());
+						//logger.info("sell : " + userTransaction.getUsd());
 						sellAmount = sellAmount.add(amountBtcValue);
 					}
 				}
 
 				if (userTransaction.getType().equals("1")) {
 					BigDecimal userTransUsd = new BigDecimal(userTransaction.getUsd());
-					logger.info("withdraw : " + userTransaction.getUsd());
-					withDrawAmount = withDrawAmount.add(userTransUsd);
+					BigDecimal userTransEur = new BigDecimal(userTransaction.getEur());
+
+					if (userTransUsd.compareTo(BigDecimal.ZERO) < 0) {
+						logger.info("withdraw usd : " + userTransaction.getUsd());
+						withDrawAmount_usd = withDrawAmount_usd.add(userTransUsd);
+					} else {
+						logger.info("withdraw eur : " + userTransaction.getEur());
+						withDrawAmount_eur = withDrawAmount_eur.add(userTransEur);
+					}
 				}
 			}
 
@@ -111,7 +119,8 @@ public class MoneyController {
 			model.addAttribute("depositAmountEur", depositAmount_eur.toString());
 			model.addAttribute("buyAmount", buyAmount.toString());
 			model.addAttribute("sellAmount", sellAmount.toString());
-			model.addAttribute("withDrawAmount", withDrawAmount.toString());
+			model.addAttribute("withDrawAmountUsd", withDrawAmount_usd.toString());
+			model.addAttribute("withDrawAmountEur", withDrawAmount_eur.toString());
 			model.addAttribute("profitAmount", (buyAmount.add(sellAmount)).toString());
 
 		} catch (MalformedURLException e) {
