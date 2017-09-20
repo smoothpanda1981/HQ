@@ -13,7 +13,9 @@
 <div style="text-align: left">
 	<strong>${result}</strong>
 	<strong>BTC : ${btc_balance}</strong><br>
+	<strong>ETH : ${eth_balance}</strong><br>
 	<strong>Cash USD : ${usd_available}</strong><br>
+	<strong>Cash EUR : ${eur_available}</strong><br>
 </div>
 
 <div style="text-align: left">

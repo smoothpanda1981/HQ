@@ -23,6 +23,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.RoundingMode;
 import java.net.*;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -46,6 +47,12 @@ public class MoneyController {
 				authentication
 		 	*/
 			bitstampUtils.setAuthKeys("njOkn5ghkE2GFui01Wh94eyy7FCBekpk", "B1iF44lKdMalQXCy2viXg4FkPKLD1bUG", "670702");
+
+			/*
+				ticket BTC USD
+			 */
+//			StringBuffer response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/ticker/btcusd/", "balance");
+//			logger.info("balance : " + response.toString());
 
 			/*
 				balance
@@ -75,6 +82,8 @@ public class MoneyController {
 
 			BigDecimal withDrawAmount_usd = new BigDecimal(0);
 			BigDecimal withDrawAmount_eur = new BigDecimal(0);
+
+			BigDecimal profit = new BigDecimal(0);
 
 			for (UserTransaction userTransaction : userTransactionList) {
 				if (userTransaction.getType().equals("0")) {
@@ -107,13 +116,26 @@ public class MoneyController {
 
 					if (userTransUsd.compareTo(BigDecimal.ZERO) < 0) {
 						logger.info("withdraw usd : " + userTransaction.getUsd());
-						withDrawAmount_usd = withDrawAmount_usd.add(userTransUsd);
+						withDrawAmount_usd = withDrawAmount_usd.add(userTransUsd.subtract(new BigDecimal(userTransaction.getFee())));
 					} else {
 						logger.info("withdraw eur : " + userTransaction.getEur());
-						withDrawAmount_eur = withDrawAmount_eur.add(userTransEur);
+						withDrawAmount_eur = withDrawAmount_eur.add(userTransEur.subtract(new BigDecimal(userTransaction.getFee())));
 					}
 				}
 			}
+			depositAmount_usd = depositAmount_usd.setScale(2, RoundingMode.CEILING);
+			depositAmount_eur = depositAmount_eur.setScale(2, RoundingMode.CEILING);
+			buyAmount = buyAmount.setScale(2, RoundingMode.CEILING);
+			sellAmount = sellAmount.setScale(2, RoundingMode.CEILING);
+			withDrawAmount_usd = withDrawAmount_usd.setScale(2, RoundingMode.CEILING);
+			withDrawAmount_eur = withDrawAmount_eur.setScale(2, RoundingMode.CEILING);
+
+			profit = depositAmount_usd.add(withDrawAmount_usd);
+			profit = profit.add(depositAmount_eur.add(withDrawAmount_eur));
+			profit = new BigDecimal(balance.getUsd_available()).subtract(profit);
+
+			profit = profit.setScale(2, RoundingMode.CEILING);
+
 
 			model.addAttribute("depositAmountUsd", depositAmount_usd.toString());
 			model.addAttribute("depositAmountEur", depositAmount_eur.toString());
@@ -121,7 +143,7 @@ public class MoneyController {
 			model.addAttribute("sellAmount", sellAmount.toString());
 			model.addAttribute("withDrawAmountUsd", withDrawAmount_usd.toString());
 			model.addAttribute("withDrawAmountEur", withDrawAmount_eur.toString());
-			model.addAttribute("profitAmount", (buyAmount.add(sellAmount)).toString());
+			model.addAttribute("profitAmount", profit.toString());
 
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
