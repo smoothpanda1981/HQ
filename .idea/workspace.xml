@@ -6,24 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" line="58" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" line="74" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b67453-0d9e-4d58-8942-09d2bb330bb9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ.war" afterPath="$PROJECT_DIR$/target/HQ.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/drivers/chromedriver" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/drivers/chromedriver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/drivers/chromedriver" afterPath="$PROJECT_DIR$/target/classes/drivers/chromedriver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/BitstampUtils.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/BitstampUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/BitstampUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/BitstampUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Ticker.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Ticker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/pages/money.jsp" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/pages/money.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wang.yan.mvc.AppTests.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wang.yan.mvc.AppTests.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.wang.yan.mvc.AppTests.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.wang.yan.mvc.AppTests.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,34 +45,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="MoneyController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="-145">
+              <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeleniumTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/SeleniumTest.java">
+      <file leaf-file-name="ObjectMapper.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1674">
-              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ticker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Ticker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#351#352#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#781#782#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
+                <element signature="e#1004#1005#0" expanded="true" />
+                <element signature="e#1021#1022#0" expanded="true" />
+                <element signature="e#1056#1057#0" expanded="true" />
+                <element signature="e#1077#1078#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1156#1157#0" expanded="true" />
+                <element signature="e#1177#1178#0" expanded="true" />
+                <element signature="e#1205#1206#0" expanded="true" />
+                <element signature="e#1223#1224#0" expanded="true" />
+                <element signature="e#1260#1261#0" expanded="true" />
+                <element signature="e#1283#1284#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoneyController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
+      <file leaf-file-name="Balance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Balance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2124">
+              <caret line="229" column="38" lean-forward="false" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
+              <folding>
+                <element signature="e#5310#5311#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTransaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransaction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="91" column="28" lean-forward="false" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+              <folding>
+                <element signature="e#1657#1658#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,39 +139,26 @@
       <file leaf-file-name="BitstampUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="93">
+              <caret line="25" column="73" lean-forward="false" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/footer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="money.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="money.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="211">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#font#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#1;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,21 +167,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/AppTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding>
-                <element signature="e#1231#1232#0" expanded="true" />
-                <element signature="e#1298#1299#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -181,6 +212,7 @@
       <find>mappe</find>
       <find>google</find>
       <find>options</find>
+      <find>response</find>
     </findStrings>
     <replaceStrings>
       <replace>double</replace>
@@ -212,14 +244,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/theme1/js/bitstamp.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/bitstamp/BitStamp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/bitstamp/BitstampFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Ticker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Asks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Bids.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/OrderBook.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/AppTests.java" />
         <option value="$PROJECT_DIR$/target/HQ/WEB-INF/pages/bitstamp.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/MD5EncryptionUnitTest.java" />
@@ -231,8 +261,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/SeleniumTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Ticker.java" />
+        <option value="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/ObjectMapper.class" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" />
       </list>
     </option>
   </component>
@@ -328,6 +361,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,6 +395,34 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HQ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HQ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HQ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HQ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="bitstamp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HQ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HQ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HQ" type="b2602c69:ProjectViewProjectNode" />
@@ -417,10 +480,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,6 +501,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wang.yan.mvc.model.bitstamp" />
       <recent name="com.wang.yan.mvc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -1104,7 +1166,9 @@
       <workItem from="1504677452175" duration="599000" />
       <workItem from="1505549998297" duration="82000" />
       <workItem from="1505550149333" duration="2791000" />
-      <workItem from="1505736600334" duration="8905000" />
+      <workItem from="1505736600334" duration="9356000" />
+      <workItem from="1506179170722" duration="29000" />
+      <workItem from="1506179460302" duration="4480000" />
     </task>
     <task id="LOCAL-00001" summary="Stable version on Acer for the 1st time.">
       <created>1499536138782</created>
@@ -1260,7 +1324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505909531581</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="MoneyController : compute profit">
+      <created>1505940489329</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1505940489329</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1296,7 +1367,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98559000" />
+    <option name="totallyTimeSpent" value="103519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1322,16 +1393,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32399103" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3224138" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931036" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40172413" sideWeight="0.49786553" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48448277" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40172413" sideWeight="0.49786553" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54137933" sideWeight="0.49359658" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22878788" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1396,7 +1467,8 @@
     <MESSAGE value="MoneyController : add table for balance" />
     <MESSAGE value="MoneyController : Minor refactor" />
     <MESSAGE value="MoneyController : Deposit &amp; Withdraw (usd + eur)" />
-    <option name="LAST_COMMIT_MESSAGE" value="MoneyController : Deposit &amp; Withdraw (usd + eur)" />
+    <MESSAGE value="MoneyController : compute profit" />
+    <option name="LAST_COMMIT_MESSAGE" value="MoneyController : compute profit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1407,13 +1479,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/maps.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/KeepassController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1445,24 +1510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33780">
-          <caret line="1689" column="0" lean-forward="false" selection-start-line="1689" selection-start-column="0" selection-end-line="1689" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1333">
           <caret line="437" column="11" lean-forward="false" selection-start-line="437" selection-start-column="11" selection-end-line="437" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Ticker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1649,45 +1700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="91" column="28" lean-forward="false" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Balance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
-          <caret line="229" column="38" lean-forward="false" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
-          <folding>
-            <element signature="e#5310#5311#0" expanded="false" />
-            <element signature="e#5368#5369#0" expanded="false" />
-            <element signature="e#5418#5419#0" expanded="false" />
-            <element signature="e#5456#5457#0" expanded="false" />
-            <element signature="e#5490#5491#0" expanded="false" />
-            <element signature="e#5544#5545#0" expanded="false" />
-            <element signature="e#5590#5591#0" expanded="false" />
-            <element signature="e#5629#5630#0" expanded="false" />
-            <element signature="e#5664#5665#0" expanded="false" />
-            <element signature="e#5720#5721#0" expanded="false" />
-            <element signature="e#5768#5769#0" expanded="false" />
-            <element signature="e#5805#5806#0" expanded="false" />
-            <element signature="e#5838#5839#0" expanded="false" />
-            <element signature="e#5890#5891#0" expanded="false" />
-            <element signature="e#5934#5935#0" expanded="false" />
-            <element signature="e#5971#5972#0" expanded="false" />
-            <element signature="e#6004#6005#0" expanded="false" />
-            <element signature="e#6056#6057#0" expanded="false" />
-            <element signature="e#6100#6101#0" expanded="false" />
-            <element signature="e#6137#6138#0" expanded="false" />
-            <element signature="e#6170#6171#0" expanded="false" />
-            <element signature="e#6222#6223#0" expanded="false" />
-            <element signature="e#6266#6267#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/JsoupTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1701,8 +1713,8 @@
         <state relative-caret-position="270">
           <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="false" />
+            <element signature="e#1298#1299#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1719,14 +1731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/MD5EncryptionUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1751,7 +1755,7 @@
         <state relative-caret-position="1674">
           <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1759,32 +1763,128 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/MD5EncryptionUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="144">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        <state relative-caret-position="93">
+          <caret line="25" column="73" lean-forward="false" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Balance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2124">
+          <caret line="229" column="38" lean-forward="false" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
+          <folding>
+            <element signature="e#5310#5311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="91" column="28" lean-forward="false" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Ticker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12190">
+          <caret line="840" column="17" lean-forward="false" selection-start-line="840" selection-start-column="17" selection-end-line="840" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="-145">
+          <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#font#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#1;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

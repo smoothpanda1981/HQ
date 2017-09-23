@@ -8,10 +8,20 @@
 </head>
 <body>
 <%@ include file="menus.jsp"  %>
-<h1 class="sub-header">${message}</h1>
+<h1 class="sub-header">
+	${message} --- profit :
+		<c:if test="${profitAmount >= 0}">
+			<font style="color: green">${profitAmount}</font>
+		</c:if>
+		<c:if test="${profitAmount < 0}">
+			<font style="color: red">${profitAmount}</font>
+		</c:if>
+</h1>
 
 <div style="text-align: left">
 	<strong>${result}</strong>
+	<strong>BTCUSD Last : ${ticker_btcusd_last}</strong><br>
+	<strong>BTCEUR Last : ${ticker_btceur_last}</strong><br>
 	<strong>BTC : ${btc_balance}</strong><br>
 	<strong>ETH : ${eth_balance}</strong><br>
 	<strong>Cash USD : ${usd_available}</strong><br>
@@ -25,7 +35,6 @@
 	<strong>sellAmount : ${sellAmount}</strong><br>
 	<strong>withDrawAmount USD : ${withDrawAmountUsd}</strong><br>
 	<strong>withDrawAmount EUR : ${withDrawAmountEur}</strong><br>
-	<strong>profit : ${profitAmount}</strong><br>
 </div>
 
 
@@ -37,6 +46,7 @@
 			<th>Ethereum Available</th>
 			<th>USD Cash</th>
 			<th>EUR Cash</th>
+			<th>Profit</th>
 		</tr>
 		</thead>
 		<tbody>
@@ -45,6 +55,12 @@
 				<td>${eth_balance}</td>
 				<td>${usd_available}</td>
 				<td>${eur_available}</td>
+				<c:if test="${profitAmount >= 0}">
+					<td style="color: green">${profitAmount}</td>
+				</c:if>
+				<c:if test="${profitAmount < 0}">
+					<td style="color: red">${profitAmount}</td>
+				</c:if>
 			</tr>
 		</tbody>
 	</table>

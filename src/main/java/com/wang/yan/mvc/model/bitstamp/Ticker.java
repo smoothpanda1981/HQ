@@ -4,29 +4,29 @@ package com.wang.yan.mvc.model.bitstamp;
  * Created by ywang on 07.07.17.
  */
 public class Ticker {
-	private String high;
-	private String last;
+	private double high;
+	private double last;
 	private String timestamp;
-	private String bid;
-	private String vwap;
-	private String volume;
-	private String low;
-	private String ask;
-	private String open;
+	private double bid;
+	private double vwap;
+	private double volume;
+	private double low;
+	private double ask;
+	private double open;
 
-	public String getHigh() {
+	public double getHigh() {
 		return high;
 	}
 
-	public void setHigh(String high) {
+	public void setHigh(double high) {
 		this.high = high;
 	}
 
-	public String getLast() {
+	public double getLast() {
 		return last;
 	}
 
-	public void setLast(String last) {
+	public void setLast(double last) {
 		this.last = last;
 	}
 
@@ -38,51 +38,51 @@ public class Ticker {
 		this.timestamp = timestamp;
 	}
 
-	public String getBid() {
+	public double getBid() {
 		return bid;
 	}
 
-	public void setBid(String bid) {
+	public void setBid(double bid) {
 		this.bid = bid;
 	}
 
-	public String getVwap() {
+	public double getVwap() {
 		return vwap;
 	}
 
-	public void setVwap(String vwap) {
+	public void setVwap(double vwap) {
 		this.vwap = vwap;
 	}
 
-	public String getVolume() {
+	public double getVolume() {
 		return volume;
 	}
 
-	public void setVolume(String volume) {
+	public void setVolume(double volume) {
 		this.volume = volume;
 	}
 
-	public String getLow() {
+	public double getLow() {
 		return low;
 	}
 
-	public void setLow(String low) {
+	public void setLow(double low) {
 		this.low = low;
 	}
 
-	public String getAsk() {
+	public double getAsk() {
 		return ask;
 	}
 
-	public void setAsk(String ask) {
+	public void setAsk(double ask) {
 		this.ask = ask;
 	}
 
-	public String getOpen() {
+	public double getOpen() {
 		return open;
 	}
 
-	public void setOpen(String open) {
+	public void setOpen(double open) {
 		this.open = open;
 	}
 }

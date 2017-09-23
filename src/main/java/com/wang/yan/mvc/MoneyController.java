@@ -49,15 +49,21 @@ public class MoneyController {
 			bitstampUtils.setAuthKeys("njOkn5ghkE2GFui01Wh94eyy7FCBekpk", "B1iF44lKdMalQXCy2viXg4FkPKLD1bUG", "670702");
 
 			/*
-				ticket BTC USD
+				ticker BTC USD
 			 */
-//			StringBuffer response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/ticker/btcusd/", "balance");
-//			logger.info("balance : " + response.toString());
+			StringBuffer response = bitstampUtils.getGetData("https://www.bitstamp.net/api/v2/ticker/btcusd/", "ticker_btcusd");
+			logger.info("ticker btc_usd : " + response.toString());
+			Ticker ticker_btcusd = mapper.readValue(response.toString(), Ticker.class);
+			model.addAttribute("ticker_btcusd_last", ticker_btcusd.getLast());
+			response = bitstampUtils.getGetData("https://www.bitstamp.net/api/v2/ticker/btceur/", "ticker_btceur");
+			logger.info("ticker btc_eur : " + response.toString());
+			Ticker ticker_btceur = mapper.readValue(response.toString(), Ticker.class);
+			model.addAttribute("ticker_btceur_last", ticker_btceur.getLast());
 
 			/*
 				balance
 		 	*/
-			StringBuffer response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/balance/", "balance");
+			response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/balance/", "balance");
 			logger.info("balance : " + response.toString());
 			Balance balance = mapper.readValue(response.toString(), Balance.class);
 			model.addAttribute("btc_balance", balance.getBtc_balance());
@@ -130,8 +136,19 @@ public class MoneyController {
 			withDrawAmount_usd = withDrawAmount_usd.setScale(2, RoundingMode.CEILING);
 			withDrawAmount_eur = withDrawAmount_eur.setScale(2, RoundingMode.CEILING);
 
+
+			// Compute profit
 			profit = depositAmount_usd.add(withDrawAmount_usd);
 			profit = profit.add(depositAmount_eur.add(withDrawAmount_eur));
+			BigDecimal balance_btcusd_balance = new BigDecimal(balance.getBtc_balance());
+			balance_btcusd_balance =  balance_btcusd_balance.multiply(new BigDecimal(ticker_btcusd.getLast()));
+			logger.info("balance_btcusd_balance : " + balance_btcusd_balance.toString());
+			BigDecimal balance_btceur_balance = new BigDecimal(balance.getBtc_balance());
+			balance_btceur_balance =  balance_btceur_balance.multiply(new BigDecimal(ticker_btceur.getLast()));
+			logger.info("balance_btceur_balance : " + balance_btceur_balance.toString());
+
+			profit = profit.add(balance_btcusd_balance);
+			profit = profit.add(balance_btceur_balance);
 			profit = new BigDecimal(balance.getUsd_available()).subtract(profit);
 
 			profit = profit.setScale(2, RoundingMode.CEILING);
@@ -143,7 +160,7 @@ public class MoneyController {
 			model.addAttribute("sellAmount", sellAmount.toString());
 			model.addAttribute("withDrawAmountUsd", withDrawAmount_usd.toString());
 			model.addAttribute("withDrawAmountEur", withDrawAmount_eur.toString());
-			model.addAttribute("profitAmount", profit.toString());
+			model.addAttribute("profitAmount", Double.valueOf(profit.toString()));
 
 		} catch (MalformedURLException e) {
 			e.printStackTrace();

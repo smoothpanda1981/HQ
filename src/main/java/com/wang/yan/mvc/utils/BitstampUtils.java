@@ -1,15 +1,12 @@
 package com.wang.yan.mvc.utils;
 
-import com.wang.yan.mvc.MoneyController;
 import org.apache.log4j.Logger;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
 import java.math.BigInteger;
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.URLEncoder;
+import java.net.*;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
@@ -25,6 +22,46 @@ public class BitstampUtils {
     private long nonce;
 
     private static final Logger logger = Logger.getLogger(BitstampUtils.class);
+
+    public StringBuffer getGetData(String httpLink, String requestName) {
+        StringBuffer response = new StringBuffer();
+        try {
+            URL obj = new URL(httpLink);
+            HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
+
+            // optional default is GET
+            connection.setRequestMethod("GET");
+            //add request header
+            connection.setRequestProperty("User-Agent", "Mozilla/5.0");
+
+            int responseCode = connection.getResponseCode();
+            System.out.println("\nSending 'GET' request to URL : " + httpLink);
+            System.out.println("Response Code : " + responseCode);
+
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(connection.getInputStream()));
+            String inputLine;
+
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
+
+            //print result
+            System.out.println(response.toString());
+
+        } catch (ProtocolException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        return response;
+    }
 
     public StringBuffer getPostData(String httpLink, String requestName) throws ParseException, IOException {
         Map<String,String> args = new HashMap<String,String>() ;
