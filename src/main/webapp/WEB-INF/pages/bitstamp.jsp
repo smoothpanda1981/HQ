@@ -20,7 +20,6 @@
 	<strong>buyAmount : ${buyAmount}</strong>
 	<strong>sellAmount : ${sellAmount}</strong>
 	<strong>withDrawAmount : ${withDrawAmount}</strong>
-	<strong>profit : ${profitAmount}</strong>
 </div>
 
 

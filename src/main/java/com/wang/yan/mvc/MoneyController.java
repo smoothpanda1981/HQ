@@ -45,7 +45,23 @@ public class MoneyController {
 			/*
 				authentication
 		 	*/
-			bitstampUtils.setAuthKeys("njOkn5ghkE2GFui01Wh94eyy7FCBekpk", "B1iF44lKdMalQXCy2viXg4FkPKLD1bUG", "670702");
+			String key = "";
+			String password = "";
+			String account = "";
+			List<String> stringList = bitstampUtils.getAuthKeys();
+			for (String s : stringList) {
+				if (s.contains("key")) {
+					key = s.substring(4, s.length());
+				} else if (s.contains("password")) {
+					password = s.substring(9, s.length());
+				} else {
+					account = s.substring(8, s.length());
+				}
+			}
+			logger.info("bitstamp key : " + key);
+			logger.info("bitstamp password : " + password);
+			logger.info("bitstamp account : " + account);
+			bitstampUtils.setAuthKeys(key, password, account);
 
 			/*
 				ticker BTC USD

@@ -7,12 +7,13 @@ import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
 import java.math.BigInteger;
 import java.net.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Stream;
 
 public class BitstampUtils {
     private SecretKeySpec keyspec;
@@ -138,5 +139,24 @@ public class BitstampUtils {
         } catch (InvalidKeyException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<String> getAuthKeys() {
+        List<String> stringList = new ArrayList<>();
+        String fileName = "/home/ywang/Data/bitstamp.txt";
+
+        //read file into stream, try-with-resources
+        try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
+
+            stream.forEach(s -> putInList(stringList, s));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return stringList;
+    }
+
+    private void putInList(List<String> stringList, String s) {
+        stringList.add(s);
     }
 }

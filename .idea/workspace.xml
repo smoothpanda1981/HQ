@@ -7,48 +7,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b67453-0d9e-4d58-8942-09d2bb330bb9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/BitstampDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/BitstampDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/BitstampProfit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/BitstampService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/BitstampServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ.war" afterPath="$PROJECT_DIR$/target/HQ.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController$1.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/GoogleMapsController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/GoogleMapsController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HelloController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HelloController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LogoutController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LogoutController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/SingupController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/SingupController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/VideoController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/VideoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/WebServiceController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/WebServiceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsDemo.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsDemo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Login.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/SearchKeepass.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/SearchKeepass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UpdateLogin.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UpdateLogin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/Utils.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/Utils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/GoogleMapsController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/GoogleMapsController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HelloController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HelloController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LogoutController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LogoutController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/SingupController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/SingupController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/VideoController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/VideoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/WebServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/WebServiceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsDemo.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsDemo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Login.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/SearchKeepass.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/SearchKeepass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UpdateLogin.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UpdateLogin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/Utils.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/Utils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/AppTests.class" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/AppTests.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/JsoupTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/JsoupTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/SeleniumTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/SeleniumTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HQ.iml" afterPath="$PROJECT_DIR$/HQ.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/GoogleMapsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/GoogleMapsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/HelloController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/HelloController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/KeepassController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/KeepassController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/LogoutController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/LogoutController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/SingupController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/SingupController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/VideoController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/VideoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/WebServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/WebServiceController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/LoginDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/LoginDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/SignupDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/SignupDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/BookDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/BookDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/LoginDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/LoginDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/SignupDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/SignupDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/jms/JmsDemo.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/jms/JmsDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/Login.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/SearchKeepass.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/SearchKeepass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/UpdateLogin.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/UpdateLogin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/OrderBook.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/OrderBook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/LoginService.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/LoginService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/SignupService.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/SignupService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/BookServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/BookServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/LoginServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/LoginServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/SignupServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/SignupServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/AppTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/AppTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/JsoupTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/JsoupTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/SeleniumTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/SeleniumTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/pages/money.jsp" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/pages/money.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/mvc-dispatcher-servlet.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,8 +88,8 @@
       <file leaf-file-name="MoneyController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="180" column="43" lean-forward="true" selection-start-line="180" selection-start-column="43" selection-end-line="180" selection-end-column="43" />
+            <state relative-caret-position="211">
+              <caret line="63" column="62" lean-forward="true" selection-start-line="47" selection-start-column="12" selection-end-line="63" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,60 +101,61 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitstampServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/BitstampServiceImpl.java">
+      <file leaf-file-name="BitstampUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="25">
+              <caret line="148" column="49" lean-forward="true" selection-start-line="148" selection-start-column="49" selection-end-line="148" selection-end-column="49" />
               <folding>
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#5429#5430#0" expanded="true" />
+                <element signature="e#5462#5463#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitstampDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/BitstampDao.java">
+      <file leaf-file-name="Stream.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Stream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+            <state relative-caret-position="106">
+              <caret line="497" column="9" lean-forward="false" selection-start-line="497" selection-start-column="9" selection-end-line="497" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/LoginDaoImpl.java">
+      <file leaf-file-name="BitstampController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="-2057">
+              <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="money.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bitstamp.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="money.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignupDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/SignupDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="1170">
+              <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -212,6 +226,7 @@
       <find>options</find>
       <find>response</find>
       <find>from</find>
+      <find>bitstamp key</find>
     </findStrings>
     <replaceStrings>
       <replace>double</replace>
@@ -249,8 +264,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/AppTests.java" />
         <option value="$PROJECT_DIR$/target/HQ/WEB-INF/pages/bitstamp.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/MD5EncryptionUnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/MD5Encryption.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/JsoupTest.java" />
@@ -260,7 +273,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/wang/yan/mvc/SeleniumTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Ticker.java" />
         <option value="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/ObjectMapper.class" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/Book.java" />
@@ -269,8 +281,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/BitstampDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/BitstampProfit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/BitstampDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp" />
       </list>
     </option>
   </component>
@@ -408,25 +423,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HQ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HQ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HQ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HQ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -436,17 +432,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HQ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HQ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="bitstamp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HQ" type="b2602c69:ProjectViewProjectNode" />
@@ -527,7 +514,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.16833334" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1204,7 +1191,7 @@
       <workItem from="1505550149333" duration="2791000" />
       <workItem from="1505736600334" duration="9356000" />
       <workItem from="1506179170722" duration="29000" />
-      <workItem from="1506179460302" duration="10548000" />
+      <workItem from="1506179460302" duration="13787000" />
     </task>
     <task id="LOCAL-00001" summary="Stable version on Acer for the 1st time.">
       <created>1499536138782</created>
@@ -1374,7 +1361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506184640137</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="MoneyController : bitstamp profit saved in DB">
+      <created>1506202363237</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1506202363237</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1410,7 +1404,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109587000" />
+    <option name="totallyTimeSpent" value="112826000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1445,7 +1439,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40172413" sideWeight="0.49786553" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54137933" sideWeight="0.49359658" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22878788" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1512,7 +1506,8 @@
     <MESSAGE value="MoneyController : Deposit &amp; Withdraw (usd + eur)" />
     <MESSAGE value="MoneyController : compute profit" />
     <MESSAGE value="MoneyController : compute profit with btcusd and btceur" />
-    <option name="LAST_COMMIT_MESSAGE" value="MoneyController : compute profit with btcusd and btceur" />
+    <MESSAGE value="MoneyController : bitstamp profit saved in DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="MoneyController : bitstamp profit saved in DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1523,13 +1518,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menus.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar!/META-INF/c.tld">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3160">
@@ -1614,13 +1602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hibernate.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1647,13 +1628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="147" column="50" lean-forward="false" selection-start-line="147" selection-start-column="50" selection-end-line="147" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1726,16 +1700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="25" column="73" lean-forward="false" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/Balance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2124">
@@ -1761,42 +1725,42 @@
         <state relative-caret-position="378">
           <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
+            <element signature="e#411#412#0" expanded="false" />
+            <element signature="e#439#440#0" expanded="false" />
+            <element signature="e#457#458#0" expanded="false" />
+            <element signature="e#494#495#0" expanded="false" />
+            <element signature="e#517#518#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
+            <element signature="e#653#654#0" expanded="false" />
+            <element signature="e#680#681#0" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
+            <element signature="e#732#733#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+            <element signature="e#799#800#0" expanded="false" />
+            <element signature="e#836#837#0" expanded="false" />
+            <element signature="e#859#860#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#909#910#0" expanded="false" />
+            <element signature="e#950#951#0" expanded="false" />
+            <element signature="e#977#978#0" expanded="false" />
+            <element signature="e#1004#1005#0" expanded="false" />
+            <element signature="e#1021#1022#0" expanded="false" />
+            <element signature="e#1056#1057#0" expanded="false" />
+            <element signature="e#1077#1078#0" expanded="false" />
+            <element signature="e#1104#1105#0" expanded="false" />
+            <element signature="e#1121#1122#0" expanded="false" />
+            <element signature="e#1156#1157#0" expanded="false" />
+            <element signature="e#1177#1178#0" expanded="false" />
+            <element signature="e#1205#1206#0" expanded="false" />
+            <element signature="e#1223#1224#0" expanded="false" />
+            <element signature="e#1260#1261#0" expanded="false" />
+            <element signature="e#1283#1284#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1908,7 +1872,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/BitstampServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="e#762#763#0" expanded="true" />
             <element signature="e#820#821#0" expanded="true" />
@@ -1935,7 +1899,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1952,20 +1924,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="497" column="9" lean-forward="false" selection-start-line="497" selection-start-column="9" selection-end-line="497" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="148" column="49" lean-forward="true" selection-start-line="148" selection-start-column="49" selection-end-line="148" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5429#5430#0" expanded="true" />
+            <element signature="e#5462#5463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="180" column="43" lean-forward="true" selection-start-line="180" selection-start-column="43" selection-end-line="180" selection-end-column="43" />
+        <state relative-caret-position="211">
+          <caret line="63" column="62" lean-forward="true" selection-start-line="47" selection-start-column="12" selection-end-line="63" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+        <state relative-caret-position="-2057">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
           <folding />
         </state>
       </provider>
