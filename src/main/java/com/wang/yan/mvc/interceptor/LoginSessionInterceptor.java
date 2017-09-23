@@ -1,6 +1,5 @@
 package com.wang.yan.mvc.interceptor;
 
-import com.wang.yan.mvc.HelloController;
 import com.wang.yan.mvc.utils.Utils;
 import org.apache.log4j.Logger;
 import org.springframework.web.servlet.HandlerInterceptor;

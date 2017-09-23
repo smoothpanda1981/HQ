@@ -1,6 +1,5 @@
 package com.wang.yan.mvc.dao;
 
-import com.wang.yan.mvc.model.Book;
 import com.wang.yan.mvc.model.Login;
 
 import java.sql.SQLException;

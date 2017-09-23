@@ -38,40 +38,57 @@
 </div>
 
 
-<div>
-	<table class="table">
-		<thead>
-		<tr>
-			<th>Bitcoin Available</th>
-			<th>Ethereum Available</th>
-			<th>USD Cash</th>
-			<th>EUR Cash</th>
-			<th>Profit</th>
-		</tr>
-		</thead>
-		<tbody>
+<div class="col-xs-6">
+	<h2 class="sub-header">Bitcoin Status</h2>
+	<div class="table-responsive">
+		<table class="table">
+			<thead>
 			<tr>
-				<td>${btc_balance}</td>
-				<td>${eth_balance}</td>
-				<td>${usd_available}</td>
-				<td>${eur_available}</td>
-				<c:if test="${profitAmount >= 0}">
-					<td style="color: green">${profitAmount}</td>
-				</c:if>
-				<c:if test="${profitAmount < 0}">
-					<td style="color: red">${profitAmount}</td>
-				</c:if>
+				<th>Bitcoin Available</th>
+				<th>Ethereum Available</th>
+				<th>USD Cash</th>
+				<th>EUR Cash</th>
+				<th>Profit</th>
 			</tr>
-		</tbody>
-	</table>
+			</thead>
+			<tbody>
+				<tr>
+					<td>${btc_balance}</td>
+					<td>${eth_balance}</td>
+					<td>${usd_available}</td>
+					<td>${eur_available}</td>
+					<c:if test="${profitAmount >= 0}">
+						<td style="color: green">${profitAmount}</td>
+					</c:if>
+					<c:if test="${profitAmount < 0}">
+						<td style="color: red">${profitAmount}</td>
+					</c:if>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
-
-<div>
-	<table class="table">
-
-	</table>
+<div class="col-xs-6">
+	<h2 class="sub-header">Profit Status</h2>
+	<div class="table-responsive">
+		<table class="table">
+			<thead>
+			<tr>
+				<th>ID</th>
+				<th>Profit</th>
+				<th>Creation Date</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>${bitstampProfit.id}</td>
+				<td>${bitstampProfit.profit}</td>
+				<td>${bitstampProfit.creationDate}</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
-
 <%--<div style="text-align: left">--%>
 	<%--<strong>Total of Fedex Billing : ${fedexBillingTotal}</strong>--%>
 	<%--<strong>4% (then 49%) : ${fourPercent}</strong>--%>

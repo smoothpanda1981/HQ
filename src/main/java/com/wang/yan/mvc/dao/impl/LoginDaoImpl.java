@@ -1,25 +1,16 @@
 package com.wang.yan.mvc.dao.impl;
 
-import com.wang.yan.mvc.DBLoginController;
-import com.wang.yan.mvc.dao.BookDao;
 import com.wang.yan.mvc.dao.LoginDao;
-import com.wang.yan.mvc.model.Book;
 import com.wang.yan.mvc.model.Login;
-import com.wang.yan.mvc.model.Signup;
 import com.wang.yan.mvc.utils.MD5Encryption;
 import org.apache.log4j.Logger;
-import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
-import org.hibernate.metadata.ClassMetadata;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.sql.SQLException;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by ywang on 25.11.15.

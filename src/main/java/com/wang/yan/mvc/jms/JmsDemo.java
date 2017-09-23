@@ -1,7 +1,6 @@
 package com.wang.yan.mvc.jms;
 
 import org.apache.activemq.command.ActiveMQQueue;
-import org.apache.xbean.spring.context.FileSystemXmlApplicationContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

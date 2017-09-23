@@ -1,6 +1,5 @@
 package com.wang.yan.mvc.service;
 
-import com.wang.yan.mvc.model.Login;
 import com.wang.yan.mvc.model.Signup;
 
 import java.sql.SQLException;

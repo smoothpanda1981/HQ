@@ -1,9 +1,6 @@
 package com.wang.yan.mvc.model.bitstamp;
 
-import org.apache.commons.fileupload.util.LimitedInputStream;
-
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by ywang on 09.07.17.

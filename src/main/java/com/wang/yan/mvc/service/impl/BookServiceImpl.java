@@ -1,7 +1,7 @@
 package com.wang.yan.mvc.service.impl;
 
-import com.wang.yan.mvc.model.Book;
 import com.wang.yan.mvc.dao.BookDao;
+import com.wang.yan.mvc.model.Book;
 import com.wang.yan.mvc.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

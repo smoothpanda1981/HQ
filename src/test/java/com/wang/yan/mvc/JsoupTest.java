@@ -1,6 +1,5 @@
 package com.wang.yan.mvc;
 
-import com.wang.yan.mvc.utils.MD5Encryption;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

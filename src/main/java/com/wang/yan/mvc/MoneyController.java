@@ -2,39 +2,38 @@ package com.wang.yan.mvc;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wang.yan.mvc.model.bitstamp.*;
+import com.wang.yan.mvc.model.BitstampProfit;
+import com.wang.yan.mvc.model.bitstamp.Balance;
+import com.wang.yan.mvc.model.bitstamp.Ticker;
+import com.wang.yan.mvc.model.bitstamp.UserTransaction;
+import com.wang.yan.mvc.service.BitstampService;
 import com.wang.yan.mvc.utils.BitstampUtils;
 import org.apache.log4j.Logger;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.crypto.Mac;
-import javax.crypto.spec.SecretKeySpec;
-import java.io.*;
+import java.io.IOException;
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.math.RoundingMode;
-import java.net.*;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
+import java.net.MalformedURLException;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
 
 @Controller
 @RequestMapping("/money")
 public class MoneyController {
 	private static final Logger logger = Logger.getLogger(MoneyController.class);
+
+	@Autowired
+	private BitstampService bitstampService;
+
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String moneyPage(ModelMap model) throws InterruptedException {
@@ -162,6 +161,23 @@ public class MoneyController {
 			model.addAttribute("withDrawAmountEur", withDrawAmount_eur.toString());
 			model.addAttribute("profitAmount", Double.valueOf(profit.toString()));
 
+			/*
+				Check if needed to save in BitstampProfit
+			 */
+			BitstampProfit bitstampProfitToSave = new BitstampProfit();
+			bitstampProfitToSave.setProfit(Double.valueOf(profit.toString()));
+			bitstampProfitToSave.setCreationDate(new Date());
+
+			BitstampProfit bitstampProfit = bitstampService.getLastBitstampProfit();
+			if (bitstampProfit.getProfit() == null) {
+				bitstampService.saveBitstampProfit(bitstampProfitToSave);
+			} else {
+				if (!bitstampProfit.getProfit().equals(bitstampProfitToSave.getProfit())) {
+					bitstampService.saveBitstampProfit(bitstampProfitToSave);
+				}
+			}
+			BitstampProfit bitstampProfitForAttribute = bitstampService.getLastBitstampProfit();
+			model.addAttribute("bitstampProfit", bitstampProfitForAttribute);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

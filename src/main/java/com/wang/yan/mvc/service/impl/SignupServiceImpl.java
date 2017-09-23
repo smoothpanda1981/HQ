@@ -1,10 +1,7 @@
 package com.wang.yan.mvc.service.impl;
 
-import com.wang.yan.mvc.dao.LoginDao;
 import com.wang.yan.mvc.dao.SignupDao;
-import com.wang.yan.mvc.model.Login;
 import com.wang.yan.mvc.model.Signup;
-import com.wang.yan.mvc.service.LoginService;
 import com.wang.yan.mvc.service.SignupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

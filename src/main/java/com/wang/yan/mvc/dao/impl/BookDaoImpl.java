@@ -1,11 +1,10 @@
 package com.wang.yan.mvc.dao.impl;
 
-import com.wang.yan.mvc.model.Book;
 import com.wang.yan.mvc.dao.BookDao;
+import com.wang.yan.mvc.model.Book;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.metadata.ClassMetadata;
-import org.hibernate.persister.entity.AbstractEntityPersister;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

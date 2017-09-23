@@ -1,12 +1,8 @@
 package com.wang.yan.mvc.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Created by ywang on 19/12/15.

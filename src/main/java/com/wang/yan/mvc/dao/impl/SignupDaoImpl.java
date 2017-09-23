@@ -1,15 +1,10 @@
 package com.wang.yan.mvc.dao.impl;
 
-import com.wang.yan.mvc.dao.LoginDao;
 import com.wang.yan.mvc.dao.SignupDao;
-import com.wang.yan.mvc.model.Login;
 import com.wang.yan.mvc.model.Signup;
-import com.wang.yan.mvc.utils.MD5Encryption;
 import org.apache.log4j.Logger;
-import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,5 @@
 package com.wang.yan.mvc.utils;
 
-import com.wang.yan.mvc.HelloController;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;

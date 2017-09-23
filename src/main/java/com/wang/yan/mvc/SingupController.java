@@ -1,7 +1,6 @@
 package com.wang.yan.mvc;
 
 import com.wang.yan.mvc.model.Login;
-import com.wang.yan.mvc.model.Message;
 import com.wang.yan.mvc.model.Signup;
 import com.wang.yan.mvc.service.LoginService;
 import com.wang.yan.mvc.service.SignupService;
@@ -11,16 +10,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.method.HandlerMethod;
-import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
-import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 @Controller
 @RequestMapping("signup")

@@ -1,17 +1,7 @@
 package com.wang.yan.mvc;
 
-import java.io.*;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.net.*;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.text.DecimalFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.*;
-
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wang.yan.mvc.model.bitstamp.*;
 import com.wang.yan.mvc.utils.BitstampUtils;
 import org.apache.log4j.Logger;
@@ -20,10 +10,18 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import javax.crypto.Mac;
-import javax.crypto.spec.SecretKeySpec;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.math.BigDecimal;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @Controller
 @RequestMapping("/bitstamp")
