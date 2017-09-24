@@ -158,13 +158,12 @@ public class MoneyController {
 			BigDecimal balance_btcusd_balance = new BigDecimal(balance.getBtc_balance());
 			balance_btcusd_balance =  balance_btcusd_balance.multiply(new BigDecimal(ticker_btcusd.getLast()));
 			logger.info("balance_btcusd_balance : " + balance_btcusd_balance.toString());
-			BigDecimal balance_btceur_balance = new BigDecimal(balance.getBtc_balance());
-			balance_btceur_balance =  balance_btceur_balance.multiply(new BigDecimal(ticker_btceur.getLast()));
-			logger.info("balance_btceur_balance : " + balance_btceur_balance.toString());
+//			BigDecimal balance_btceur_balance = new BigDecimal(balance.getBtc_balance());
+//			balance_btceur_balance =  balance_btceur_balance.multiply(new BigDecimal(ticker_btceur.getLast()));
+//			logger.info("balance_btceur_balance : " + balance_btceur_balance.toString());
 
 			profit = profit.add(balance_btcusd_balance);
-			profit = profit.add(balance_btceur_balance);
-			profit = new BigDecimal(balance.getUsd_available()).subtract(profit);
+			profit = balance_btcusd_balance.add(new BigDecimal(balance.getUsd_available())).subtract(profit);
 
 			profit = profit.setScale(2, RoundingMode.CEILING);
 

@@ -7,61 +7,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b67453-0d9e-4d58-8942-09d2bb330bb9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ.war" afterPath="$PROJECT_DIR$/target/HQ.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController$1.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/GoogleMapsController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/GoogleMapsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HelloController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HelloController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LogoutController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LogoutController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/SingupController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/SingupController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/VideoController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/VideoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/WebServiceController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/WebServiceController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsDemo.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsDemo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Login.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/SearchKeepass.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/SearchKeepass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UpdateLogin.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UpdateLogin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/Utils.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/GoogleMapsController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/GoogleMapsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HelloController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HelloController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LogoutController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LogoutController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/SingupController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/SingupController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/VideoController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/VideoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/WebServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/WebServiceController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsDemo.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsDemo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Login.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/SearchKeepass.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/SearchKeepass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UpdateLogin.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UpdateLogin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/Utils.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/AppTests.class" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/AppTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/JsoupTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/JsoupTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/SeleniumTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/SeleniumTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DBLoginController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DBLoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DaigouController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DaigouController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DashboardController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DashboardController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/FinanceController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/FinanceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HibernateController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HibernateController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/KeepassController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/KeepassController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LinkedInController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LinkedInController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/BookDao.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/BookDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/LoginDao.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/LoginDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/SignupDao.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/SignupDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter$1.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender$1.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender$2.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/AppUser.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/AppUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Book.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Customer.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Customer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/DeleteLogin.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/DeleteLogin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Message.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Message.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Signup.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Signup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Student.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/User.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UserProfile.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UserProfile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UserProfileType.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UserProfileType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Asks.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Asks.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Balance.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Balance.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Bids.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Bids.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/finance/FxData.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/finance/FxData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/finance/StockData.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/finance/StockData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/BookService.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/BookService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/LoginService.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/LoginService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/SignupService.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/SignupService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/UserService.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/BookServiceImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/BookServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/BitstampUtils.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/BitstampUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/MD5Encryption.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/MD5Encryption.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DBLoginController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DBLoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DaigouController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DaigouController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DashboardController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DashboardController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/FinanceController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/FinanceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HibernateController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HibernateController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/KeepassController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/KeepassController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LinkedInController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LinkedInController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/BookDao.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/BookDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/LoginDao.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/LoginDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/SignupDao.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/SignupDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter$1.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender$1.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender$2.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/AppUser.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/AppUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Book.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Customer.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Customer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/DeleteLogin.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/DeleteLogin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Message.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Message.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Signup.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Signup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Student.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UserProfile.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UserProfile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UserProfileType.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UserProfileType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Asks.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Asks.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Balance.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Balance.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Bids.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Bids.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/finance/FxData.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/finance/FxData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/finance/StockData.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/finance/StockData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/BookService.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/BookService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/LoginService.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/LoginService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/SignupService.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/SignupService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/BookServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/BookServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/BitstampUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/BitstampUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/MD5Encryption.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/MD5Encryption.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/MD5EncryptionUnitTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/MD5EncryptionUnitTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HQ.iml" afterPath="$PROJECT_DIR$/HQ.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/pages/bitstamp.jsp" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/pages/bitstamp.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,11 +118,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MoneyController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MoneyController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="63" column="62" lean-forward="true" selection-start-line="47" selection-start-column="12" selection-end-line="63" selection-end-column="62" />
+            <state relative-caret-position="157">
+              <caret line="165" column="91" lean-forward="false" selection-start-line="165" selection-start-column="91" selection-end-line="165" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,7 +144,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
-              <caret line="148" column="49" lean-forward="true" selection-start-line="148" selection-start-column="49" selection-end-line="148" selection-end-column="49" />
+              <caret line="148" column="49" lean-forward="false" selection-start-line="148" selection-start-column="49" selection-end-line="148" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5429#5430#0" expanded="true" />
@@ -141,7 +174,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bitstamp.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bitstamp.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
@@ -227,6 +260,8 @@
       <find>response</find>
       <find>from</find>
       <find>bitstamp key</find>
+      <find>balance</find>
+      <find>balance_btcusd_balance</find>
     </findStrings>
     <replaceStrings>
       <replace>double</replace>
@@ -283,9 +318,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/BitstampDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BitstampController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/bitstamp.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
       </list>
     </option>
   </component>
@@ -1191,7 +1226,7 @@
       <workItem from="1505550149333" duration="2791000" />
       <workItem from="1505736600334" duration="9356000" />
       <workItem from="1506179170722" duration="29000" />
-      <workItem from="1506179460302" duration="13787000" />
+      <workItem from="1506179460302" duration="15465000" />
     </task>
     <task id="LOCAL-00001" summary="Stable version on Acer for the 1st time.">
       <created>1499536138782</created>
@@ -1368,7 +1403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506202363237</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="MoneyController : Remove bitstamp api key">
+      <created>1506205593092</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1506205593092</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1404,7 +1446,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112826000" />
+    <option name="totallyTimeSpent" value="114504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1507,7 +1549,8 @@
     <MESSAGE value="MoneyController : compute profit" />
     <MESSAGE value="MoneyController : compute profit with btcusd and btceur" />
     <MESSAGE value="MoneyController : bitstamp profit saved in DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="MoneyController : bitstamp profit saved in DB" />
+    <MESSAGE value="MoneyController : Remove bitstamp api key" />
+    <option name="LAST_COMMIT_MESSAGE" value="MoneyController : Remove bitstamp api key" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1935,21 +1978,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/utils/BitstampUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
-          <caret line="148" column="49" lean-forward="true" selection-start-line="148" selection-start-column="49" selection-end-line="148" selection-end-column="49" />
+          <caret line="148" column="49" lean-forward="false" selection-start-line="148" selection-start-column="49" selection-end-line="148" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5429#5430#0" expanded="true" />
             <element signature="e#5462#5463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="63" column="62" lean-forward="true" selection-start-line="47" selection-start-column="12" selection-end-line="63" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1967,6 +2000,16 @@
         <state relative-caret-position="54">
           <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="165" column="91" lean-forward="false" selection-start-line="165" selection-start-column="91" selection-end-line="165" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
