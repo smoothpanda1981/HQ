@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * Created by ywang on 25.11.15.
@@ -20,6 +21,11 @@ public class FedexServiceImpl implements FedexService {
     @Autowired
     private FedexDao fedexDao;
 
+
+    @Override
+    public List<Fedex> getListFedex() throws SQLException {
+        return fedexDao.getListFedex();
+    }
 
     @Override
     public void addFedex(Fedex fedex) throws SQLException {

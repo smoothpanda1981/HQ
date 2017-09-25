@@ -3,10 +3,12 @@ package com.wang.yan.mvc;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wang.yan.mvc.model.BitstampProfit;
+import com.wang.yan.mvc.model.Fedex;
 import com.wang.yan.mvc.model.bitstamp.Balance;
 import com.wang.yan.mvc.model.bitstamp.Ticker;
 import com.wang.yan.mvc.model.bitstamp.UserTransaction;
 import com.wang.yan.mvc.service.BitstampService;
+import com.wang.yan.mvc.service.FedexService;
 import com.wang.yan.mvc.utils.BitstampUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.net.MalformedURLException;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -34,6 +37,8 @@ public class MoneyController {
 	@Autowired
 	private BitstampService bitstampService;
 
+	@Autowired
+	private FedexService fedexService;
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String moneyPage(ModelMap model) throws InterruptedException {
@@ -193,6 +198,24 @@ public class MoneyController {
 			}
 			BitstampProfit bitstampProfitForAttribute = bitstampService.getLastBitstampProfit();
 			model.addAttribute("bitstampProfit", bitstampProfitForAttribute);
+
+			/*
+				Fedex profit
+			 */
+			try {
+				List<Fedex> fedexList = fedexService.getListFedex();
+				Double total = 0.00;
+				for (Fedex fedex : fedexList) {
+					total = total + fedex.getPaid();
+				}
+				total = total * 0.04 * 0.49;
+				BigDecimal fedexProfit = new BigDecimal(total.doubleValue());
+				fedexProfit = fedexProfit.setScale(2, RoundingMode.CEILING);
+
+				model.addAttribute("fedexProfit", fedexProfit.toString());
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

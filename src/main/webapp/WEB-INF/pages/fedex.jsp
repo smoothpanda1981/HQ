@@ -14,7 +14,6 @@
     <hr>
     <div>
         <h3>Create new Invoice</h3>
-        <h6 class="text-danger">${create_login_message}</h6>
         <c:if test = "${not empty saveMessage}">
             <c:out value = "${saveMessage}"/><p>
         </c:if>
@@ -77,6 +76,40 @@
             <br>
             <input type="submit" class="btn btn-primary" value="Create"/>
         </form:form>
+    </div>
+    <hr>
+    <div>
+        <h3>List</h3>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>invoice no</th>
+                    <th>invoice type</th>
+                    <th>invoice date</th>
+                    <th>due date</th>
+                    <th>account no</th>
+                    <th>invoice status</th>
+                    <th>paid</th>
+                    <th>currency</th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:forEach items="${fedexList}" var="fedexList">
+                    <tr>
+                        <td>${fedexList.invoice_number}</td>
+                        <td>${fedexList.invoice_type}</td>
+                        <td>${fedexList.invoice_date}</td>
+                        <td>${fedexList.due_date}</td>
+                        <td>${fedexList.account_number}</td>
+                        <td>${fedexList.invoice_status}</td>
+                        <td>${fedexList.paid}</td>
+                        <td>${fedexList.currency}</td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
     </div>
 <%@ include file="footer.jsp"  %>
 </body>

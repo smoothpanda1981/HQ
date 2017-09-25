@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * Created by ywang on 25.11.15.
@@ -26,6 +27,16 @@ public class FedexDaoImpl implements FedexDao {
     @Autowired
     private SessionFactory sessionFactory;
 
+
+    @Override
+    public List<Fedex> getListFedex() throws SQLException {
+        Session session = sessionFactory.getCurrentSession();
+        if (session == null) {
+            session = sessionFactory.openSession();
+        }
+        List<Fedex> fedexList = session.createCriteria(Fedex.class).list();
+        return fedexList;
+    }
 
     @Override
     public void addFedex(Fedex fedex) throws SQLException {
