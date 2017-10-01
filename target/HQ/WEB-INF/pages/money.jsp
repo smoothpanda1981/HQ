@@ -9,34 +9,16 @@
 <body>
 <%@ include file="menus.jsp"  %>
 <h1 class="sub-header">
-	${message} --- profit :
+	${message} --- BTC profit (USD) :
 		<c:if test="${profitAmount >= 0}">
 			<font style="color: green">${profitAmount}</font>
 		</c:if>
 		<c:if test="${profitAmount < 0}">
 			<font style="color: red">${profitAmount}</font>
 		</c:if>
+			   --- Fedex profit (CHF) :
+			<font style="color: green">${fedexProfit}</font>
 </h1>
-
-<div style="text-align: left">
-	<strong>${result}</strong>
-	<strong>BTCUSD Last : ${ticker_btcusd_last}</strong><br>
-	<strong>BTCEUR Last : ${ticker_btceur_last}</strong><br>
-	<strong>BTC : ${btc_balance}</strong><br>
-	<strong>ETH : ${eth_balance}</strong><br>
-	<strong>Cash USD : ${usd_available}</strong><br>
-	<strong>Cash EUR : ${eur_available}</strong><br>
-</div>
-
-<div style="text-align: left">
-	<strong>depositAmount USD : ${depositAmountUsd}</strong><br>
-	<strong>depositAmount EUR : ${depositAmountEur}</strong><br>
-	<strong>buyAmount : ${buyAmount}</strong><br>
-	<strong>sellAmount : ${sellAmount}</strong><br>
-	<strong>withDrawAmount USD : ${withDrawAmountUsd}</strong><br>
-	<strong>withDrawAmount EUR : ${withDrawAmountEur}</strong><br>
-</div>
-
 
 <div class="col-xs-6">
 	<h2 class="sub-header">Bitcoin Status</h2>
@@ -89,6 +71,27 @@
 		</table>
 	</div>
 </div>
+
+<div style="text-align: left">
+	<strong>${result}</strong>
+	<strong>BTCUSD Last : ${ticker_btcusd_last}</strong><br>
+	<strong>BTCEUR Last : ${ticker_btceur_last}</strong><br>
+	<strong>BTC : ${btc_balance}</strong><br>
+	<strong>ETH : ${eth_balance}</strong><br>
+	<strong>Cash USD : ${usd_available}</strong><br>
+	<strong>Cash EUR : ${eur_available}</strong><br>
+</div>
+
+<div style="text-align: left">
+	<strong>depositAmount USD : ${depositAmountUsd}</strong><br>
+	<strong>depositAmount EUR : ${depositAmountEur}</strong><br>
+	<strong>buyAmount : ${buyAmount}</strong><br>
+	<strong>sellAmount : ${sellAmount}</strong><br>
+	<strong>withDrawAmount USD : ${withDrawAmountUsd}</strong><br>
+	<strong>withDrawAmount EUR : ${withDrawAmountEur}</strong><br>
+</div>
+
+
 <%--<div style="text-align: left">--%>
 	<%--<strong>Total of Fedex Billing : ${fedexBillingTotal}</strong>--%>
 	<%--<strong>4% (then 49%) : ${fourPercent}</strong>--%>

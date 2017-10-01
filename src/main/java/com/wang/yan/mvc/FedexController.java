@@ -41,6 +41,8 @@ public class FedexController {
 			logger.info("in addFedex");
 			fedexService.addFedex(fedex);
 			model.addAttribute("saveMessage", "Saved");
+			List<Fedex> fedexList = fedexService.getListFedex();
+			model.addAttribute("fedexList", fedexList);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

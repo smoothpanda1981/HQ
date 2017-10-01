@@ -6,8 +6,10 @@ import com.wang.yan.mvc.model.Fedex;
 import com.wang.yan.mvc.model.Login;
 import com.wang.yan.mvc.utils.MD5Encryption;
 import org.apache.log4j.Logger;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -34,7 +36,10 @@ public class FedexDaoImpl implements FedexDao {
         if (session == null) {
             session = sessionFactory.openSession();
         }
-        List<Fedex> fedexList = session.createCriteria(Fedex.class).list();
+        Criteria criteria = session.createCriteria(Fedex.class);
+        criteria.addOrder(Order.desc("id"));
+        List<Fedex> fedexList = criteria.list();
+
         return fedexList;
     }
 
