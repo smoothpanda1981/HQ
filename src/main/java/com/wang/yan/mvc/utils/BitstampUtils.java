@@ -15,6 +15,9 @@ import java.text.ParseException;
 import java.util.*;
 import java.util.stream.Stream;
 
+/*
+https://github.com/abwaters/bitstamp-api/blob/master/src/com/abwaters/bitstamp/Bitstamp.java
+ */
 public class BitstampUtils {
     private SecretKeySpec keyspec;
     private Mac mac;
@@ -101,7 +104,7 @@ public class BitstampUtils {
         postData += "&signature="+String.format("%064x", new BigInteger(1, mac.doFinal())).toUpperCase() ;
         logger.info("postData : " + postData);
         conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded") ;
-        conn.setRequestProperty("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36") ;
+        conn.setRequestProperty("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36") ;
 
         // write post data
         OutputStreamWriter out = new OutputStreamWriter(conn.getOutputStream());

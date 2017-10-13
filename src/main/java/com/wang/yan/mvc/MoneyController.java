@@ -55,12 +55,14 @@ public class MoneyController {
 			String account = "";
 			List<String> stringList = bitstampUtils.getAuthKeys();
 			for (String s : stringList) {
-				if (s.contains("key")) {
+				if (s.startsWith("key=")) {
 					key = s.substring(4, s.length());
-				} else if (s.contains("password")) {
+				} else if (s.startsWith("password=")) {
 					password = s.substring(9, s.length());
-				} else {
+				} else if (s.startsWith("account=")) {
 					account = s.substring(8, s.length());
+				} else {
+					// nothing
 				}
 			}
 			logger.info("bitstamp key : " + key);

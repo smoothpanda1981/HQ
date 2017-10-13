@@ -1,5 +1,8 @@
 package com.wang.yan.mvc;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.wang.yan.mvc.model.bitstamp.Balance;
+import com.wang.yan.mvc.utils.BitstampUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -7,6 +10,8 @@ import org.jsoup.select.Elements;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.text.ParseException;
+import java.util.Arrays;
 
 /**
  * Created by ywang on 10.04.16.
