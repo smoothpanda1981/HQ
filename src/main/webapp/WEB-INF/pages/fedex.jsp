@@ -49,7 +49,7 @@
             <div class="form-group row">
                 <form:label cssClass="col-sm-4 col-form-label" path="account_number">account_number</form:label>
                 <div class="col-sm-8">
-                    <form:input cssClass="form-control-plaintext" path="account_number" class="form-control" name="account_number"/>
+                    <form:select cssClass="form-control-plaintext" path="account_number" class="form-control" name="account_number" items="${accounts}"/>
                 </div>
             </div>
             <br>
