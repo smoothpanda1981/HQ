@@ -6,6 +6,7 @@ package com.wang.yan.mvc.model.bitstamp;
 public class UserTransaction {
     private String usd;
     private String btc_usd;
+    private String btc_eur;
     private Integer order_id;
     private String datetime;
     private String fee;
@@ -31,6 +32,15 @@ public class UserTransaction {
 
     public void setBtc_usd(String btc_usd) {
         this.btc_usd = btc_usd;
+    }
+
+
+    public String getBtc_eur() {
+        return btc_eur;
+    }
+
+    public void setBtc_eur(String btc_eur) {
+        this.btc_eur = btc_eur;
     }
 
     public Integer getOrder_id() {
