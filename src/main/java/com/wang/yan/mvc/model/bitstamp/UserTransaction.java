@@ -6,16 +6,19 @@ package com.wang.yan.mvc.model.bitstamp;
 public class UserTransaction {
     private String usd;
     private String btc_usd;
+    private String xrp_btc;
     private String btc_eur;
     private Integer order_id;
     private String datetime;
     private String fee;
     private Double btc;
+    private Double xrp;
     private String type;
     private Integer id;
     private Double eur;
     private Double eth;
     private Double eth_usd;
+    private Double xrp_usd;
 
 
     public String getUsd() {
@@ -34,6 +37,13 @@ public class UserTransaction {
         this.btc_usd = btc_usd;
     }
 
+    public String getXrp_btc() {
+        return xrp_btc;
+    }
+
+    public void setXrp_btc(String xrp_btc) {
+        this.xrp_btc = xrp_btc;
+    }
 
     public String getBtc_eur() {
         return btc_eur;
@@ -75,6 +85,14 @@ public class UserTransaction {
         this.btc = btc;
     }
 
+    public Double getXrp() {
+        return xrp;
+    }
+
+    public void setXrp(Double xrp) {
+        this.xrp = xrp;
+    }
+
     public String getType() {
         return type;
     }
@@ -113,5 +131,13 @@ public class UserTransaction {
 
     public void setEth_usd(Double eth_usd) {
         this.eth_usd = eth_usd;
+    }
+
+    public Double getXrp_usd() {
+        return xrp_usd;
+    }
+
+    public void setXrp_usd(Double xrp_usd) {
+        this.xrp_usd = xrp_usd;
     }
 }
