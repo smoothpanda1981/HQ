@@ -69,9 +69,22 @@ public class Money2Controller {
 			bitstampUtils.setAuthKeys(key, password, account);
 
 			/*
+				balance
+		 	*/
+			StringBuffer response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/balance/", "balance");
+			logger.info("balance : " + response.toString());
+			Balance balance = mapper.readValue(response.toString(), Balance.class);
+			model.addAttribute("btc_balance", balance.getBtc_balance());
+			model.addAttribute("eth_balance", balance.getEth_balance());
+			model.addAttribute("usd_available", balance.getUsd_available());
+			model.addAttribute("eur_available", balance.getEur_available());
+
+			//https://www.bitstamp.net/api/eur_usd/
+
+			/*
 				user_transaction
 		 	*/
-			StringBuffer response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/user_transactions/", "user_transaction");
+			response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/user_transactions/", "user_transaction");
 			logger.info("user_transactions : " + response.toString());
 			List<UserTransaction2> userTransactionList = mapper.readValue(response.toString(), new TypeReference<List<UserTransaction2>>(){});
 
@@ -104,38 +117,6 @@ public class Money2Controller {
 			model.addAttribute("sellBTC_EUR", sellBTC_EUR.toString());
 			model.addAttribute("sellETH_USD", sellETH_USD.toString());
 			model.addAttribute("sellXRP_USD", sellXRP_USD.toString());
-
-
-			BigDecimal buyAmount = new BigDecimal(0);
-			BigDecimal sellAmount = new BigDecimal(0);
-			BigDecimal profit = new BigDecimal(0);
-			BigDecimal multiplicator = new BigDecimal(-1);
-
-//			for (UserTransaction userTransaction : userTransactionList) {
-//				if (userTransaction.getType().equals("2")) {
-//					BigDecimal amountBtcValue = new BigDecimal(userTransaction.getUsd());
-//					BigDecimal amountFeeValue = new BigDecimal(userTransaction.getFee());
-//					if (userTransaction.getBtc() < 0.0) {
-//						amountBtcValue = amountBtcValue.subtract(amountFeeValue);
-//						sellAmount = sellAmount.add(amountBtcValue);
-//					} else {
-//						amountBtcValue = amountBtcValue.multiply(multiplicator).add(amountFeeValue);
-//						buyAmount = buyAmount.add(amountBtcValue);
-//					}
-//				}
-//			}
-//
-//			buyAmount = buyAmount.setScale(2, RoundingMode.CEILING);
-//			sellAmount = sellAmount.setScale(2, RoundingMode.CEILING);
-//			model.addAttribute("buyAmount", buyAmount.toString());
-//			model.addAttribute("sellAmount", sellAmount.toString());
-//
-//
-//			// Compute profit
-//			sellAmount = sellAmount.subtract(buyAmount);
-//			profit = profit.add(sellAmount);
-//			profit = profit.setScale(2, RoundingMode.CEILING);
-//			model.addAttribute("profitAmount", Double.valueOf(profit.toString()));
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -167,6 +148,7 @@ public class Money2Controller {
 
 	private BigDecimal computeWithdraw(List<UserTransaction2> userTransaction2List, String currency) {
 		BigDecimal withdraw = new BigDecimal(0);
+		BigDecimal fees = new BigDecimal(0);
 		for (UserTransaction2 userTransaction : userTransaction2List) {
 			if (userTransaction.getType().equals("1")) {
 				if (currency.equals("USD")) {
@@ -178,14 +160,18 @@ public class Money2Controller {
 						withdraw = withdraw.add(new BigDecimal(userTransaction.getEur()));
 					}
 				}
+				fees = fees.add(new BigDecimal(userTransaction.getFee()));
 			}
 		}
+		fees = fees.multiply(new BigDecimal(-1));
+		withdraw = withdraw.add(fees);
 		withdraw = withdraw.setScale(2, RoundingMode.CEILING);
 		return withdraw;
 	}
 
 	private BigDecimal computeBuy(List<UserTransaction2> userTransaction2List, String currency) {
 		BigDecimal buy = new BigDecimal(0);
+		BigDecimal fees = new BigDecimal(0);
 		for (UserTransaction2 userTransaction : userTransaction2List) {
 			if (userTransaction.getType().equals("2")) {
 				if (currency.equals("btc_USD")) {
@@ -205,13 +191,18 @@ public class Money2Controller {
 						buy = buy.add(new BigDecimal(userTransaction.getUsd()));
 					}
 				}
+				fees = fees.add(new BigDecimal(userTransaction.getFee()));
 			}
 		}
+		fees = fees.multiply(new BigDecimal(-1));
+		buy = buy.add(fees);
 		buy = buy.setScale(2, RoundingMode.CEILING);
 		return buy;
 	}
+
 	private BigDecimal computeSell(List<UserTransaction2> userTransaction2List, String currency) {
 		BigDecimal sell = new BigDecimal(0);
+		BigDecimal fees = new BigDecimal(0);
 		for (UserTransaction2 userTransaction : userTransaction2List) {
 			if (userTransaction.getType().equals("2")) {
 				if (currency.equals("btc_USD")) {
@@ -231,8 +222,11 @@ public class Money2Controller {
 						sell = sell.add(new BigDecimal(userTransaction.getUsd()));
 					}
 				}
+				fees = fees.add(new BigDecimal(userTransaction.getFee()));
 			}
 		}
+		fees = fees.multiply(new BigDecimal(-1));
+		sell = sell.add(fees);
 		sell = sell.setScale(2, RoundingMode.CEILING);
 		return sell;
 	}

@@ -24,6 +24,28 @@
 		<table class="table">
 			<thead>
 			<tr>
+				<th>BTC</th>
+				<th>ETH</th>
+				<th>Cash USD</th>
+				<th>Cash EUR</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>${btc_balance}</td>
+				<td>${eth_balance}</td>
+				<td>${usd_available}</td>
+				<td>${eur_available}</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="col-xs-12">
+	<div class="table-responsive">
+		<table class="table">
+			<thead>
+			<tr>
 				<th>Deposit USD</th>
 				<th>Deposit EUR</th>
 				<th>Withdraw USD</th>

@@ -6,18 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java" line="139" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java" line="120" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b67453-0d9e-4d58-8942-09d2bb330bb9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransaction2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ.war" afterPath="$PROJECT_DIR$/target/HQ.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money2.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../SpringApplicationWithScheduler/target/" />
@@ -65,18 +60,18 @@
       <file leaf-file-name="MoneyController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="131" column="42" lean-forward="true" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
+            <state relative-caret-position="152">
+              <caret line="93" column="76" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="93" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Money2Controller.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Money2Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1905">
-              <caret line="100" column="48" lean-forward="false" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+            <state relative-caret-position="165">
+              <caret line="81" column="14" lean-forward="false" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -152,14 +147,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="money2.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="money2.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money2.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="78" column="16" lean-forward="true" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+            <state relative-caret-position="39">
+              <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
               <folding>
-                <marker date="1512448691902" expanded="false" signature="424:436" ph="..." />
-                <marker date="1512448691902" expanded="false" signature="547:557" ph="..." />
+                <marker date="1512449731011" expanded="false" signature="424:436" ph="..." />
+                <marker date="1512449731011" expanded="false" signature="547:557" ph="..." />
               </folding>
             </state>
           </provider>
@@ -178,8 +173,8 @@
       <file leaf-file-name="money.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="51" column="6" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="51" selection-end-column="6" />
+            <state relative-caret-position="152">
+              <caret line="81" column="52" lean-forward="true" selection-start-line="78" selection-start-column="4" selection-end-line="81" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -240,12 +235,14 @@
       <find>response</find>
       <find>from</find>
       <find>bitstamp key</find>
-      <find>balance</find>
       <find>balance_btcusd_balance</find>
       <find>green</find>
       <find>keyspec</find>
       <find>in addFedex</find>
       <find>user_tra</find>
+      <find>usd_available</find>
+      <find>cash us</find>
+      <find>balance</find>
     </findStrings>
     <replaceStrings>
       <replace>double</replace>
@@ -320,8 +317,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Bitstamp2Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransaction2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java" />
       </list>
     </option>
   </component>
@@ -1221,7 +1218,7 @@
       <workItem from="1509703852896" duration="1275000" />
       <workItem from="1510783606952" duration="4996000" />
       <workItem from="1511620652656" duration="599000" />
-      <workItem from="1512334703742" duration="8124000" />
+      <workItem from="1512334703742" duration="9318000" />
     </task>
     <task id="LOCAL-00001" summary="Stable version on Acer for the 1st time.">
       <created>1499536138782</created>
@@ -1468,7 +1465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511115821290</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Money 2 + UserTransaction2">
+      <created>1512448811412</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1512448811412</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1504,7 +1508,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161526000" />
+    <option name="totallyTimeSpent" value="162720000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1587,7 +1591,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update dependency javax.servlet-api and remove test" />
     <MESSAGE value="Add profit computation" />
     <MESSAGE value="Add Money Page and fix Profit issue" />
     <MESSAGE value="Add driver.quit" />
@@ -1612,7 +1615,8 @@
     <MESSAGE value="Change Account_number fields by select box" />
     <MESSAGE value="Fix UserTransaction issue" />
     <MESSAGE value="Fix xrp issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix xrp issue" />
+    <MESSAGE value="Money 2 + UserTransaction2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Money 2 + UserTransaction2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1962,22 +1966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="131" column="42" lean-forward="true" selection-start-line="131" selection-start-column="42" selection-end-line="131" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="51" column="6" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="51" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransaction2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-907">
@@ -2046,22 +2034,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1905">
-          <caret line="100" column="48" lean-forward="false" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+        <state relative-caret-position="152">
+          <caret line="93" column="76" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="93" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="81" column="52" lean-forward="true" selection-start-line="78" selection-start-column="4" selection-end-line="81" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/money2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="78" column="16" lean-forward="true" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+        <state relative-caret-position="39">
+          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
           <folding>
-            <marker date="1512448691902" expanded="false" signature="424:436" ph="..." />
-            <marker date="1512448691902" expanded="false" signature="547:557" ph="..." />
+            <marker date="1512449731011" expanded="false" signature="424:436" ph="..." />
+            <marker date="1512449731011" expanded="false" signature="547:557" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/Money2Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="81" column="14" lean-forward="false" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
