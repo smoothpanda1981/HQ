@@ -47,17 +47,21 @@
 			<thead>
 			<tr>
 				<th>Deposit USD</th>
-				<th>Deposit EUR</th>
 				<th>Withdraw USD</th>
+				<th>Total USD</th>
+				<th>Deposit EUR</th>
 				<th>Withdraw EUR</th>
+				<th>Total EUR</th>
 			</tr>
 			</thead>
 			<tbody>
 			<tr>
 				<td>${depositUSD}</td>
-				<td>${depositEUR}</td>
 				<td>${withdrawUSD}</td>
+				<td>${totalDepositUSD}</td>
+				<td>${depositEUR}</td>
 				<td>${withdrawEUR}</td>
+				<td>${totalDepositEUR}</td>
 			</tr>
 			</tbody>
 		</table>
@@ -103,6 +107,50 @@
 				<td>${sellBTC_EUR}</td>
 				<td>${sellETH_USD}</td>
 				<td>${sellXRP_USD}</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="col-xs-12">
+	<div class="table-responsive">
+		<table class="table">
+			<thead>
+			<tr>
+				<th>Total BTC_USD</th>
+				<th>Total BTC_EUR</th>
+				<th>Total ETH_USD</th>
+				<th>Total XRP_USD</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>${total_BTC_USD}</td>
+				<td>${total_BTC_EUR}</td>
+				<td>${total_ETH_USD}</td>
+				<td>${total_XRP_USD}</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="col-xs-12">
+	<div class="table-responsive">
+		<table class="table">
+			<thead>
+			<tr>
+				<th>Cash USD</th>
+				<th>Total Deposit in USD</th>
+				<th>Total BTC in USD</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>${usd_available}</td>
+				<td>${totalDeposit}</td>
+				<td>${totalBTC}</td>
 			</tr>
 			</tbody>
 		</table>

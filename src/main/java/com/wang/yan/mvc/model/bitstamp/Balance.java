@@ -4,6 +4,12 @@ package com.wang.yan.mvc.model.bitstamp;
  * Created by ywang on 09.07.17.
  */
 public class Balance {
+    private double bch_available;
+    private double bch_balance;
+    private double bch_reserved;
+    private double bchbtc_fee;
+    private double bcheur_fee;
+    private double bchusd_fee;
     private double btc_available;
     private double btc_balance;
     private double btc_reserved;
@@ -34,6 +40,54 @@ public class Balance {
     private double ethbtc_fee;
     private double etheur_fee;
     private double ethusd_fee;
+
+    public double getBch_available() {
+        return bch_available;
+    }
+
+    public void setBch_available(double bch_available) {
+        this.bch_available = bch_available;
+    }
+
+    public double getBch_balance() {
+        return bch_balance;
+    }
+
+    public void setBch_balance(double bch_balance) {
+        this.bch_balance = bch_balance;
+    }
+
+    public double getBch_reserved() {
+        return bch_reserved;
+    }
+
+    public void setBch_reserved(double bch_reserved) {
+        this.bch_reserved = bch_reserved;
+    }
+
+    public double getBchbtc_fee() {
+        return bchbtc_fee;
+    }
+
+    public void setBchbtc_fee(double bchbtc_fee) {
+        this.bchbtc_fee = bchbtc_fee;
+    }
+
+    public double getBcheur_fee() {
+        return bcheur_fee;
+    }
+
+    public void setBcheur_fee(double bcheur_fee) {
+        this.bcheur_fee = bcheur_fee;
+    }
+
+    public double getBchusd_fee() {
+        return bchusd_fee;
+    }
+
+    public void setBchusd_fee(double bchusd_fee) {
+        this.bchusd_fee = bchusd_fee;
+    }
 
     public double getBtc_available() {
         return btc_available;

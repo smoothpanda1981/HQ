@@ -4,10 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wang.yan.mvc.model.BitstampProfit;
 import com.wang.yan.mvc.model.Fedex;
-import com.wang.yan.mvc.model.bitstamp.Balance;
-import com.wang.yan.mvc.model.bitstamp.Ticker;
-import com.wang.yan.mvc.model.bitstamp.UserTransaction;
-import com.wang.yan.mvc.model.bitstamp.UserTransaction2;
+import com.wang.yan.mvc.model.bitstamp.*;
 import com.wang.yan.mvc.service.BitstampService;
 import com.wang.yan.mvc.service.FedexService;
 import com.wang.yan.mvc.utils.BitstampUtils;
@@ -79,7 +76,15 @@ public class Money2Controller {
 			model.addAttribute("usd_available", balance.getUsd_available());
 			model.addAttribute("eur_available", balance.getEur_available());
 
-			//https://www.bitstamp.net/api/eur_usd/
+			/*
+			Convert EUR to USD
+
+			Fedex, only keep account number and amount with 4% or 5%
+			 */
+			response = bitstampUtils.getGetData("https://www.bitstamp.net/api/eur_usd/", "conversion_eur_usd");
+			logger.info("Conversion rate eur to usd : " + response.toString());
+			ConversionRateEURToUSD conversionRateEURToUSD = mapper.readValue(response.toString(), ConversionRateEURToUSD.class);
+
 
 			/*
 				user_transaction
@@ -87,6 +92,8 @@ public class Money2Controller {
 			response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/user_transactions/", "user_transaction");
 			logger.info("user_transactions : " + response.toString());
 			List<UserTransaction2> userTransactionList = mapper.readValue(response.toString(), new TypeReference<List<UserTransaction2>>(){});
+
+
 
 			BigDecimal depositUSD = computeDeposit(userTransactionList, "USD");
 			BigDecimal depositEUR = computeDeposit(userTransactionList, "EUR");
@@ -97,6 +104,27 @@ public class Money2Controller {
 			model.addAttribute("depositEUR", depositEUR.toString());
 			model.addAttribute("withdrawUSD", withdrawUSD.toString());
 			model.addAttribute("withdrawEUR", withdrawEUR.toString());
+
+
+
+			BigDecimal totalDepositUSD = new BigDecimal(0);
+			totalDepositUSD = totalDepositUSD.add(depositUSD).add(withdrawUSD);
+			totalDepositUSD = totalDepositUSD.setScale(2, RoundingMode.CEILING);
+			BigDecimal totalDepositEUR = new BigDecimal(0);
+			totalDepositEUR = totalDepositEUR.add(depositEUR).add(withdrawEUR);
+			totalDepositEUR = totalDepositEUR.setScale(2, RoundingMode.CEILING);
+			BigDecimal totalDepositEURConvToUSD = new BigDecimal(0);
+			totalDepositEURConvToUSD = totalDepositEUR.multiply(new BigDecimal(conversionRateEURToUSD.getSell()));
+			totalDepositEURConvToUSD = totalDepositEURConvToUSD.setScale(2, RoundingMode.CEILING);
+
+			model.addAttribute("totalDepositUSD", totalDepositUSD.toString());
+			model.addAttribute("totalDepositEUR", totalDepositEUR.toString());
+			BigDecimal totalDeposit = new BigDecimal(0);
+			totalDeposit = totalDeposit.add(totalDepositUSD).add(totalDepositEURConvToUSD);
+			totalDeposit = totalDeposit.setScale(2, RoundingMode.CEILING);
+			model.addAttribute("totalDeposit", totalDeposit.toString());
+
+
 
 			BigDecimal buyBTC_USD = computeBuy(userTransactionList, "btc_USD");
 			BigDecimal buyBTC_EUR = computeBuy(userTransactionList, "btc_EUR");
@@ -117,6 +145,37 @@ public class Money2Controller {
 			model.addAttribute("sellBTC_EUR", sellBTC_EUR.toString());
 			model.addAttribute("sellETH_USD", sellETH_USD.toString());
 			model.addAttribute("sellXRP_USD", sellXRP_USD.toString());
+
+
+			BigDecimal total_BTC_USD = new BigDecimal(0);
+			total_BTC_USD = total_BTC_USD.add(buyBTC_USD).add(sellBTC_USD);
+			total_BTC_USD = total_BTC_USD.setScale(2, RoundingMode.CEILING);
+			BigDecimal total_ETH_USD = new BigDecimal(0);
+			total_ETH_USD = total_ETH_USD.add(buyETH_USD).add(sellETH_USD);
+			total_ETH_USD = total_ETH_USD.setScale(2, RoundingMode.CEILING);
+			BigDecimal total_XRP_USD = new BigDecimal(0);
+			total_XRP_USD = total_XRP_USD.add(buyXRP_USD).add(sellXRP_USD);
+			total_XRP_USD = total_XRP_USD.setScale(2, RoundingMode.CEILING);
+
+			BigDecimal total_BTC_EUR = new BigDecimal(0);
+			total_BTC_EUR = total_BTC_EUR.add(buyBTC_EUR).add(sellBTC_EUR);
+			total_BTC_EUR = total_BTC_EUR.setScale(2, RoundingMode.CEILING);
+			BigDecimal total_BTC_EURConvToUSD = new BigDecimal(0);
+			total_BTC_EURConvToUSD = total_BTC_EUR.multiply(new BigDecimal(conversionRateEURToUSD.getSell()));
+			total_BTC_EURConvToUSD = total_BTC_EURConvToUSD.setScale(2, RoundingMode.CEILING);
+
+
+			model.addAttribute("total_BTC_USD", total_BTC_USD.toString());
+			model.addAttribute("total_BTC_EUR", total_BTC_EUR.toString());
+			model.addAttribute("total_ETH_USD", total_ETH_USD.toString());
+			model.addAttribute("total_XRP_USD", total_XRP_USD.toString());
+
+
+			BigDecimal totalBTC = new BigDecimal(0);
+			totalBTC = totalBTC.add(total_BTC_USD).add(total_BTC_EURConvToUSD).add(total_ETH_USD).add(total_XRP_USD);
+			totalBTC = totalBTC.setScale(2, RoundingMode.CEILING);
+			model.addAttribute("totalBTC", totalBTC.toString());
+
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
