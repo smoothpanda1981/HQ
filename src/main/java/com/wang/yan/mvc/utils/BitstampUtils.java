@@ -25,6 +25,8 @@ public class BitstampUtils {
     private String clientid;
     private long nonce;
 
+    public static String post_data_string;
+
     private static final Logger logger = Logger.getLogger(BitstampUtils.class);
 
     public StringBuffer getGetData(String httpLink, String requestName) {
@@ -103,6 +105,7 @@ public class BitstampUtils {
 
         postData += "&signature="+String.format("%064x", new BigInteger(1, mac.doFinal())).toUpperCase() ;
         logger.info("postData : " + postData);
+        post_data_string = postData;
         conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded") ;
         conn.setRequestProperty("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36") ;
 

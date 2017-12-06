@@ -157,6 +157,17 @@
 	</div>
 </div>
 
+<div>
+	<ul>
+		<li>
+			${balance_post_data_string}
+		</li>
+		<li>
+			${user_transactions_post_data_string}
+		</li>
+	</ul>
+</div>
+<br><br>
 
 <%@ include file="footer.jsp"  %>
 </body>

@@ -70,6 +70,7 @@ public class Money2Controller {
 		 	*/
 			StringBuffer response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/balance/", "balance");
 			logger.info("balance : " + response.toString());
+			model.addAttribute("balance_post_data_string", BitstampUtils.post_data_string);
 			Balance balance = mapper.readValue(response.toString(), Balance.class);
 			model.addAttribute("btc_balance", balance.getBtc_balance());
 			model.addAttribute("eth_balance", balance.getEth_balance());
@@ -85,12 +86,13 @@ public class Money2Controller {
 			logger.info("Conversion rate eur to usd : " + response.toString());
 			ConversionRateEURToUSD conversionRateEURToUSD = mapper.readValue(response.toString(), ConversionRateEURToUSD.class);
 
-
 			/*
 				user_transaction
 		 	*/
 			response = bitstampUtils.getPostData("https://www.bitstamp.net/api/v2/user_transactions/", "user_transaction");
 			logger.info("user_transactions : " + response.toString());
+			model.addAttribute("user_transactions_post_data_string", BitstampUtils.post_data_string);
+
 			List<UserTransaction2> userTransactionList = mapper.readValue(response.toString(), new TypeReference<List<UserTransaction2>>(){});
 
 
