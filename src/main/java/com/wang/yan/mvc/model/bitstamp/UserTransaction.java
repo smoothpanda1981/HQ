@@ -12,6 +12,7 @@ public class UserTransaction {
     private String datetime;
     private String fee;
     private Double btc;
+    private Double ltc;
     private Double xrp;
     private String type;
     private Integer id;
@@ -19,6 +20,7 @@ public class UserTransaction {
     private Double eth;
     private Double eth_usd;
     private Double xrp_usd;
+    private Double ltc_usd;
 
 
     public String getUsd() {
@@ -139,5 +141,21 @@ public class UserTransaction {
 
     public void setXrp_usd(Double xrp_usd) {
         this.xrp_usd = xrp_usd;
+    }
+
+    public Double getLtc() {
+        return ltc;
+    }
+
+    public void setLtc(Double ltc) {
+        this.ltc = ltc;
+    }
+
+    public Double getLtc_usd() {
+        return ltc_usd;
+    }
+
+    public void setLtc_usd(Double ltc_usd) {
+        this.ltc_usd = ltc_usd;
     }
 }
