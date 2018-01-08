@@ -188,8 +188,8 @@
 <br><br><br>
 <c:forEach var="entry" items="${map2}">
 	<div class="col-xs-4">
-		<a href="#entry-key-${entry.key}" data-toggle="collapse"><h3 class="sub-header">${entry.key}</h3></a>
-		<div id="entry-key-${entry.key}" class="table-responsive collapse">
+		<a href="#entry-key2-${entry.key}" data-toggle="collapse"><h3 class="sub-header">${entry.key}</h3></a>
+		<div id="entry-key2-${entry.key}" class="table-responsive collapse">
 			<table class="table">
 				<thead>
 				<tr>
