@@ -2,8 +2,6 @@ package com.wang.yan.mvc;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wang.yan.mvc.model.BitstampProfit;
-import com.wang.yan.mvc.model.Fedex;
 import com.wang.yan.mvc.model.bitstamp.*;
 import com.wang.yan.mvc.service.BitstampService;
 import com.wang.yan.mvc.service.FedexService;
@@ -14,13 +12,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import sun.jvm.hotspot.runtime.linux_aarch64.LinuxAARCH64JavaThreadPDAccess;
 
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.net.MalformedURLException;
-import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.*;
 
