@@ -157,6 +157,73 @@
 	</div>
 </div>
 
+<br><br><br>
+<c:forEach var="entry" items="${map2}">
+	<div class="col-xs-4">
+		<a href="#entry-key-${entry.key}" data-toggle="collapse"><h3 class="sub-header">${entry.key}</h3></a>
+		<div id="entry-key-${entry.key}" class="table-responsive collapse">
+			<table class="table">
+				<thead>
+				<tr>
+					<th>Date</th>
+					<th>Deposit</th>
+					<th>Withdraw</th>
+					<th>Buy</th>
+					<th>Sell</th>
+				</tr>
+				</thead>
+				<tbody>
+				<c:forEach var="item" varStatus="loop" items="${entry.value}">
+					<tr>
+						<c:choose>
+							<c:when test="${empty item.datetime}">
+								<td></td>
+							</c:when>
+							<c:otherwise>
+								<td>${item.datetime}</td>
+							</c:otherwise>
+						</c:choose>
+						<c:choose>
+							<c:when test="${empty item.deposit}">
+								<td></td>
+							</c:when>
+							<c:otherwise>
+								<td>${item.deposit}</td>
+							</c:otherwise>
+						</c:choose>
+						<c:choose>
+							<c:when test="${empty item.withdraw}">
+								<td></td>
+							</c:when>
+							<c:otherwise>
+								<td>${item.withdraw}</td>
+							</c:otherwise>
+						</c:choose>
+						<c:choose>
+							<c:when test="${empty item.buy}">
+								<td></td>
+							</c:when>
+							<c:otherwise>
+								<td>${item.buy}</td>
+							</c:otherwise>
+						</c:choose>
+						<c:choose>
+							<c:when test="${empty item.sell}">
+								<td></td>
+							</c:when>
+							<c:otherwise>
+								<td>${item.sell}</td>
+							</c:otherwise>
+						</c:choose>
+					</tr>
+				</c:forEach>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</c:forEach>
+
+
 <div>
 	<ul>
 		<li>

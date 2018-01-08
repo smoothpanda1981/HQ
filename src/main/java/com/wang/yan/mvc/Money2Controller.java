@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import sun.jvm.hotspot.runtime.linux_aarch64.LinuxAARCH64JavaThreadPDAccess;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -21,8 +22,7 @@ import java.math.RoundingMode;
 import java.net.MalformedURLException;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Controller
 @RequestMapping("/money2")
@@ -178,6 +178,45 @@ public class Money2Controller {
 			totalBTC = totalBTC.setScale(2, RoundingMode.CEILING);
 			model.addAttribute("totalBTC", totalBTC.toString());
 
+
+			Map<String, List<UserTransaction2>> userTransaction2ListAndMap = new HashMap<>();
+			for (UserTransaction2 userTransaction2 : userTransactionList) {
+				String[] date2 = userTransaction2.getDatetime().split(" ");
+				String[] date3 = date2[0].split("-");
+				String finalS = date3[0] + "-" + date3[1];
+				if (!userTransaction2ListAndMap.containsKey(finalS)){
+					List<UserTransaction2> emptyUserTransation2List = new ArrayList<>();
+					userTransaction2ListAndMap.put(finalS, emptyUserTransation2List);
+				}
+			}
+
+			for (UserTransaction2 userTransaction2 : userTransactionList) {
+				String[] date2 = userTransaction2.getDatetime().split(" ");
+				String[] date3 = date2[0].split("-");
+				String finalS = date3[0] + "-" + date3[1];
+				userTransaction2ListAndMap.get(finalS).add(userTransaction2);
+			}
+
+			Map<String, List<UserTransactionForTable>> map2 = new HashMap<>();
+			for (String s : userTransaction2ListAndMap.keySet()) {
+				List<UserTransactionForTable> userTransactionForTableList = convertUserTransation2ListIntoUserTransactionForTableList(userTransaction2ListAndMap.get(s));
+				map2.put(s, userTransactionForTableList);
+			}
+
+
+			for (String s : userTransaction2ListAndMap.keySet()) {
+				logger.info("temp.s : " + s);
+				List<UserTransactionForTable> temp = map2.get(s);
+				for (UserTransactionForTable temp2 : temp) {
+					logger.info("temp2.date : " + temp2.getDatetime());
+					logger.info("temp2.deposit : " + temp2.getDeposit());
+					logger.info("temp2.withdraw : " + temp2.getWithdraw());
+					logger.info("temp2.buy : " + temp2.getBuy());
+					logger.info("temp2.sell : " + temp2.getSell());
+				}
+			}
+			logger.info("size of map2 : " + map2.size());
+			model.addAttribute("map2", map2);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -186,6 +225,52 @@ public class Money2Controller {
 			e.printStackTrace();
 		}
 		return "money2";
+	}
+
+	private List<UserTransactionForTable> convertUserTransation2ListIntoUserTransactionForTableList(List<UserTransaction2> UserTransaction2List) {
+		List<UserTransactionForTable> result = new ArrayList<>();
+
+		for (UserTransaction2 userTransaction2 : UserTransaction2List) {
+
+			UserTransactionForTable userTransactionForTable = new UserTransactionForTable();
+			userTransactionForTable.setDatetime(userTransaction2.getDatetime());
+
+			if (userTransaction2.getType().equals("0")) {
+				if (userTransaction2.getUsd() >= 0.0) {
+					userTransactionForTable.setDeposit(userTransaction2.getUsd());
+				} else if (userTransaction2.getEur() >= 0.0) {
+					userTransactionForTable.setDeposit(userTransaction2.getEur());
+				}
+			} else if (userTransaction2.getType().equals("1")) {
+				if (userTransaction2.getUsd() <= 0.0) {
+					userTransactionForTable.setWithdraw(userTransaction2.getUsd());
+				} else if (userTransaction2.getEur() <= 0.0) {
+					userTransactionForTable.setWithdraw(userTransaction2.getEur());
+				}
+			} else if (userTransaction2.getType().equals("2")) {
+				if (userTransaction2.getBtc_usd() != null && userTransaction2.getBtc() > 0.0) {
+					userTransactionForTable.setBuy(userTransaction2.getUsd());
+				} else if (userTransaction2.getBtc_eur() != null && userTransaction2.getBtc() > 0.0) {
+					userTransactionForTable.setBuy(userTransaction2.getEur());
+				} else if (userTransaction2.getEth_usd() != null && userTransaction2.getEth() > 0.0) {
+					userTransactionForTable.setBuy(userTransaction2.getUsd());
+				} else if (userTransaction2.getXrp_usd() != null && userTransaction2.getXrp() > 0.0) {
+					userTransactionForTable.setBuy(userTransaction2.getUsd());
+				}
+
+				if (userTransaction2.getBtc_usd() != null && userTransaction2.getBtc() < 0.0) {
+					userTransactionForTable.setSell(userTransaction2.getUsd());
+				} else if (userTransaction2.getBtc_eur() != null && userTransaction2.getBtc() < 0.0) {
+					userTransactionForTable.setSell(userTransaction2.getEur());
+				} else if (userTransaction2.getEth_usd() != null && userTransaction2.getEth() < 0.0) {
+					userTransactionForTable.setSell(userTransaction2.getUsd());
+				} else if (userTransaction2.getXrp_usd() != null && userTransaction2.getXrp() < 0.0) {
+					userTransactionForTable.setSell(userTransaction2.getUsd());
+				}
+			}
+			result.add(userTransactionForTable);
+		}
+		return result;
 	}
 
 	private BigDecimal computeDeposit(List<UserTransaction2> userTransaction2List, String currency) {
