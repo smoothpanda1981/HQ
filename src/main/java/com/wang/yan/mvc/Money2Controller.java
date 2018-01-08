@@ -202,21 +202,14 @@ public class Money2Controller {
 				List<UserTransactionForTable> userTransactionForTableList = convertUserTransation2ListIntoUserTransactionForTableList(userTransaction2ListAndMap.get(s));
 				map2.put(s, userTransactionForTableList);
 			}
-
-
-			for (String s : userTransaction2ListAndMap.keySet()) {
-				logger.info("temp.s : " + s);
-				List<UserTransactionForTable> temp = map2.get(s);
-				for (UserTransactionForTable temp2 : temp) {
-					logger.info("temp2.date : " + temp2.getDatetime());
-					logger.info("temp2.deposit : " + temp2.getDeposit());
-					logger.info("temp2.withdraw : " + temp2.getWithdraw());
-					logger.info("temp2.buy : " + temp2.getBuy());
-					logger.info("temp2.sell : " + temp2.getSell());
-				}
-			}
-			logger.info("size of map2 : " + map2.size());
 			model.addAttribute("map2", map2);
+
+			Map<String, UserTransactionForTotal> map3 = new HashMap<>();
+			for (String s : map2.keySet()) {
+				UserTransactionForTotal userTransactionForTotal = convertUserTransation2ListIntoUserTransactionForTotalList(map2.get(s));
+				map3.put(s, userTransactionForTotal);
+			}
+			model.addAttribute("map3", map3);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -225,6 +218,35 @@ public class Money2Controller {
 			e.printStackTrace();
 		}
 		return "money2";
+	}
+
+	private UserTransactionForTotal convertUserTransation2ListIntoUserTransactionForTotalList(List<UserTransactionForTable> userTransactionForTablesList) {
+		UserTransactionForTotal result = new UserTransactionForTotal();
+
+		Double totalBuy = 0.0;
+		Double totalSell = 0.0;
+		Double totalDeposit = 0.0;
+		Double totalWithdraw = 0.0;
+
+		for (UserTransactionForTable userTransactionForTable : userTransactionForTablesList) {
+			if (userTransactionForTable.getBuy() != null) {
+				totalBuy += userTransactionForTable.getBuy();
+			}
+			if (userTransactionForTable.getSell() != null) {
+				totalSell += userTransactionForTable.getSell();
+			}
+			if (userTransactionForTable.getDeposit() != null) {
+				totalDeposit += userTransactionForTable.getDeposit();
+			}
+			if (userTransactionForTable.getWithdraw() != null) {
+				totalWithdraw += userTransactionForTable.getWithdraw();
+			}
+			result.setTotalBuy((int) Math.round(totalBuy));
+			result.setTotalSell((int) Math.round(totalSell));
+			result.setTotalDeposit((int) Math.round(totalDeposit));
+			result.setTotalWithdraw((int) Math.round(totalWithdraw));
+		}
+		return result;
 	}
 
 	private List<UserTransactionForTable> convertUserTransation2ListIntoUserTransactionForTableList(List<UserTransaction2> UserTransaction2List) {

@@ -18,6 +18,34 @@
 		<%--</c:if>--%>
 <%--</h1>--%>
 
+<c:forEach var="entry" items="${map3}">
+	<div class="col-xs-3">
+		<a href="#entry-key-${entry.key}" data-toggle="collapse"><h3 class="sub-header">${entry.key}</h3></a>
+		<div id="entry-key-${entry.key}" class="table-responsive collapse">
+			<table class="table">
+				<thead>
+				<tr>
+					<th>Deposit</th>
+					<th>Withdraw</th>
+					<th>Buy</th>
+					<th>Sell</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>${entry.value.totalDeposit}</td>
+						<td>${entry.value.totalWithdraw}</td>
+						<td>${entry.value.totalBuy}</td>
+						<td>${entry.value.totalSell}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</c:forEach>
+<br><br><br>
+
+
 <div class="col-xs-12">
 	<h2 class="sub-header">Bitcoin Status</h2>
 	<div class="table-responsive">
