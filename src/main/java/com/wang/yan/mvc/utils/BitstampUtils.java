@@ -149,7 +149,7 @@ public class BitstampUtils {
 
     public List<String> getAuthKeys() {
         List<String> stringList = new ArrayList<>();
-        String fileName = "/home/ywang/Data/bitstamp.txt";
+        String fileName = "/Data/bitstamp.txt";
 
         //read file into stream, try-with-resources
         try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
