@@ -3,12 +3,14 @@ com/wang/yan/mvc/model/SearchKeepass.class
 com/wang/yan/mvc/model/UserProfile.class
 com/wang/yan/mvc/dao/impl/LoginDaoImpl.class
 com/wang/yan/mvc/model/DeleteLogin.class
+com/wang/yan/mvc/dao/TickerHourDao.class
 com/wang/yan/mvc/HelloController.class
 com/wang/yan/mvc/model/BitstampProfit.class
 com/wang/yan/mvc/model/AppUser.class
 com/wang/yan/mvc/model/User.class
 com/wang/yan/mvc/service/UserService.class
 com/wang/yan/mvc/model/UpdateLogin.class
+com/wang/yan/mvc/service/impl/TickerHourServiceImpl.class
 com/wang/yan/mvc/service/BitstampService.class
 com/wang/yan/mvc/DashboardController.class
 com/wang/yan/mvc/model/finance/FxData.class
@@ -23,6 +25,8 @@ com/wang/yan/mvc/dao/BitstampDao.class
 com/wang/yan/mvc/model/bitstamp/UserTransaction2.class
 com/wang/yan/mvc/model/finance/StockData.class
 com/wang/yan/mvc/utils/Utils.class
+com/wang/yan/mvc/service/TickerHourService.class
+com/wang/yan/mvc/model/bitstamp/TickerHour.class
 com/wang/yan/mvc/GoogleMapsController.class
 com/wang/yan/mvc/SingupController.class
 com/wang/yan/mvc/service/impl/SignupServiceImpl.class
@@ -39,6 +43,7 @@ com/wang/yan/mvc/service/impl/UserServiceImpl.class
 com/wang/yan/mvc/service/impl/LoginServiceImpl.class
 com/wang/yan/mvc/model/Student.class
 com/wang/yan/mvc/dao/FedexDao.class
+com/wang/yan/mvc/model/bitstamp/UserTransactionForTotal.class
 com/wang/yan/mvc/utils/MD5Encryption.class
 com/wang/yan/mvc/FedexController.class
 com/wang/yan/mvc/service/FedexService.class
@@ -48,12 +53,15 @@ com/wang/yan/mvc/dao/impl/FedexDaoImpl.class
 com/wang/yan/mvc/LinkedInController.class
 com/wang/yan/mvc/service/impl/FedexServiceImpl.class
 com/wang/yan/mvc/jms/JmsMessageSender$1.class
+com/wang/yan/mvc/model/bitstamp/UserTransactionForTable.class
+com/wang/yan/mvc/dao/impl/TickerHourDaoImpl.class
 com/wang/yan/mvc/MoneyController.class
 com/wang/yan/mvc/model/Message.class
 com/wang/yan/mvc/model/UserProfileType.class
 com/wang/yan/mvc/DBLoginController.class
 com/wang/yan/mvc/model/bitstamp/Bids.class
 com/wang/yan/mvc/model/bitstamp/UserTransaction.class
+com/wang/yan/mvc/GraphController.class
 com/wang/yan/mvc/VideoController.class
 com/wang/yan/mvc/DaigouController.class
 com/wang/yan/mvc/dao/impl/BookDaoImpl.class

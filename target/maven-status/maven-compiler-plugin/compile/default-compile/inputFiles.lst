@@ -2,6 +2,7 @@
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/service/impl/LoginServiceImpl.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/FinanceController.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/service/BitstampService.java
+/Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/dao/impl/TickerHourDaoImpl.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/dao/BitstampDao.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/DBLoginController.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/DashboardController.java
@@ -16,13 +17,17 @@
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/Fedex.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/Signup.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/dao/impl/BitstampDaoImpl.java
+/Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransactionForTable.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/FedexController.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/dao/LoginDao.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/service/impl/UserServiceImpl.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/service/impl/BookServiceImpl.java
+/Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/service/TickerHourService.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/UpdateLogin.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/BitstampController.java
+/Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/service/impl/TickerHourServiceImpl.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/bitstamp/Balance.java
+/Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransactionForTotal.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/SearchKeepass.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/Student.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/dao/impl/LoginDaoImpl.java
@@ -30,6 +35,7 @@
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/MoneyController.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/GoogleMapsController.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/Money2Controller.java
+/Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/GraphController.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/service/FedexService.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/dao/BookDao.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/HibernateController.java
@@ -39,6 +45,7 @@
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/SingupController.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/DaigouController.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.java
+/Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/bitstamp/TickerHour.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/BitstampProfit.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/HelloController.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/Message.java
@@ -63,6 +70,7 @@
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/dao/SignupDao.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/Book.java
+/Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/dao/TickerHourDao.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/bitstamp/Bids.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/bitstamp/UserTransaction2.java
 /Users/ywang/IdeaProjects/HQ/src/main/java/com/wang/yan/mvc/model/Customer.java

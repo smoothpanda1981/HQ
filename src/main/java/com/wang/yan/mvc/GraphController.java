@@ -37,7 +37,8 @@ public class GraphController {
 		List<TickerHour> tickerHourList = tickerHourService.getListOfTickerHour();
 		List<TickerHour> tickerHourNewList = convertTimestamp(tickerHourList);
 
-		model.addAttribute("data", convertListToStringData(tickerHourNewList));
+		model.addAttribute("data1", convertListToStringData(tickerHourNewList, "last"));
+		model.addAttribute("data2", convertListToStringData(tickerHourNewList, "volume"));
 //		model.addAttribute("data", "[\n" +
 //				"                ['Year', 'Sales', 'Expenses'],\n" +
 //				"                ['2004',  1000,      400],\n" +
@@ -49,16 +50,31 @@ public class GraphController {
 		return "graph";
 	}
 
-	public String convertListToStringData(List<TickerHour> tickerHourList) {
+	public String convertListToStringData(List<TickerHour> tickerHourList, String var) {
 		String firstChar = "[";
-		String titleLine = "['Time', 'Last', 'Volume'],";
+		String titleLine = "";
 		String lastChar = "]";
 
 		String block = "";
 		for (TickerHour tickerHour : tickerHourList) {
-			block = block + "['" + tickerHour.getTimestamp() + "', " + tickerHour.getLast() + ", " + tickerHour.getVolume() + "], ";
+			if (var.equals("last")) {
+				block = block + "['" + tickerHour.getTimestamp() + "', " + tickerHour.getLast() + "], ";
+			} else if (var.equals("volume")) {
+				block = block + "['" + tickerHour.getTimestamp() + "', " + tickerHour.getVolume() + "], ";
+			} else {
+				// do nothing
+			}
+
 		}
 		block = block.substring(0, block.length()-2);
+
+		if (var.equals("last")) {
+			titleLine = "['Time', 'Last'],";
+		} else if (var.equals("volume")) {
+			titleLine = "['Time', 'Volume'],";
+		} else {
+			// do nothing
+		}
 		System.out.println("block : " + block);
 		System.out.println("final : " + (firstChar + titleLine + block + lastChar));
 		return firstChar + titleLine + block + lastChar;

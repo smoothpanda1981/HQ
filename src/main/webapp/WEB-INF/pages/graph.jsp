@@ -14,25 +14,41 @@
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            var data = google.visualization.arrayToDataTable(${data});
+            var data1 = google.visualization.arrayToDataTable(${data1});
+            var data2 = google.visualization.arrayToDataTable(${data2});
 
-            var options = {
-                title: 'Company Performance',
+            var options1 = {
+                title: 'Bitcoin Price',
                 curveType: 'function',
                 legend: { position: 'bottom' }
             };
 
-            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+            var options2 = {
+                title: 'Bitcoin Volume',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
 
-            chart.draw(data, options);
+            var chart1 = new google.visualization.LineChart(document.getElementById('curve_chart1'));
+            var chart2 = new google.visualization.LineChart(document.getElementById('curve_chart2'));
+
+            chart1.draw(data1, options1);
+            chart2.draw(data2, options2);
+
+
         }
 	</script>
 </head>
 <body>
 <%@ include file="menus.jsp"  %>
 <h2 class="sub-header">${message}</h2>
-<div id="curve_chart" style="width: 900px; height: 500px"></div>
+<div class="col-xs-6">
+	<div id="curve_chart1"></div>
+	<div id="curve_chart2"></div>
+</div>
+<div class="col-xs-6">
 
+</div>
 <%@ include file="footer.jsp"  %>
 </body>
 </html>
