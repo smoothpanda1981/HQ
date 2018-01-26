@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wang.yan.mvc.model.bitstamp.*;
 import com.wang.yan.mvc.service.BitstampService;
 import com.wang.yan.mvc.service.FedexService;
+import com.wang.yan.mvc.service.TickerHourService;
 import com.wang.yan.mvc.utils.BitstampUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,29 +19,68 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.net.MalformedURLException;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Controller
 @RequestMapping("/graph")
 public class GraphController {
 	private static final Logger logger = Logger.getLogger(GraphController.class);
 
+	@Autowired
+	private TickerHourService tickerHourService;
+
 	@RequestMapping(method = RequestMethod.GET)
 	public String moneyPage(ModelMap model) throws InterruptedException {
 		model.addAttribute("message", "Graph");
 
-		model.addAttribute("data", "[\n" +
-				"                ['Year', 'Sales', 'Expenses'],\n" +
-				"                ['2004',  1000,      400],\n" +
-				"                ['2005',  1170,      460],\n" +
-				"                ['2006',  660,       1120],\n" +
-				"                ['2007',  1030,      540],\n" +
-				" 				 ['2008',  930,      440]\n" +
-				"            ]");
+		List<TickerHour> tickerHourList = tickerHourService.getListOfTickerHour();
+		List<TickerHour> tickerHourNewList = convertTimestamp(tickerHourList);
+
+		model.addAttribute("data", convertListToStringData(tickerHourNewList));
+//		model.addAttribute("data", "[\n" +
+//				"                ['Year', 'Sales', 'Expenses'],\n" +
+//				"                ['2004',  1000,      400],\n" +
+//				"                ['2005',  1170,      460],\n" +
+//				"                ['2006',  660,       1120],\n" +
+//				"                ['2007',  1030,      540],\n" +
+//				" 				 ['2008',  930,      440]\n" +
+//				"            ]");
 		return "graph";
 	}
 
+	public String convertListToStringData(List<TickerHour> tickerHourList) {
+		String firstChar = "[";
+		String titleLine = "['Time', 'Last', 'Volume'],";
+		String lastChar = "]";
+
+		String block = "";
+		for (TickerHour tickerHour : tickerHourList) {
+			block = block + "['" + tickerHour.getTimestamp() + "', " + tickerHour.getLast() + ", " + tickerHour.getVolume() + "], ";
+		}
+		block = block.substring(0, block.length()-2);
+		System.out.println("block : " + block);
+		System.out.println("final : " + (firstChar + titleLine + block + lastChar));
+		return firstChar + titleLine + block + lastChar;
+	}
+
+	public List<TickerHour> convertTimestamp(List<TickerHour> tickerHourList) {
+		List<TickerHour> result = new ArrayList<>();
+		for (TickerHour tickerHour : tickerHourList) {
+			String newTimeStamp = convertUnixTimestampToDate(Long.parseLong(tickerHour.getTimestamp()));
+			tickerHour.setTimestamp(newTimeStamp);
+			result.add(tickerHour);
+		}
+		return result;
+	}
+
+	private String convertUnixTimestampToDate(Long timstamp) {
+		long unixSeconds = timstamp;
+		// convert seconds to milliseconds
+		Date date = new Date(unixSeconds*1000L);
+		// the format of your date
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String formattedDate = sdf.format(date);
+		return formattedDate;
+	}
 }
