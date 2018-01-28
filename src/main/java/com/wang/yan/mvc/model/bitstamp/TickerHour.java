@@ -5,7 +5,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "TICKER_HOUR")
 public class TickerHour {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -36,6 +35,9 @@ public class TickerHour {
 
     @Column(name = "OPEN")
     private Double open;
+
+    @Column(name = "CRYPTO_CURRENCY")
+    private String cryptoCurrency;
 
     public Long getId() {
         return id;
@@ -115,5 +117,13 @@ public class TickerHour {
 
     public void setOpen(Double open) {
         this.open = open;
+    }
+
+    public String getCryptoCurrency() {
+        return cryptoCurrency;
+    }
+
+    public void setCryptoCurrency(String cryptoCurrency) {
+        this.cryptoCurrency = cryptoCurrency;
     }
 }

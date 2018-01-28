@@ -1,12 +1,7 @@
 package com.wang.yan.mvc;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wang.yan.mvc.model.bitstamp.*;
-import com.wang.yan.mvc.service.BitstampService;
-import com.wang.yan.mvc.service.FedexService;
 import com.wang.yan.mvc.service.TickerHourService;
-import com.wang.yan.mvc.utils.BitstampUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,14 +9,12 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.io.IOException;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.net.MalformedURLException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+/*
+ * mysqldump -u root -p northwind TICKER_HOUR > mydb_tables.sql
+ */
 @Controller
 @RequestMapping("/graph")
 public class GraphController {
@@ -34,11 +27,18 @@ public class GraphController {
 	public String moneyPage(ModelMap model) throws InterruptedException {
 		model.addAttribute("message", "Graph");
 
-		List<TickerHour> tickerHourList = tickerHourService.getListOfTickerHour();
-		List<TickerHour> tickerHourNewList = convertTimestamp(tickerHourList);
+		List<TickerHour> tickerHourListBtcUsd = tickerHourService.getListOfTickerHour("BTC");
+		List<TickerHour> tickerHourNewListBtcUsd = convertTimestamp(tickerHourListBtcUsd);
 
-		model.addAttribute("data1", convertListToStringData(tickerHourNewList, "last"));
-		model.addAttribute("data2", convertListToStringData(tickerHourNewList, "volume"));
+		model.addAttribute("data1", convertListToStringData(tickerHourNewListBtcUsd, "last"));
+		model.addAttribute("data2", convertListToStringData(tickerHourNewListBtcUsd, "volume"));
+
+		List<TickerHour> tickerHourListEthUsd = tickerHourService.getListOfTickerHour("ETH");
+		List<TickerHour> tickerHourNewListEthUsd = convertTimestamp(tickerHourListEthUsd);
+
+		model.addAttribute("data3", convertListToStringData(tickerHourNewListEthUsd, "last"));
+		model.addAttribute("data4", convertListToStringData(tickerHourNewListEthUsd, "volume"));
+
 //		model.addAttribute("data", "[\n" +
 //				"                ['Year', 'Sales', 'Expenses'],\n" +
 //				"                ['2004',  1000,      400],\n" +
