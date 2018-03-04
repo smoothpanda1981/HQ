@@ -44,9 +44,26 @@
         <jsoup.version>1.10.3</jsoup.version>
         <selenium-java.version>3.4.0</selenium-java.version>
         <guava.version>21.0</guava.version>
+        <google-api-client.version>1.23.0</google-api-client.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>${google-api-client.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-jetty</artifactId>
+            <version>${google-api-client.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-sheets</artifactId>
+            <version>v4-rev506-1.23.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>

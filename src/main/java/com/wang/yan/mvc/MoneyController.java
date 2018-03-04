@@ -2,6 +2,17 @@ package com.wang.yan.mvc;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.api.client.auth.oauth2.Credential;
+import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
+import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
+import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
+import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
+import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.client.util.store.FileDataStoreFactory;
+import com.google.api.services.sheets.v4.Sheets;
+import com.google.api.services.sheets.v4.SheetsScopes;
+import com.google.api.services.sheets.v4.model.ValueRange;
 import com.wang.yan.mvc.model.BitstampProfit;
 import com.wang.yan.mvc.model.Fedex;
 import com.wang.yan.mvc.model.bitstamp.Balance;
@@ -12,19 +23,25 @@ import com.wang.yan.mvc.service.FedexService;
 import com.wang.yan.mvc.utils.BitstampUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.net.MalformedURLException;
+import java.security.GeneralSecurityException;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -218,18 +235,73 @@ public class MoneyController {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
+
+			/*
+				Fedex profit
+			 */
+			// Build a new authorized API client service.
+//			Sheets service = getSheetsService();
+//
+//			String spreadsheetId = "1upPMjqyXS3B-YZN1McDamm39XHLaSwkq58bWs4OsxNQ";
+//			String range = "822212646!E:E";
+//			ValueRange responseValueRande = service.spreadsheets().values()
+//					.get(spreadsheetId, range)
+//					.execute();
+//			List<List<Object>> values = responseValueRande.getValues();
+//			if (values == null || values.size() == 0) {
+//				System.out.println("No data found.");
+//			} else {
+//				System.out.println("Name, Major");
+//				for (List row : values) {
+//					System.out.printf("%s, %s\n", row.get(0), row.get(4));
+//				}
+//			}
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (ParseException e) {
 			e.printStackTrace();
+		} catch (GeneralSecurityException e) {
+			e.printStackTrace();
 		}
-
-
 
 		return "money";
 	}
 
 
+	/**
+	 * Build and return an authorized Sheets API client service.
+	 * @return an authorized Sheets API client service
+	 * @throws IOException
+	 */
+	public static Sheets getSheetsService() throws IOException, GeneralSecurityException {
+		Credential credential = authorize();
+		return new Sheets.Builder(GoogleNetHttpTransport.newTrustedTransport(), JacksonFactory.getDefaultInstance(), credential)
+				.setApplicationName("Google Sheets API Java - YW")
+				.build();
+	}
+
+	public static Credential authorize() throws IOException, GeneralSecurityException {
+		// Load client secrets.
+		Resource resource = new ClassPathResource("google/client_id.json");
+		InputStream in = resource.getInputStream();
+
+		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JacksonFactory.getDefaultInstance(), new InputStreamReader(in));
+
+		// Build flow and trigger user authorization request.
+		GoogleAuthorizationCodeFlow flow =
+				new GoogleAuthorizationCodeFlow.Builder(
+						GoogleNetHttpTransport.newTrustedTransport(), JacksonFactory.getDefaultInstance(), clientSecrets,  Arrays.asList(SheetsScopes.SPREADSHEETS_READONLY))
+						.setDataStoreFactory(new FileDataStoreFactory(new java.io.File(
+								System.getProperty("user.home"), ".credentials/sheets.googleapis.com-java-quickstart")))
+						.setAccessType("offline")
+						.build();
+		Credential credential = new AuthorizationCodeInstalledApp(
+				flow, new LocalServerReceiver()).authorize("user");
+		System.out.println(
+				"Credentials saved to " + new java.io.File(
+						System.getProperty("user.home"), ".credentials/sheets.googleapis.com-java-quickstart").getAbsolutePath());
+		return credential;
+	}
 }
