@@ -33,10 +33,11 @@ public class TickerHourDaoImpl implements TickerHourDao {
         }
         List<TickerHour> listTickerHour = session.createCriteria(TickerHour.class).list();
         List<TickerHour> listTickerHourWithRightCryptoCurrency = listTickerHour.stream().filter(th -> th.getCryptoCurrency().equals(cryptoCurrency)).collect(Collectors.toList());
+        List<TicketHour> listTicketHourWithRightCryptoCurrencyLast96 = listTickerHourWithRightCryptoCurrency.stream().collect(lastN(96));
 
 
-        if (listTickerHourWithRightCryptoCurrency != null) {
-            return listTickerHourWithRightCryptoCurrency;
+        if (listTicketHourWithRightCryptoCurrencyLast96 != null) {
+            return listTicketHourWithRightCryptoCurrencyLast96;
         } else {
             return null;
         }
