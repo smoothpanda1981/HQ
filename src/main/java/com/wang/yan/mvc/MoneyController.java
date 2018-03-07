@@ -262,8 +262,8 @@ public class MoneyController {
 			e.printStackTrace();
 		} catch (ParseException e) {
 			e.printStackTrace();
-		} catch (GeneralSecurityException e) {
-			e.printStackTrace();
+		//} catch (GeneralSecurityException e) {
+		//	e.printStackTrace();
 		}
 
 		return "money";
