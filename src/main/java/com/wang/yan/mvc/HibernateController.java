@@ -25,7 +25,7 @@ public class HibernateController {
 
 		Book book = new Book();
 		book.setName("La puissance de la joie");
-		book.setAuthors("Frédéric Lenoir");
+		book.setAuthors("Frederic Lenoir");
 		book.setCode("9782213661353");
 		book.setIsbn("2213661359");
 		book.setPrice("18,00");
