@@ -216,7 +216,7 @@ public class Money2Controller {
 		return "money2";
 	}
 
-	private UserTransactionForTotal convertUserTransation2ListIntoUserTransactionForTotalList(List<UserTransactionForTable> userTransactionForTablesList) {
+	public static  UserTransactionForTotal convertUserTransation2ListIntoUserTransactionForTotalList(List<UserTransactionForTable> userTransactionForTablesList) {
 		UserTransactionForTotal result = new UserTransactionForTotal();
 
 		Double totalBuy = 0.0;
@@ -245,7 +245,7 @@ public class Money2Controller {
 		return result;
 	}
 
-	private List<UserTransactionForTable> convertUserTransation2ListIntoUserTransactionForTableList(List<UserTransaction2> UserTransaction2List) {
+	public static  List<UserTransactionForTable> convertUserTransation2ListIntoUserTransactionForTableList(List<UserTransaction2> UserTransaction2List) {
 		List<UserTransactionForTable> result = new ArrayList<>();
 
 		for (UserTransaction2 userTransaction2 : UserTransaction2List) {
@@ -291,7 +291,7 @@ public class Money2Controller {
 		return result;
 	}
 
-	private BigDecimal computeDeposit(List<UserTransaction2> userTransaction2List, String currency) {
+	public static BigDecimal computeDeposit(List<UserTransaction2> userTransaction2List, String currency) {
 		BigDecimal deposit = new BigDecimal(0);
 		for (UserTransaction2 userTransaction : userTransaction2List) {
 			if (userTransaction.getType().equals("0")) {
@@ -310,7 +310,7 @@ public class Money2Controller {
 		return deposit;
 	}
 
-	private BigDecimal computeWithdraw(List<UserTransaction2> userTransaction2List, String currency) {
+	public static  BigDecimal computeWithdraw(List<UserTransaction2> userTransaction2List, String currency) {
 		BigDecimal withdraw = new BigDecimal(0);
 		BigDecimal fees = new BigDecimal(0);
 		for (UserTransaction2 userTransaction : userTransaction2List) {
@@ -333,7 +333,7 @@ public class Money2Controller {
 		return withdraw;
 	}
 
-	private BigDecimal computeBuy(List<UserTransaction2> userTransaction2List, String currency) {
+	public static  BigDecimal computeBuy(List<UserTransaction2> userTransaction2List, String currency) {
 		BigDecimal buy = new BigDecimal(0);
 		BigDecimal fees = new BigDecimal(0);
 		for (UserTransaction2 userTransaction : userTransaction2List) {
@@ -364,7 +364,7 @@ public class Money2Controller {
 		return buy;
 	}
 
-	private BigDecimal computeSell(List<UserTransaction2> userTransaction2List, String currency) {
+	public static  BigDecimal computeSell(List<UserTransaction2> userTransaction2List, String currency) {
 		BigDecimal sell = new BigDecimal(0);
 		BigDecimal fees = new BigDecimal(0);
 		for (UserTransaction2 userTransaction : userTransaction2List) {
