@@ -5,37 +5,205 @@
       <artifact name="HQ:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd2e4fae-6282-40c1-b4ef-b62400b02e83" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_apis_google_api_services_sheets_v4_rev506_1_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_java6_1_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_jetty_1_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_26.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_20081211.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/google/client_id.json" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/HQ_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/HQ_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_client_google_api_client_1_21_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_client_google_api_client_1_23_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_1_21_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_1_23_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_jackson2_1_21_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_jackson2_1_23_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_1_21_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_1_23_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/HQ.iml" afterPath="$PROJECT_DIR$/HQ.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java" />
-      <change beforePath="$PROJECT_DIR$/target/HQ.war" afterPath="$PROJECT_DIR$/target/HQ.war" />
-      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" />
-      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/lib/google-api-client-1.21.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/lib/google-http-client-1.21.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/lib/google-http-client-jackson2-1.21.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/lib/google-oauth-client-1.21.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" />
+    <list default="true" id="9bf4572e-e5bd-48e7-93a3-254612e45fff" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/BuySellBTCStragegyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/FinDataDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/FinDataDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/BuySellBtcUsd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/FinDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/FinDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/findata.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/HQ_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/HQ_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/HQ_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/HQ_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HQ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/BitstampController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DBLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DBLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DaigouController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DaigouController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/FedexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/FedexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/FinanceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/FinanceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/GoogleMapsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/GoogleMapsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/GraphController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/GraphController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HibernateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/HibernateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/KeepassController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/KeepassController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LinkedInController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LinkedInController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LogoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/LogoutController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/Money2Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/Money2Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/Money2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/Money2Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/MoneyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/SingupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/SingupController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/VideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/VideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/WebServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/WebServiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/BitstampDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/BitstampDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/BookDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/FedexDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/FedexDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/LoginDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/SignupDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/SignupDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/TickerHourDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/TickerHourDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/BitstampDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/BitstampDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/FedexDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/FedexDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/TickerHourDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/dao/impl/TickerHourDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/jms/JmsMessageSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/AppUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/BitstampProfit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/BitstampProfit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/DeleteLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/DeleteLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Fedex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Fedex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/SearchKeepass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/SearchKeepass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Signup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Signup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UpdateLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UpdateLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UserProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UserProfileType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/UserProfileType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Asks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Asks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Balance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Balance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Bids.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Bids.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/ConversionRateEURToUSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/ConversionRateEURToUSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/TickerHour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/TickerHour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransactionForTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransactionForTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransactionForTotal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/bitstamp/UserTransactionForTotal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/finance/FxData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/finance/FxData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/finance/StockData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/model/finance/StockData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/BitstampService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/BitstampService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/FedexService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/FedexService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/SignupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/SignupService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/TickerHourService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/TickerHourService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/BitstampServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/BitstampServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/FedexServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/FedexServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/TickerHourServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/TickerHourServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/BitstampUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/BitstampUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/MD5Encryption.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/MD5Encryption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/com/wang/yan/mvc/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/HQ/WEB-INF/classes/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/BitstampController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DBLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DBLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DaigouController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DaigouController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/FedexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/FedexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/FinanceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/FinanceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/GoogleMapsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/GoogleMapsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/GraphController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/GraphController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HibernateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/HibernateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/KeepassController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/KeepassController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LinkedInController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LinkedInController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LogoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/LogoutController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/Money2Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/Money2Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/Money2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/Money2Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/MoneyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/SingupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/SingupController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/VideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/VideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/WebServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/WebServiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/BitstampDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/BitstampDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/BookDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/FedexDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/FedexDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/LoginDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/SignupDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/SignupDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/TickerHourDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/TickerHourDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/BitstampDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/BitstampDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/BookDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/FedexDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/FedexDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/LoginDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/SignupDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/TickerHourDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/dao/impl/TickerHourDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/filter/GetMethodConvertingFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/interceptor/LoginSessionInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/jms/JmsMessageSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/AppUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/BitstampProfit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/BitstampProfit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/DeleteLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/DeleteLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Fedex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Fedex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/SearchKeepass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/SearchKeepass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Signup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Signup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UpdateLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UpdateLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UserProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UserProfileType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/UserProfileType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Asks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Asks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Balance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Balance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Bids.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Bids.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/ConversionRateEURToUSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/ConversionRateEURToUSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/OrderBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/ProfitsBuySell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/Ticker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/TickerHour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/TickerHour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransaction2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransactionForTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransactionForTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransactionForTotal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/bitstamp/UserTransactionForTotal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/finance/FxData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/finance/FxData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/finance/StockData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/model/finance/StockData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/BitstampService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/BitstampService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/FedexService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/FedexService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/SignupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/SignupService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/TickerHourService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/TickerHourService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/BitstampServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/BitstampServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/FedexServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/FedexServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/SignupServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/TickerHourServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/TickerHourServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/BitstampUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/BitstampUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/MD5Encryption.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/MD5Encryption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wang/yan/mvc/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/AppTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/AppTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/JsoupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/JsoupTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/MD5EncryptionUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/MD5EncryptionUnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/SeleniumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/yan/mvc/SeleniumTest.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,156 +221,12 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GraphController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/GraphController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="90" column="5" lean-forward="false" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graph.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/graph.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="25" lean-forward="false" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TickerHourDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/dao/impl/TickerHourDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TickerHourServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/impl/TickerHourServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TickerHourService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/service/TickerHourService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TickerHour.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/model/bitstamp/TickerHour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-              <folding>
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#828#829#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#948#949#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1051#1052#0" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
-                <element signature="e#1118#1119#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
-                <element signature="e#1186#1187#0" expanded="true" />
-                <element signature="e#1218#1219#0" expanded="true" />
-                <element signature="e#1268#1269#0" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1404#1405#0" expanded="true" />
-                <element signature="e#1434#1435#0" expanded="true" />
-                <element signature="e#1465#1466#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-                <element signature="e#1532#1533#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#1597#1598#0" expanded="true" />
-                <element signature="e#1626#1627#0" expanded="true" />
-                <element signature="e#1670#1671#0" expanded="true" />
-                <element signature="e#1706#1707#0" expanded="true" />
-                <element signature="e#1736#1737#0" expanded="true" />
-                <element signature="e#1762#1763#0" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
-                <element signature="e#1830#1831#0" expanded="true" />
-                <element signature="e#1860#1861#0" expanded="true" />
-                <element signature="e#1886#1887#0" expanded="true" />
-                <element signature="e#1924#1925#0" expanded="true" />
-                <element signature="e#1954#1955#0" expanded="true" />
-                <element signature="e#1985#1986#0" expanded="true" />
-                <element signature="e#2012#2013#0" expanded="true" />
-                <element signature="e#2052#2053#0" expanded="true" />
-                <element signature="e#2084#2085#0" expanded="true" />
-                <element signature="e#2125#2126#0" expanded="true" />
-                <element signature="e#2162#2163#0" expanded="true" />
-                <element signature="e#2222#2223#0" expanded="true" />
-                <element signature="e#2274#2275#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoneyController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/MoneyController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-115">
-              <caret line="252" column="20" lean-forward="true" selection-start-line="252" selection-start-column="20" selection-end-line="252" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client_id.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/google/client_id.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="56" column="32" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -240,18 +264,12 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1016" />
   </component>
+  <component name="ProjectId" id="1qzWNOxu4rPlWAvGhOmq50LelLO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -398,28 +416,37 @@
       <pane id="AndroidView" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.24062096" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wang.yan.mvc.model.bitstamp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages" />
       <recent name="$PROJECT_DIR$/src/main/resources/google" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wang.yan.mvc" />
+      <recent name="com.wang.yan.mvc.service.impl" />
+      <recent name="com.wang.yan.mvc.service" />
+      <recent name="com.wang.yan.mvc.dao.impl" />
+      <recent name="com.wang.yan.mvc.dao" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="jdbc:mysql://localhost:3306/n" />
     </option>
   </component>
   <component name="RunManager">
@@ -431,74 +458,28 @@
       <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.37" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="HQ" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.45" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="HQ:war exploded">
@@ -510,12 +491,11 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_HQ_2" />
       </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="52099" />
       </RunnerSettings>
@@ -549,6 +529,21 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -564,7 +559,8 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="HQ:war exploded" />
         </option>
@@ -576,12 +572,11 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="_HQ" />
       </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="52099" />
       </RunnerSettings>
@@ -630,12 +625,18 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SbtLocalSettings">
@@ -643,15 +644,12 @@
       <projects_view />
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd2e4fae-6282-40c1-b4ef-b62400b02e83" name="Default" comment="" />
       <created>1516810782585</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -660,6 +658,7 @@
       <workItem from="1516948381675" duration="9864000" />
       <workItem from="1520085069180" duration="3577000" />
       <workItem from="1520088676587" duration="873000" />
+      <workItem from="1618498151912" duration="2213000" />
     </task>
     <task id="LOCAL-00001" summary="Superposition of graphe : bitcoin price and bitcoin volume">
       <created>1517003247248</created>
@@ -720,19 +719,24 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Superposition of graphe : bitcoin price and bitcoin volume" />
     <MESSAGE value="back to TICKER_HOUR with crypto_currency" />
     <option name="LAST_COMMIT_MESSAGE" value="back to TICKER_HOUR with crypto_currency" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/yan/mvc/GraphController.java">

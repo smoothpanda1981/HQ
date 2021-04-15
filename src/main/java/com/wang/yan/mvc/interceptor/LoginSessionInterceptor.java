@@ -59,6 +59,9 @@ public class LoginSessionInterceptor implements HandlerInterceptor {
             } else if (httpServletRequest.getServletPath().equals("/graph")) {
                 logger.debug("in else servletPath  in if servletPath equals /graph.");
                 return true;
+            } else if (httpServletRequest.getServletPath().equals("/findata")) {
+                logger.debug("in else servletPath  in if servletPath equals /graph.");
+                return true;
             } else {
                 if (httpServletRequest.getSession().getAttribute("login") == null) {
                     logger.debug("in if session attribute login is null.");
